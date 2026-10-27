@@ -1,0 +1,600 @@
+{
+  "version": "public-regional-chunks-1",
+  "regions": [
+    {
+      "key": "umi",
+      "originalPath": "region-data-runtime\\umi.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\umi.json.gz",
+      "originalGzipSha256": "2919d137d7a19fe9a716449ab32533c1151ca6f393bf90b3da805a31965deb94",
+      "originalEncodedBytes": 19829636,
+      "originalRuntimeSha256": "9454bd4e171f289727c9876a1e0afcdafdec6672c6f51d6ef428d7401fad5ffe",
+      "originalExpandedBytes": 97264725,
+      "publicExpandedBytes": 97270298,
+      "originalExpandedSha256": "dbb7fd75a5b7114e327b6977df5ef49829185bbe86264cf6e51dc4ac33b5d179",
+      "publicExpandedSha256": "8d0656d6dc11f8e3453980e8d7ede16a8d4a6dd2315e2336b690b70526eb9ce6",
+      "localPathTokensChanged": 1357,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "a5aeb8cf3a52a48c193dfd9d61551dbf656124f3a39d48d5d0a93e0caf83b2df",
+      "publicGzipBytes": 14872311,
+      "encodedBytes": 19829748,
+      "parts": [
+        {
+          "file": "umi-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "5be160d90873e04efa18b48a657f9377dfd7ee6caff4ae572842a247db456b56",
+          "runtimeSha256": "445121b1dc1b76889f6828b784370459039f944a81b475933b962b49cca08e5d",
+          "runtimeBytes": 15728702
+        },
+        {
+          "file": "umi-part-002.js",
+          "encodedBytes": 4101108,
+          "encodedSha256": "d12cce72aac2595fdab2ba8b753a83abb1b850564c4a525bf24ca3d3d81f5b57",
+          "runtimeSha256": "49f4c798dd01de8a30824950b8cd4b0c1a68d2a449d1fde9db22d1c88fdf7c94",
+          "runtimeBytes": 4101170
+        }
+      ],
+      "datasetSignature": "15630e701807468cb46bde18863bd96be57b2448ff5af015b02972ed913ce59d",
+      "privacyExcludedFacilityCount": 1,
+      "publicFacilityCount": 321
+    },
+    {
+      "key": "munakata",
+      "originalPath": "region-data-runtime\\munakata.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\munakata.json.gz",
+      "originalGzipSha256": "2344e247c3d1b9622f52e976041895b201f17c462920e6dae1545118bc9cef3b",
+      "originalEncodedBytes": 26769472,
+      "originalRuntimeSha256": "bcce072c9e147b492bf2cb1ecce2023825a54e4266d5ccee991afdf477bdca2c",
+      "originalExpandedBytes": 131631823,
+      "publicExpandedBytes": 131633698,
+      "originalExpandedSha256": "fe4aeac91bf70d273e800f172270c8795fbe57e90a0b983e6a40dec6a8116fd3",
+      "publicExpandedSha256": "8a34679f0741a6a30a0166afbeaa4d677a5d465c89412ce5d6333aa35e4148e4",
+      "localPathTokensChanged": 363,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "fe91740cd51c3afb5a5321bf68a6c29b6c757b5f8067e840e798fe70257d3326",
+      "publicGzipBytes": 20077156,
+      "encodedBytes": 26769544,
+      "parts": [
+        {
+          "file": "munakata-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "14adf5e766f14182b7a8dfeba276fcdbd9823b9175353ff3bd5c1300bcd33876",
+          "runtimeSha256": "cca1a163fe564618d54fea44794473dc3581c238c0942934c2eb00f30b75b1e9",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "munakata-part-002.js",
+          "encodedBytes": 11040904,
+          "encodedSha256": "5cb1f61152080814577177553785b0f11ba47eec497147c1347ced7322240843",
+          "runtimeSha256": "442fd290d97065e506082dbfb106560919e4cb1758b47ba2fdeb2a937fb5741a",
+          "runtimeBytes": 11040971
+        }
+      ],
+      "datasetSignature": "be8ce40d992517ceaeea80f319befd54688364cd9ec56b429f00fd72467ab405"
+    },
+    {
+      "key": "fukuchi",
+      "originalPath": "region-data-runtime\\fukuchi.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\fukuchi.json.gz",
+      "originalGzipSha256": "2105eeeebbcc693299777c835560fd253c99b2a6b0804cb851453c6550113beb",
+      "originalEncodedBytes": 10800936,
+      "originalRuntimeSha256": "73f486f64c66fcaaf99a96a27b8efaa019997c1aa698f7968106b100041e333c",
+      "originalExpandedBytes": 61344329,
+      "publicExpandedBytes": 61349132,
+      "originalExpandedSha256": "bc2d3fddfea32d5e830f4dc7356f9e873eb7c372e5e871aaac1f8eb484e3627f",
+      "publicExpandedSha256": "a0534417783a9255455ab566fdd2fde2624087ac4a0cdda68c318e3ea9b24712",
+      "localPathTokensChanged": 1014,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "0e52ee49511d718e76bc97bced9e28da883dfb8c960f99b7899913106340e691",
+      "publicGzipBytes": 8100816,
+      "encodedBytes": 10801088,
+      "parts": [
+        {
+          "file": "fukuchi-part-001.js",
+          "encodedBytes": 10801088,
+          "encodedSha256": "cbce3ef3a5b362a0e2f74233a1fe41b0e4e3766a6826227710233faab1ecf21f",
+          "runtimeSha256": "3bc3444453b61debdf1ae9364394f35c70d0a2af613f2685fd58eb3854ad248d",
+          "runtimeBytes": 10801154
+        }
+      ],
+      "datasetSignature": "4c222df0988a41335c87c837db9a3db8eb388ca725a8392386d06e0aa9031ed4"
+    },
+    {
+      "key": "tamamura",
+      "originalPath": "region-data-runtime\\tamamura.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\tamamura.json.gz",
+      "originalGzipSha256": "631775c866b475b6072b2ca4e0b9a89bd8296e28b696a652eb05d9a4c5997a9c",
+      "originalEncodedBytes": 14060688,
+      "originalRuntimeSha256": "5cb9db3d7487bbd28a26bec204ea97dcd723849dfbf469e4adca582904f79a01",
+      "originalExpandedBytes": 85979284,
+      "publicExpandedBytes": 85987018,
+      "originalExpandedSha256": "c2bce4d637cdb01105bd01a1f84d4091242a67ab530a01683dd7c893ce17b980",
+      "publicExpandedSha256": "3d8173f2abaa4b9494f6b38636db9f251a2e75d37b7cf700f8d09e08e1c236e2",
+      "localPathTokensChanged": 1804,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "caa02c13c595be300d5074436b50fbb02a8685171fad640380defb1fd1247db1",
+      "publicGzipBytes": 10545700,
+      "encodedBytes": 14060936,
+      "parts": [
+        {
+          "file": "tamamura-part-001.js",
+          "encodedBytes": 14060936,
+          "encodedSha256": "0418f8ed8b57b13c6fe271ce0b45378141e5de50287d0975c777f1fb129d685f",
+          "runtimeSha256": "6cc9bfac2c98ffd6fee5fb6896e63b67eb2ecf1a4b45fdcf14929bd4383f16ea",
+          "runtimeBytes": 14061003
+        }
+      ],
+      "datasetSignature": "2fda0b4046ec555a23eab3d1d0d5e64c27ae937c988fd6beb12f6d9ed605f6e8"
+    },
+    {
+      "key": "tomioka",
+      "originalPath": "region-data-runtime\\tomioka.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\tomioka.json.gz",
+      "originalGzipSha256": "75b7a0a2e205139ed9e9452a56692e6078cf94b88d76a9b659ac79b2831e60ce",
+      "originalEncodedBytes": 26803592,
+      "originalRuntimeSha256": "7cbd96016f8769b6d21d3723129748156e5d849ac3c867232705043350d553f4",
+      "originalExpandedBytes": 137346210,
+      "publicExpandedBytes": 137354979,
+      "originalExpandedSha256": "69ce9347329ec4bba4784f4b9c708085c5b2941908450432669202c7b3cd0673",
+      "publicExpandedSha256": "afae2361966de238c6a012ab513a178f644664bee4647971c7704cc8972cdcdf",
+      "localPathTokensChanged": 1776,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "e90ff736f08335cbee04545435b207bb18dd1e59ef918eaf52d0bfc194eb7d52",
+      "publicGzipBytes": 20102637,
+      "encodedBytes": 26803516,
+      "parts": [
+        {
+          "file": "tomioka-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "80cf4880cd4d4c63ff856edbe83fd8b70213648605ae27d80d56f5645072ba73",
+          "runtimeSha256": "0cf4ac974b24569ad9e52a6f77fb811b175c9d2fcc5128952e8fa7f848fe8ede",
+          "runtimeBytes": 15728706
+        },
+        {
+          "file": "tomioka-part-002.js",
+          "encodedBytes": 11074876,
+          "encodedSha256": "f0c1bca95405bda3fcae3fd02ff082c9c2155001b9723b423254291ff77f379a",
+          "runtimeSha256": "a49ac6da5dae7dbbc5959292df95c12b8fc08859fadbed879f7fc701942f34e3",
+          "runtimeBytes": 11074942
+        }
+      ],
+      "datasetSignature": "3eee219e9695af2594fb31c2326deb0e5d2ea692a8981a861e9c31a0d885b286"
+    },
+    {
+      "key": "maebashi",
+      "originalPath": "region-data-runtime\\maebashi.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\maebashi.json.gz",
+      "originalGzipSha256": "ee8bba8988c3d806bfb42645bd9645e6141fc956c8f23d1830289510a09fe528",
+      "originalEncodedBytes": 79695400,
+      "originalRuntimeSha256": "1d245b990706f4a65019dc3902627b58584b0bf340b8f7b7cb87f78b8eb3124c",
+      "originalExpandedBytes": 467052199,
+      "publicExpandedBytes": 467070862,
+      "originalExpandedSha256": "74f799d07d9cd9ec1c049bf0f3baf92077c30545f22883a636e9a1d735e2ee87",
+      "publicExpandedSha256": "fc85ae62b5f63fd09f821ee4757540b1e7710a28fd9e4f03f915f037520e6c1d",
+      "localPathTokensChanged": 4167,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "e114383becedb51ef4df3cf9ce328641ed2a32d68f9c352e41f46a8f1ee4084d",
+      "publicGzipBytes": 59771209,
+      "encodedBytes": 79694948,
+      "parts": [
+        {
+          "file": "maebashi-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "249422dab29e51f8c4630381a1f1b05725b00e527f045a129df052180a486c73",
+          "runtimeSha256": "c9ec7324aba1a274bf012052fffffe9e0690deafce84b8a298b8ab2d243d5f53",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "maebashi-part-002.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "d3d5043fb0537d33c53be4034748099ca39fea788002be6487b31d040bc95c37",
+          "runtimeSha256": "69c6f2d2a4a9b390bf7e89cc9baf39e2fdc649087adc0add8ff4d269f8937ec6",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "maebashi-part-003.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "9a0f50455d9905957dc6c93924dc84c24cde5c07c87a0cf6e0bcfbede2ee7830",
+          "runtimeSha256": "83d2b37dd369bd78b2329b7cbe969bff6a3542a928d8672ce86cbe713b87f7f0",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "maebashi-part-004.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "2db47efd6cf4fb03f502077819146846469525f78510518e7a8e5d50b5cd0445",
+          "runtimeSha256": "5eef3a463a78356491c3f26125aada40085eb295321e898d5966cbab6e02de0a",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "maebashi-part-005.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "1a03cd80ea5e4aa720af99e2cdb3a6666387340869db6a8b23ab4f8452ca7a7d",
+          "runtimeSha256": "52667d282c7209204a844a328886beb0980cb65d83bbbe1389e07a5823c77776",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "maebashi-part-006.js",
+          "encodedBytes": 1051748,
+          "encodedSha256": "9673cb195796741536b7015e3ea802cdb952dc1a88e50a6707da5f18577549bc",
+          "runtimeSha256": "2ebb72d8f9b71cd3ca92971c7a1dccd8e8b1d36eb6936b1fa394247b0b9c59c5",
+          "runtimeBytes": 1051815
+        }
+      ],
+      "datasetSignature": "ec6f47e54571c66fc0d47eed8a0822109bff983d65247e05d30335b937ea18b5"
+    },
+    {
+      "key": "kawagoe",
+      "originalPath": "region-data-runtime\\kawagoe.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\kawagoe.json.gz",
+      "originalGzipSha256": "82d175fd66ed7ea4b9f2d38fae5eefc9aefa41a42d792d0feaeac0bda6857867",
+      "originalEncodedBytes": 54974012,
+      "originalRuntimeSha256": "4199e80367b8c09a857cea427802baf3909898ba718848707ffab9c3835f1c65",
+      "originalExpandedBytes": 324447548,
+      "publicExpandedBytes": 324477689,
+      "originalExpandedSha256": "5956bd0f6ba727a2b8d11b30d0492774377b8b214cf676aeec93276281efcc84",
+      "publicExpandedSha256": "45e6cff65803d3563b74450d85cecf1ca7bec967a8ebf05d39fa7b5a3e690093",
+      "localPathTokensChanged": 7571,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "a903e4c2571fd88610279373598427cc84d9883c48355a430eb305c2ab908f7d",
+      "publicGzipBytes": 41231149,
+      "encodedBytes": 54974868,
+      "parts": [
+        {
+          "file": "kawagoe-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "ae7a54e59a00db2d1bbd67dbed73b56d1a52cf28e963075477c5d2592b5665cf",
+          "runtimeSha256": "f4e60d4aa7e7bf55b23d083db8657c940f8f4560e9fa4ec1c5c03163f3f9f66d",
+          "runtimeBytes": 15728706
+        },
+        {
+          "file": "kawagoe-part-002.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "1d032bfd1c0579b590c435f583195aef8278d10a3e9436f2c744c059896abfb8",
+          "runtimeSha256": "f59f46fdbf43926286356e94202258de2d8c711974d432b3521636e98310e753",
+          "runtimeBytes": 15728706
+        },
+        {
+          "file": "kawagoe-part-003.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "b9946e49caf19975f9b8a229f68682694f16a44b061fe6041ed6f331af692eb9",
+          "runtimeSha256": "92d61cd7f0f4fb450c0178a6380834aed758b52b6844e26e0748b999fd6e53b7",
+          "runtimeBytes": 15728706
+        },
+        {
+          "file": "kawagoe-part-004.js",
+          "encodedBytes": 7788948,
+          "encodedSha256": "cc0b5d172f7daba436477d9778caa2c4047e18d2d05774bf24a0f5da2994ca60",
+          "runtimeSha256": "239f0f9b19b07cdf89224ef24b359310e3321f1dfd50ef86405ee0445ffade0c",
+          "runtimeBytes": 7789014
+        }
+      ],
+      "datasetSignature": "a3e62c9dba6e46f553e89135389bb19e65d149e9efc388c35e75a97f1f6b9460"
+    },
+    {
+      "key": "hakuba_day",
+      "originalPath": "region-data-runtime\\hakuba_day.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\hakuba_day.json.gz",
+      "originalGzipSha256": "3a018dcbd961c646aaf3f6a3c2ae2a5c9b1c72477c6ddf381a83d50097c4f3fd",
+      "originalEncodedBytes": 10500072,
+      "originalRuntimeSha256": "4e79ff6915229b9414bc78ec54be05d3624f9068929e7bb166447fa7d2aa3b13",
+      "originalExpandedBytes": 51625718,
+      "publicExpandedBytes": 51627566,
+      "originalExpandedSha256": "6e81be50a128b1f4c36a7e7aefb97f8034403e14212aa04a5d701f6e662b1731",
+      "publicExpandedSha256": "1fe5a7fbfc1d7be7c5263757e180afb2d8c43313596d1fdd33d601e93a94aa95",
+      "localPathTokensChanged": 371,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "3c7bc9879ad19b931179ceb5668f0765acb2f2698725c7cee5a144e12cdc84fb",
+      "publicGzipBytes": 7875011,
+      "encodedBytes": 10500016,
+      "parts": [
+        {
+          "file": "hakuba_day-part-001.js",
+          "encodedBytes": 10500016,
+          "encodedSha256": "dbc9818eca16806104505aa9ba550eb9458d3c25b032f1e8dfc1a50ac7befe70",
+          "runtimeSha256": "8d5ffde73409d1d372128135ac2c48668ad223b4729591b967448b3ea1b64a9f",
+          "runtimeBytes": 10500085
+        }
+      ],
+      "datasetSignature": "1ec4ef9cfc059999608aa96c9fa9461b55c6d8044a31b49db9c6281720b26af5"
+    },
+    {
+      "key": "kinokawa",
+      "originalPath": "region-data-runtime\\kinokawa.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\kinokawa.json.gz",
+      "originalGzipSha256": "fb7fe4f1624576610981c411afacd83c2050c6f2b7746c902c2da5124d631681",
+      "originalEncodedBytes": 48384276,
+      "originalRuntimeSha256": "5d717ad22355ec99e3d23effcad2de2715e9dc0582f127b2d26f29d3f3462194",
+      "originalExpandedBytes": 244607777,
+      "publicExpandedBytes": 244619231,
+      "originalExpandedSha256": "d2e768f5847bd231318516611b75530fd32dfa7a95bf0ac07fa30e842e4cf0de",
+      "publicExpandedSha256": "06891cfe7630e973ec477a45e06a1728d4b13d69343f0c8b826837bacb69331f",
+      "localPathTokensChanged": 2314,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "0e722cff2b202128375b03e1e4ec6781b2de3b926ea23bd9dbcf22a71f96ddd0",
+      "publicGzipBytes": 36288304,
+      "encodedBytes": 48384408,
+      "parts": [
+        {
+          "file": "kinokawa-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "dfb5a762828b0f5ab6eedece0da2b44545bca0044ce75ccd622a670dbcca5fc2",
+          "runtimeSha256": "874cfb79126a85b503d36255409fb8043f28290cd7a9a4330c79889f311032c5",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "kinokawa-part-002.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "b781a1a1e9698ae06d9d2c2733d66980029da86b993341948b40edcb2d0e83db",
+          "runtimeSha256": "f8c70eb9ed006137025eceb2378ee2f2335562efe8368a59710ef958e887ef2e",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "kinokawa-part-003.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "1e54892cd6d487fc3952b43f325144290e050b0d6e0c687ccba0143de019704c",
+          "runtimeSha256": "aca7790dcb09183cf4c9e88994b5152363ac8c6c56b907e200dd1acc7031ed0e",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "kinokawa-part-004.js",
+          "encodedBytes": 1198488,
+          "encodedSha256": "1e3ee91a3804fdf7bc1194de138084847db3d50df4c454e7fc01475d7893bc13",
+          "runtimeSha256": "a9a7aa779ea46af605b25dab6daa8c7d1e71a88e9a45a6d79e0c26c2aac6c2ff",
+          "runtimeBytes": 1198555
+        }
+      ],
+      "datasetSignature": "116390447c9390af04af3f8771b36e05285632a68a18d6d1fdf7c68e816a55a3"
+    },
+    {
+      "key": "annaka",
+      "originalPath": "region-data-runtime\\annaka.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\annaka.json.gz",
+      "originalGzipSha256": "f66673cc126e6f21e6c95d91ea838e3fb9223494a4c51a99709119737bd580a8",
+      "originalEncodedBytes": 39187948,
+      "originalRuntimeSha256": "aeca3db07f015256a816a788c2d0b1e5db6729e49488e477e8b62093b7205a14",
+      "originalExpandedBytes": 202324866,
+      "publicExpandedBytes": 202337046,
+      "originalExpandedSha256": "2be57baa9909f6834e6654e563014e966d0778dee360fca2da30bfdea7081822",
+      "publicExpandedSha256": "f50253c5fd27821d99b0dd4dca80ac44a2084f9b86e773366794ab97b4409795",
+      "localPathTokensChanged": 2166,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "b6060eed4dc356b13d5fc95a7878581c5e52a54c4c7be061a7f2755010a4ca2b",
+      "publicGzipBytes": 29391047,
+      "encodedBytes": 39188064,
+      "parts": [
+        {
+          "file": "annaka-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "ac0c920a5e49966eb4a023e3ed5d237b31519e29e92468421845bc948c4cdfd6",
+          "runtimeSha256": "6b05e148c6dd00cb0cdba33356c41f209c0ca7eb21068f54a6b5e5ceac1de2d8",
+          "runtimeBytes": 15728705
+        },
+        {
+          "file": "annaka-part-002.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "7941f8f37668046f4965ebba7cd32591d948b56c83913140586d29e3756ac886",
+          "runtimeSha256": "bb2fbe06e5dc78a7723fe3e55d9e6c3988bbb32e356401281ccd4aab23ea5b14",
+          "runtimeBytes": 15728705
+        },
+        {
+          "file": "annaka-part-003.js",
+          "encodedBytes": 7730784,
+          "encodedSha256": "ebe87ee3266a265c2620bff700ee91d3177ba32497e2739246bed59b93f6d9db",
+          "runtimeSha256": "9474a0d7446fa324e48f1861f5f7a2cbec31d77b7cedc9577b2959e3ffd9dc26",
+          "runtimeBytes": 7730849
+        }
+      ],
+      "datasetSignature": "0872eda891a3d72a1edbb1cf7cc9bba800dea3d3d44475692be2f9fe9ca6b28c"
+    },
+    {
+      "key": "goshogawara",
+      "originalPath": "region-data-runtime\\goshogawara.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\goshogawara.json.gz",
+      "originalGzipSha256": "7bbea8e66a59cb730f8466d41a2d7deb6b934b47b8a94cca50ba1b77da1764fd",
+      "originalEncodedBytes": 34976304,
+      "originalRuntimeSha256": "f9c042edd71efc4a78a4ad02dfba8612236101a9b7c701608812951665f274eb",
+      "originalExpandedBytes": 198791462,
+      "publicExpandedBytes": 198794096,
+      "originalExpandedSha256": "c3f575e97139d8e8b64a84f5f5c8331f01a649163bc1a7f1bcf068a457523166",
+      "publicExpandedSha256": "6a0c4a504ca41ec9c80f96e679ec589bcf93fae932551af8b98c83a8c99e7d70",
+      "localPathTokensChanged": 482,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "3a556d4d231f531bf7bd9dc1014d4cd7c358841bd701afacbcd0476148ea0139",
+      "publicGzipBytes": 26232193,
+      "encodedBytes": 34976260,
+      "parts": [
+        {
+          "file": "goshogawara-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "d57d37c6f99f35eeb5e6c530bd752a557f672aea5b7fd0480e95f30a2b5b7f83",
+          "runtimeSha256": "6afd7ab4f7681f0f19703d9de53a5a1f1555d83ba44ec7a521bff713a4a3c7db",
+          "runtimeBytes": 15728710
+        },
+        {
+          "file": "goshogawara-part-002.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "23095a219da2a4fd80d17824f81281bcda0cdca7e4058eaea94ecd31d195f6e7",
+          "runtimeSha256": "065742a7face4b368eff32e0f67025d4f648349f8409d50cf92ba8566e08aca5",
+          "runtimeBytes": 15728710
+        },
+        {
+          "file": "goshogawara-part-003.js",
+          "encodedBytes": 3518980,
+          "encodedSha256": "08fb2795eac891f5247210f9784625d6dac4c74b50ec93e975073580b9cd9fe0",
+          "runtimeSha256": "a6c82bf4f2e194bd200bd530b3a4e282f933df68e53a832aed5816be2bb63f11",
+          "runtimeBytes": 3519050
+        }
+      ],
+      "datasetSignature": "f9f335057c74592c68a8243c8ac37debd497f4453d1dfba965c33829e5fc91bc"
+    },
+    {
+      "key": "sakai",
+      "originalPath": "region-data-runtime\\sakai.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\sakai.json.gz",
+      "originalGzipSha256": "f339995d62aca9ae1918481f461acb0ce7612d3c45cb0019e339de6c8cfc02fb",
+      "originalEncodedBytes": 28180284,
+      "originalRuntimeSha256": "71607f052e6843f92eaa8c65875e04d0d86cd4ac87622cf040647d699012b1c5",
+      "originalExpandedBytes": 167987099,
+      "publicExpandedBytes": 168002363,
+      "originalExpandedSha256": "91861a069bba76eea83131e3cb117df5de79ee047616b34acdc5dceb96141901",
+      "publicExpandedSha256": "cd8b45918a7dfe244af645a93e5bbdfb5c86798e3607505bf67cefb78ae2948e",
+      "localPathTokensChanged": 3023,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "7a659e3fa9759c715ebd6da8284d9c520aea1db4070e869b64c41489401f601f",
+      "publicGzipBytes": 21135246,
+      "encodedBytes": 28180328,
+      "parts": [
+        {
+          "file": "sakai-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "82f512df0a84169176a788d56dfb05dc29bc646ab476e97cff3960399f74389b",
+          "runtimeSha256": "153b7f8345fd4e2dfeaa4affb3a1e8b254724771537710ede823a6494aca0886",
+          "runtimeBytes": 15728704
+        },
+        {
+          "file": "sakai-part-002.js",
+          "encodedBytes": 12451688,
+          "encodedSha256": "ce25b3dfbf95f23da56cad892e09c68726d2bb804cb6d88b3de4a723c715997e",
+          "runtimeSha256": "95d0395c0d12fad5ee5bade3fe811ecf7b1313402b98f256f94c4b62a4712203",
+          "runtimeBytes": 12451752
+        }
+      ],
+      "datasetSignature": "eef668f4fdce49e8aa7dee16195612fceced520a75b46232275bb230c89b305d"
+    },
+    {
+      "key": "showa",
+      "originalPath": "region-data-runtime\\showa.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\showa.json.gz",
+      "originalGzipSha256": "3a0d0e11c4028e852eb583ff0df6e89756122cb99ab0b0c31e750a71e9fa5031",
+      "originalEncodedBytes": 10722632,
+      "originalRuntimeSha256": "ded70afce692ed6f7b9675a9507dab58b8019a5cf6210957330b302d3bf9f90c",
+      "originalExpandedBytes": 60096444,
+      "publicExpandedBytes": 60099153,
+      "originalExpandedSha256": "06a35740826b80a4f8491e40483e28a050666b75f4c37c71397f256f1ac4c9ee",
+      "publicExpandedSha256": "e7c7ed5d160e9ba28b9d03a2e7f8b9e31294d13de672ce810bbdb28c8cee8c74",
+      "localPathTokensChanged": 540,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "9a26f53fed8ff30ca43286fd78548439fbf790df56bbe743e5955fea56e30cac",
+      "publicGzipBytes": 8042026,
+      "encodedBytes": 10722704,
+      "parts": [
+        {
+          "file": "showa-part-001.js",
+          "encodedBytes": 10722704,
+          "encodedSha256": "d540d1f218069fbb8a5bf7e5b89d390aacbf1c1ca50ff8e04d93dfc6c04bd6d3",
+          "runtimeSha256": "bce52f4420274d6527733e29e85d83cf360abcd0b2030d2b711b1c6141933769",
+          "runtimeBytes": 10722768
+        }
+      ],
+      "datasetSignature": "28222aea90b01163ccfdd946eddbc0a4c27f707dfc97a9dada09f0e9d6a2439f"
+    },
+    {
+      "key": "hirakawa",
+      "originalPath": "region-data-runtime\\hirakawa.js",
+      "originalSourcePayloadPath": "logical-local/drive-c/Documents\\Codex\\2026-10-25\\mp-planning\\datasets\\regional_data\\hirakawa.json.gz",
+      "originalGzipSha256": "b1a1ef74b0d0ac903fb4906403ab37bd27551b47777f894d513e35abbc36075f",
+      "originalEncodedBytes": 28191556,
+      "originalRuntimeSha256": "1b802aab65c9ee836476c0abf6be3ec308a227c1d8ab3f276d887990706bbc07",
+      "originalExpandedBytes": 140776333,
+      "publicExpandedBytes": 140780245,
+      "originalExpandedSha256": "c18d4329ad57e0fd345ae91d635741ca9a8e122ba3988964dfa586cebc476c42",
+      "publicExpandedSha256": "a56c5576cb7bab6772f81c0194fb8c77c117b0ae3d768b57446a9ffe44f2d88c",
+      "localPathTokensChanged": 711,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "5a64c137d170a4a03ff1d2b979acfcd67da41f60952abee7aceee25c2daf8716",
+      "publicGzipBytes": 21143606,
+      "encodedBytes": 28191476,
+      "parts": [
+        {
+          "file": "hirakawa-part-001.js",
+          "encodedBytes": 15728640,
+          "encodedSha256": "9cecd7272c8b0041c5dd596575d63ec70a4a465e06f6ea1c64deb7e82b9de3f5",
+          "runtimeSha256": "5804e71cb2e3f6a84099877dd65f02ea006209f90e42273cc2fcdb4d30e684e5",
+          "runtimeBytes": 15728707
+        },
+        {
+          "file": "hirakawa-part-002.js",
+          "encodedBytes": 12462836,
+          "encodedSha256": "9a20950df31a932e211b75900305192c7ea864c67c63724124a85230b12501b5",
+          "runtimeSha256": "5891622607465b7c612a90cb92632b649ad3b2f0fac02e4366f327b36b85178d",
+          "runtimeBytes": 12462903
+        }
+      ],
+      "datasetSignature": "7fc9a6e8fab73596b234e10a4cdc16bd01fce3bc8b6fd34f8fe93d8027a938c6"
+    },
+    {
+      "key": "nakama",
+      "originalPath": "region-data-runtime\\nakama.js",
+      "originalSourcePayloadPath": null,
+      "originalGzipSha256": "10dd87c0e2ed1cde8aa55c443441fbdd644c850365b9b97c0242ef1ad0654861",
+      "originalEncodedBytes": 5994388,
+      "originalRuntimeSha256": "05ab596afa19a95b68831e5dac890cc8c6901247f81698eeee0cc6d59bca91a4",
+      "originalExpandedBytes": 30475197,
+      "publicExpandedBytes": 30475197,
+      "originalExpandedSha256": "1909d6e488eab62f241fc17e1eca63e2ce5f9d25e64a7fa927fb85400504475c",
+      "publicExpandedSha256": "1909d6e488eab62f241fc17e1eca63e2ce5f9d25e64a7fa927fb85400504475c",
+      "localPathTokensChanged": 0,
+      "examples": [],
+      "nonPathStringsPreserved": true,
+      "nonStringBytesPreserved": true,
+      "transformation": "bounded local-path-prefix substitution; independent JSON semantic review required",
+      "publicGzipSha256": "10dd87c0e2ed1cde8aa55c443441fbdd644c850365b9b97c0242ef1ad0654861",
+      "publicGzipBytes": 4495791,
+      "encodedBytes": 5994388,
+      "parts": [
+        {
+          "file": "nakama-part-001.js",
+          "encodedBytes": 5994388,
+          "encodedSha256": "21320fe389634b3e0d997c5d3c1ebe378e0bd189661154eea9e406a88ee1b377",
+          "runtimeSha256": "a8ed57e048021e246935a135ba4f9f34992e730470f856bf5cebb03691104f99",
+          "runtimeBytes": 5994453
+        }
+      ],
+      "datasetSignature": "cd9ce1f83b1c090a916ad98d605c838011572d3201abb7cd82b15660e4a3d0b7"
+    }
+  ],
+  "processingNotice": "公開対象外の施設情報を除外。その他の数値・座標は保持し、端末内の保存先を公開用の論理参照へ変換。",
+  "privacyExcludedFacilityCount": 1,
+  "sourceOriginalApplicationSha256": "fd18057ecd6e8af253cb1ab5ab90bd29ecdee9ce3eade2dbe8af2331c83e5c24"
+}
