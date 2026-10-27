@@ -1,0 +1,18 @@
+# Only the curated static release belongs in this repository.
+*.zip
+*.pbf
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.log
+.env*
+*.pem
+*.key
+sample-data-runtime/
+cache/
+*-review/
+*-tools/
+__pycache__/

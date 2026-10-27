@@ -1,0 +1,23 @@
+# のりば設計室・公開初版8.15
+
+地域を選び、停留所の数と大切にしたいことを選んで比較する、自治体検討・地域学習のための試作です。
+
+公開予定URL: https://tiida0810.github.io/noriba-design-lab/
+
+- 14地域の公開データと中間市の仮配置、固定研究の比較例を収録しています。
+- 任意の自治体データ、写真、動画、停留所番号付きフォルダーを利用者の端末で取り込めます。アップロード用サーバーはありません。
+- 私物の現地写真・動画の見本は公開版に含めません。写真登録・編集・地図HTML出力は利用できます。
+- 固定研究の数値と、現在の条件で計算した値を分けます。設置可否・安全・実需要や最適配置を認定しません。
+- [データの出典と利用条件](SOURCE_NOTICES.html) / [机上検証のPDF](docs/desk-validation.pdf)
+
+## GitHub Pagesで公開
+
+このフォルダーだけをリポジトリへ登録し、Settings → Pages → SourceでGitHub Actionsを選びます。mainへのpushで付属workflowが静的ファイルを公開します。ソフトウェアの追加ビルドは不要です。別名リポジトリのproject subpathでも相対URLで読み込みます。
+
+ブラウザー登録時はこのフォルダー内を選び、`.github/workflows/pages.yml`と`.nojekyll`も含めてください。地域ファイルは16MiB以下の本体部品に分割済みです。既存の持ち出しZIPや元PBF・分析原本・私物写真を追加しないでください。
+
+入力した写真・作業JSONは、公開サイトから自動でGitHubへ送信されません。外部URLや背景画像の明示的取得、YouTube等を開く操作は通信先に依存します。編集を再開するには作業JSONと現地資料JSONを保存してください。
+
+この版は静的検算・機能模擬で確認しています。実ブラウザー、タブレット、現地運用や授業効果は別の確認です。
+
+Workflow参考: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages

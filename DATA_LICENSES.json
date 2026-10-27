@@ -1,0 +1,302 @@
+{
+  "data": [
+    {
+      "region": "umi",
+      "label": "宇美町",
+      "provider": "ネクスト・モビリティ / Next Mobility",
+      "datasetUrl": "https://ckan.odpt.org/dataset/nextmobility_umi_knowroute",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/nextmobility_umi_knowroute/resource/0d11ca25-03ea-4cba-a4cd-b7693d2e1146",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/nextmobility_umi_knowroute/resource/78990abc-908e-4e98-90e9-229db9de38ea",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "munakata",
+      "label": "宗像市",
+      "provider": "ネクスト・モビリティ / Next Mobility",
+      "datasetUrl": "https://ckan.odpt.org/dataset/munakata-city-on-demand-bus-knowroute",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/munakata-city-on-demand-bus-knowroute/resource/ea7bb94f-d799-4eb8-a6f8-fc2570cf8935",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/munakata-city-on-demand-bus-knowroute/resource/2fa4647b-7493-4c4c-a4e6-5c12b2eaf79e",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "fukuchi",
+      "label": "福智町",
+      "provider": "未来シェア / Mirai Share",
+      "datasetUrl": "https://ckan.odpt.org/dataset/miraishare_fukuchi_fukurubus",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/miraishare_fukuchi_fukurubus/resource/6320a1b8-1324-4b3a-9163-e898cedfd463",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/miraishare_fukuchi_fukurubus/resource/4babfa5f-fbe6-4286-8e9f-22d58b1ae06b",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "tamamura",
+      "label": "玉村町",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/go-tamamura-town-on-demand-taxi-tama-go",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/go-tamamura-town-on-demand-taxi-tama-go/resource/1f8d5a11-e552-4478-b31b-1f62114aa81b",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/go-tamamura-town-on-demand-taxi-tama-go/resource/3e2ceec6-9eb5-44d5-9f85-ce6e9e6b333a",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "tomioka",
+      "label": "富岡市",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/monet_tomioka_ai_taku",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/monet_tomioka_ai_taku/resource/a4973e1f-c87f-46c2-a725-94f9ac59102c",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/monet_tomioka_ai_taku/resource/a089b722-9fcb-4b7a-b2df-8aac4a57cf57",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "maebashi",
+      "label": "前橋市",
+      "provider": "未来シェア / Mirai Share",
+      "datasetUrl": "https://ckan.odpt.org/dataset/miraishare_maebashi_demand",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/miraishare_maebashi_demand/resource/ede00c2b-a42d-4001-b331-14a7331d9ecd",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/miraishare_maebashi_demand/resource/807e30c8-fbd6-4e79-b830-9243e102d48b",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "kawagoe",
+      "label": "川越市",
+      "provider": "順風路 / JUNPUZI",
+      "datasetUrl": "https://ckan.odpt.org/dataset/junpuzi_kawagoe_kawamaru",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/junpuzi_kawagoe_kawamaru/resource/7610617d-da9a-41b9-b8e2-5bed74165d84",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/junpuzi_kawagoe_kawamaru/resource/4c2608f8-19ce-4b58-862f-114c0f3abb03",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "hakuba_day",
+      "label": "白馬村（昼）",
+      "provider": "SWAT Mobility",
+      "datasetUrl": "https://ckan.odpt.org/dataset/ai-hakuba-village-on-demand-taxi-fure-ai",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/ai-hakuba-village-on-demand-taxi-fure-ai/resource/4855f681-13df-4c04-a2fb-01bb88bc8cb2",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/ai-hakuba-village-on-demand-taxi-fure-ai/resource/662a4073-d16c-4b86-8a6a-b50ca0ef4904",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "kinokawa",
+      "label": "紀の川市",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/kinokawa-city-demand-shared-transportation-norinori-transportation",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/kinokawa-city-demand-shared-transportation-norinori-transportation/resource/3fec50ad-1efb-4f3b-be78-a29d80b70cf8",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/kinokawa-city-demand-shared-transportation-norinori-transportation/resource/458182bd-5701-4447-8c75-fa64075c1a2f",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "annaka",
+      "label": "安中市",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/monet_annaka_ai_shinkotsu",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/monet_annaka_ai_shinkotsu/resource/017be085-9b4f-4326-b8fb-c2db037c8cb8",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/monet_annaka_ai_shinkotsu/resource/65e054a1-5aeb-4ce5-8007-2fe5ee7de7f2",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "showa",
+      "label": "昭和村",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/ai-showa-village-ai-on-demand-bus-veggie-bus",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/ai-showa-village-ai-on-demand-bus-veggie-bus/resource/28d12673-25e9-48b7-a0b6-016c3d883189",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/ai-showa-village-ai-on-demand-bus-veggie-bus/resource/1ab897e0-8adb-4129-b9f1-0bddf57c1c45",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "sakai",
+      "label": "坂井市",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/sakai-city-on-demand-transportation-etaku",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/sakai-city-on-demand-transportation-etaku/resource/eadc5894-9e6e-4403-a1db-51a1dc1bb375",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/sakai-city-on-demand-transportation-etaku/resource/3e30d9f2-ca9b-4f33-ae16-5685acd9875d",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "hirakawa",
+      "label": "平川市",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/monet_hirakawa_norassa",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/monet_hirakawa_norassa/resource/4b8c4a00-2e51-401b-a354-073e7516fb57",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/monet_hirakawa_norassa/resource/afff434f-d5f8-4c25-accd-b3363a47659c",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "region": "goshogawara",
+      "label": "五所川原市",
+      "provider": "MONET Technologies",
+      "datasetUrl": "https://ckan.odpt.org/dataset/monet_goshogawara_goshokuru",
+      "licenseId": "CC-BY-4.0",
+      "resources": [
+        {
+          "kind": "gtfs",
+          "url": "https://ckan.odpt.org/dataset/monet_goshogawara_goshokuru/resource/b63e45cf-74b4-4565-81eb-b6ca901af292",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "kind": "demand",
+          "url": "https://ckan.odpt.org/dataset/monet_goshogawara_goshokuru/resource/1f4525b2-5ad1-49aa-906f-9b697292820f",
+          "licenseId": "CC-BY-4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    }
+  ],
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "modifications": "GTFS・需要記録を集計・地理結合・道路距離評価・参照形式へ加工。人口・年齢・地形と重ねた机上比較。元データや現行運行を再認定しない。",
+  "privacyNotice": "公開対象外の施設情報と私物の写真・動画見本を除外。",
+  "privateLocalFilesIncluded": false
+}
