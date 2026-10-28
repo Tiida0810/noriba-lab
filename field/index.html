@@ -6,12 +6,14 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>現地のりばメモ｜のりば設計室</title>
-<link rel="stylesheet" href="field-capture-ui.css?v=8962b29040fe">
+<link rel="stylesheet" href="field-capture-ui.css?v=1c5c1f46e5a7">
 <script src="mp-field-registry.js" defer></script>
 <script src="field-capture-model.js" defer></script>
 <script src="field-capture-store.js" defer></script>
 <script src="field-capture-photo.js" defer></script>
-<script src="field-capture-ui.js" defer></script>
+<script src="field-stop-catalog.js?v=413141bc89e2" defer></script>
+<script src="field-stop-catalog-store.js?v=cb504f0e11fc" defer></script>
+<script src="field-capture-ui.js?v=127244ea122b" defer></script>
 </head>
 <body>
 <header class="app-head"><div><a class="brand" href="../">のりば設計室</a><h1>現地のりばメモ</h1></div><a class="back-link" href="../">地図・台帳へ</a></header>
@@ -29,6 +31,7 @@
 <section id="view-capture" aria-labelledby="capture-title">
 <div class="section-head"><h2 id="capture-title">写真と気づきを残す</h2><button type="button" id="new-entry" class="quiet">新しいメモ</button></div>
 <p id="editor-state" class="state-label">新しいメモ・まだ保存していません</p>
+<div class="stop-choice"><button type="button" id="open-stop-picker" data-lock>登録済みの停留所から選ぶ</button><p id="stop-selected-summary" class="hint" aria-live="polite">PCの停留所一覧を読み込むと、番号や名前を入力せずに選べます。</p></div>
 <div class="photo-actions">
 <label class="button primary" for="camera-input">写真を撮る<input id="camera-input" class="file-hidden" type="file" accept="image/jpeg,image/png,image/webp" capture="environment"></label>
 <label class="button" for="gallery-input">保存した写真を選ぶ<input id="gallery-input" class="file-hidden" type="file" accept="image/jpeg,image/png,image/webp" multiple></label>
@@ -60,6 +63,23 @@
 <div class="actions"><button type="button" id="review-entry" data-lock>内容を確認して本登録へ</button></div>
 </section>
 
+<section id="view-stops" hidden aria-labelledby="stops-title">
+<div class="section-head"><h2 id="stops-title">停留所を選ぶ</h2><button type="button" id="close-stop-picker" class="quiet">撮影・入力へ戻る</button></div>
+<p>PCで登録した停留所を、名前や番号から選べます。写真・気づき・確認日は入力中の内容を保ちます。</p>
+<details id="stop-catalog-help" open><summary>PCの停留所一覧を読み込む</summary>
+<p class="hint">PCの「現地資料の登録／現地の写真と動画」で「スマホ用の停留所一覧を保存」を押し、そのファイルをスマホへ渡します。写真や過去の観察メモは含みません。</p>
+<label class="button" for="stop-catalog-file">停留所一覧のファイルを選ぶ<input id="stop-catalog-file" class="file-hidden" type="file" accept=".json,application/json"></label>
+<button type="button" id="reload-stop-catalog" class="quiet" data-lock>保存済みの一覧を読み直す</button>
+<div id="stop-catalog-preview" class="notice" hidden><p id="stop-catalog-preview-summary"></p><p class="hint">停留所の一覧だけを入れ替えます。仮登録・本登録の写真やメモは変わりません。</p><div class="actions"><button type="button" id="confirm-stop-catalog" class="primary" data-lock>この一覧を使う</button><button type="button" id="cancel-stop-catalog">やめる</button></div></div>
+</details>
+<p id="stop-catalog-status" class="status" role="status" aria-live="polite">停留所一覧を読み込んでいません。</p>
+<div class="identity-fields stop-filters"><label class="field">自治体で絞る<select id="stop-city"><option value="">すべての自治体</option></select></label><label class="field">サービスで絞る<select id="stop-service"><option value="">すべてのサービス</option></select></label></div>
+<label class="field">停留所の名前・番号で探す<input id="stop-search" type="search" autocomplete="off" placeholder="例：511、公園、宇美駅"></label>
+<p id="stop-results-summary" class="hint"></p>
+<p class="hint">自治体・サービス・番号の順です。「001」と「1」は別の番号です。選ぶと入力欄に反映します。位置・住所は参考情報で、現地確認済みにはしません。</p>
+<div id="stop-results" class="stop-results"></div><button type="button" id="stop-more" class="quiet" hidden>続きを表示</button>
+</section>
+
 <section id="view-review" hidden aria-labelledby="review-title"><h2 id="review-title">本登録する内容の確認</h2><p>本登録は、このアプリ内の台帳への確定です。自治体による承認・公開ではありません。</p><div id="review-content"></div><label class="check confirm"><input id="review-ack" type="checkbox">写真・番号・名前・メモを確認しました</label><div class="actions"><button type="button" id="register-entry" class="primary" disabled data-lock>この内容を本登録</button><button type="button" id="back-to-editor">戻って直す</button></div></section>
 
 <section id="view-drafts" hidden aria-labelledby="drafts-title"><h2 id="drafts-title">仮登録したメモ</h2><p>入力途中の記録です。PCへの追加用ファイルには含めません。</p><div id="draft-list" class="entry-list"></div></section>
@@ -68,7 +88,8 @@
 <section id="view-transfer" hidden aria-labelledby="transfer-title"><h2 id="transfer-title">保存・PCへの引継ぎ</h2>
 <article class="transfer-card"><h3>PCの台帳へ追加する</h3><p id="transfer-summary"></p><button type="button" id="export-pc" class="primary" data-lock>PCへ渡すファイルを保存</button><p class="hint">本登録した記録だけを含みます。ファイルをPCへ渡し、のりば設計室の「現地資料の登録」から追加してください。既存の台帳を置き換えず、追加内容を確認できます。</p></article>
 <article class="transfer-card"><h3>仮登録も含めて控えを残す</h3><button type="button" id="export-backup" data-lock>すべての控えを保存</button><p class="hint">写真を含む専用JSONです。ブラウザーの保存データを消す前や端末を変える前にも保存してください。保存ボタンはダウンロードを開始します。実際に保存できたことを端末のファイルで確認してください。</p></article>
+<p class="hint">停留所一覧は写真・メモの控えとは別です。PCから保存した一覧ファイルも保管してください。</p>
 <article class="transfer-card"><h3>保存した控えを開く</h3><label class="button" for="import-backup">控えのファイルを選ぶ<input id="import-backup" class="file-hidden" type="file" accept=".json,application/json"></label><div id="restore-preview" hidden><p id="restore-summary"></p><button type="button" id="backup-before-restore">今の記録を先に控え保存</button><label class="check"><input id="restore-ack" type="checkbox">現在の記録を控え保存し、選んだ内容へ切り替えることを確認しました</label><div class="actions"><button type="button" id="confirm-restore" data-lock>この控えに切り替える</button><button type="button" id="cancel-restore">やめる</button></div></div></article>
 </section>
-</main><footer>現地のりばメモ 1.0 ／ 写真は表示用コピーです。公開する前に、写り込みや掲載条件を確認してください。</footer>
+</main><footer>現地のりばメモ 1.1 ／ 写真は表示用コピーです。公開する前に、写り込みや掲載条件を確認してください。</footer>
 </body></html>
