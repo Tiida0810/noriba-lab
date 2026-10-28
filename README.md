@@ -1,4 +1,4 @@
-# のりば設計室・公開初版8.15
+# のりば設計室・公開初版8.15.1
 
 地域を選び、停留所の数と大切にしたいことを選んで比較する、自治体検討・地域学習のための試作です。
 
@@ -23,3 +23,9 @@
 Workflow参考: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 
 不具合やご意見は [GitHub Issues](https://github.com/Tiida0810/noriba-design-lab/issues) へお願いします。fflateのMITライセンスは同部品のものです。リポジトリ全体へMITライセンスを付与したものではありません。
+
+## 8.15.1の品質改善
+
+条件を変えた後の古い比較の再適用、停留所IDに「_」を含む写真の対応、保管資料の案内HTMLへの混入を修正しました。位置変更後の写真・動画には未再確認の注意を添えます。
+[修正と検証範囲](docs/quality-update-8.15.1.html)。研究比較と地域データは8.15から変更していません。
+写真を圧縮せず取り込む設定では、画像以外のファイルを画像拡張子に改名すると登録される場合があります。画像内容の完全な検査は残課題です。
