@@ -2,7 +2,7 @@
 
 地域を選び、停留所の数と大切にしたいことを選んで比較する、自治体検討・地域学習のための試作です。
 
-アプリURL: https://tiida0810.github.io/noriba-design-lab/
+アプリURL: https://tiida0810.github.io/noriba-lab/
 
 - 14地域の公開データと中間市の仮配置、固定研究の比較例を収録しています。
 - 任意の自治体データ、写真、動画、停留所番号付きフォルダーを利用者の端末で取り込めます。アップロード用サーバーはありません。
@@ -22,7 +22,7 @@
 
 Workflow参考: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 
-不具合やご意見は [GitHub Issues](https://github.com/Tiida0810/noriba-design-lab/issues) へお願いします。fflateのMITライセンスは同部品のものです。リポジトリ全体へMITライセンスを付与したものではありません。
+不具合やご意見は [GitHub Issues](https://github.com/Tiida0810/noriba-lab/issues) へお願いします。fflateのMITライセンスは同部品のものです。リポジトリ全体へMITライセンスを付与したものではありません。
 
 ## 8.15.1の品質改善
 
