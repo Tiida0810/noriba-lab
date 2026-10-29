@@ -1,0 +1,14 @@
+Local coordinate OCR components
+
+Tesseract.js 6.0.1 and Tesseract.js-core 6.0.0
+https://github.com/naptha/tesseract.js
+https://github.com/naptha/tesseract.js-core
+Apache License 2.0; see TESSERACT-LICENSE.txt and CORE-LICENSE.txt.
+Third-party bundled notices: tesseract.min.js.LICENSE.txt and worker.min.js.LICENSE.txt.
+
+English numeric language model: @tesseract.js-data/eng 1.0.0, 4.0.0_best_int
+https://github.com/naptha/tessdata
+Upstream model repository Apache License 2.0: see TESSDATA-LICENSE.txt.
+The npm wrapper declares MIT in its package metadata; the model is redistributed with its upstream license.
+
+Local image processing is an input aid. It does not validate surveyed coordinates, stop existence, municipal approval, or walkability.

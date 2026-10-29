@@ -1811,13 +1811,16 @@ body.font-extra .odp-note,body.font-extra .odp-result span,body.font-extra .odp-
   body[data-workspace-shell="true"] #workspace-display-settings .accessibility-tools input[type="checkbox"]{flex-shrink:0}
 }
 </style>
+<style data-stop-folder-intake-version="8.21.0">.fr-stop-intake{margin:18px 0;padding:16px;border:2px solid #648a9c;border-radius:12px;background:#f6fafb;color:#173a48}.fr-stop-intake summary{cursor:pointer;font-weight:700}.fr-stop-intake input:not([type=checkbox]):not([type=file]),.fr-stop-intake textarea,.fr-stop-intake select{width:100%;box-sizing:border-box;min-height:44px;font-size:16px}.fr-stop-intake label{display:block;margin:8px 0}.fsi-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.fsi-card{margin:16px 0;padding:14px;background:white;border:1px solid #a6bec7;border-radius:10px;overflow-wrap:anywhere}.fsi-card-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.fsi-card-heading>span{padding:4px 8px;background:#eaf1f4;border-radius:5px;font-size:.9em}.fsi-gallery{display:flex;gap:12px;overflow-x:auto;padding:5px 0}.fsi-gallery figure{flex:0 0 160px;margin:0}.fsi-gallery img{width:160px;height:110px;object-fit:contain;background:#edf2f4}.fsi-gallery figcaption{font-size:.85em}.fsi-preview{max-width:480px}.fsi-map{display:block;width:100%;border:1px solid #9fb4bf;border-radius:6px;overflow:hidden}.fsi-review{padding:10px;background:#edf6f0;border-radius:5px}.fsi-result{padding:12px;background:#e4f3e9;font-weight:700}#fsi-plan-section{margin-top:22px;border-top:1px solid #a6bec7;padding-top:12px}.fr-stop-intake button{min-height:44px}.fr-stop-intake input[type=checkbox]{min-width:20px;min-height:20px;vertical-align:middle;accent-color:#075c4d}#fsi-status:empty{display:none}@media(max-width:650px){.fsi-grid{grid-template-columns:1fr}.fr-stop-intake{padding:10px}.fsi-card{padding:10px}.fr-stop-intake .fr-toolbar{display:flex;flex-direction:column;align-items:stretch}.fr-stop-intake .fr-toolbar button{width:100%}}@media print{.fr-stop-intake input[type=file],.fr-stop-intake button{display:none}}
+.font-large #fr-stop-intake select,.font-extra #fr-stop-intake select{font-size:max(16px,1em)!important}
+</style>
 </head>
 <body data-learning-level="intro">
 <div id="loading-panel" class="loading-panel" role="status" aria-live="polite"><div><span class="loading-spinner" aria-hidden="true"></span><h2 id="loading-title">地図の準備をしています</h2><p id="loading-message">道や人数の資料を読んでいます。準備が終わるまで少し待ってください。選んだ地域だけを展開します。</p><details id="loading-error-detail" hidden><summary>先生とみる：開けなかった理由</summary><p id="loading-error-text"></p></details><a id="loading-retry" href="" hidden>再読み込みする</a><p class="help">この端末の中で処理します。資料を外部へ送信しません。</p></div></div>
 <a class="skip-link" href="#workspace-screen-title">本文へ移動</a>
 <header class="masthead">
   <div class="brand"><span class="brand-mark" aria-hidden="true">↗</span><div><span class="eyebrow">まちの移動を、根拠から考える</span><h1>のりば設計室</h1></div></div>
-  <div class="header-note"><span class="local-badge">公開版8.20.2</span><a href="field/index.html" target="_blank" rel="noopener">写真・現地メモ</a><a href="SOURCE_NOTICES.html" target="_blank" rel="noopener">出典・利用条件</a><span id="header-context-text">MP配置のたたき台をつくる比較ツール</span></div>
+  <div class="header-note"><span class="local-badge">公開版8.21.0</span><a href="field/index.html" target="_blank" rel="noopener">写真・現地メモ</a><a href="SOURCE_NOTICES.html" target="_blank" rel="noopener">出典・利用条件</a><span id="header-context-text">MP配置のたたき台をつくる比較ツール</span></div>
 </header>
 <main id="planner-main" aria-busy="true" inert>
 <aside id="dashboard-sidebar" class="dashboard-sidebar" aria-label="表示モードと画面の選択"><div class="dashboard-brand"><div><strong>のりば設計室</strong><small>地図で考える、まちの移動</small></div></div><div class="workspace-role-switch" role="group" aria-label="表示モード"><button type="button" data-workspace-audience="learn" aria-pressed="true">学習用</button><button type="button" data-workspace-audience="municipal" aria-pressed="false">自治体用</button></div><details id="dashboard-navigation" class="dashboard-navigation" open><summary class="dashboard-navigation-toggle">メニューを開く・閉じる</summary><nav class="workspace-menu-list dashboard-nav" data-audience="learn" data-workspace-menu-audience="learn" aria-label="学習用のメニュー"><button type="button" class="dashboard-nav-button" data-workspace-route="home"><span aria-hidden="true">01</span><span class="dashboard-nav-label">学習ホーム</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="region"><span aria-hidden="true">02</span><span class="dashboard-nav-label">まちを選ぶ</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="predict"><span aria-hidden="true">03</span><span class="dashboard-nav-label">よそうして、はじめる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map"><span aria-hidden="true">04</span><span class="dashboard-nav-label">乗り場をつくる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="count"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">乗り場の数を変える</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="compare"><span aria-hidden="true">05</span><span class="dashboard-nav-label">3案をくらべる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="conditions"><span aria-hidden="true">06</span><span class="dashboard-nav-label">ルールを変える</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="sources"><span aria-hidden="true">07</span><span class="dashboard-nav-label">資料を調べる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="note"><span aria-hidden="true">08</span><span class="dashboard-nav-label">ノートを書く</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="files"><span aria-hidden="true">09</span><span class="dashboard-nav-label">保存・ひらく</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="people"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">人口・年齢と交通</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="od"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">利用の曜日と時刻</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="field"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">現地の写真と動画</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map-details"><span aria-hidden="true">？</span><span class="dashboard-nav-label">地図の説明と資料</span></button></nav><nav class="workspace-menu-list dashboard-nav" data-audience="municipal" data-workspace-menu-audience="municipal" aria-label="自治体用のメニュー" hidden><button type="button" class="dashboard-nav-button" data-workspace-route="home"><span aria-hidden="true">01</span><span class="dashboard-nav-label">検討ホーム</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="region"><span aria-hidden="true">02</span><span class="dashboard-nav-label">地域・資料の取込</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="conditions"><span aria-hidden="true">03</span><span class="dashboard-nav-label">比較の条件</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map"><span aria-hidden="true">04</span><span class="dashboard-nav-label">配置案の編集</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="count"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">停留所（MP）の数を変える</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="compare"><span aria-hidden="true">05</span><span class="dashboard-nav-label">3案の比較</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="transit"><span aria-hidden="true">06</span><span class="dashboard-nav-label">交通資料・参考アクセス</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="facilities"><span aria-hidden="true">07</span><span class="dashboard-nav-label">施設の確認</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="review"><span aria-hidden="true">08</span><span class="dashboard-nav-label">条件・乗り場の点検</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="decision"><span aria-hidden="true">09</span><span class="dashboard-nav-label">記録と根拠</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="files"><span aria-hidden="true">10</span><span class="dashboard-nav-label">保存・出力</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="people"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">人口・年齢と交通</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="od"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">上位OD・曜日と時刻</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="field"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">現地資料の登録</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map-details"><span aria-hidden="true">？</span><span class="dashboard-nav-label">地図の説明と資料</span></button></nav><p class="dashboard-sidebar-note">表示モードはいつでも切り替えられます。配置案と記録は共通です。<br>実際に設置できるかは別に確認します。</p></details></aside><section id="workspace-bar" class="workspace-bar" aria-label="いまの画面と作業状態"><div class="workspace-bar-heading"><span id="workspace-mode-label">学習用</span><h2 id="workspace-screen-title" tabindex="-1">学習ホーム</h2><span id="workspace-region-label"></span></div><div class="workspace-bar-actions"><div class="workspace-scenario-switch" role="group" aria-label="地図に表示・編集する案"><button type="button" data-workspace-scenario="0" aria-pressed="true">A案</button><button type="button" data-workspace-scenario="1" aria-pressed="false">B案</button><button type="button" data-workspace-scenario="2" aria-pressed="false">C案</button></div><button id="workspace-calculate" type="button" class="button small">計算・更新</button><button type="button" class="button secondary small" data-workspace-route="files">保存・出力</button><details id="workspace-display-settings"><summary>見やすさ</summary><div class="accessibility-tools"><label>文字の大きさ<select id="ui-font-size"><option value="normal">標準</option><option value="large">大きい</option><option value="extra">さらに大きい</option></select></label><label class="check-label"><input id="ui-high-contrast" type="checkbox" checked>高コントラスト</label><label class="check-label"><input id="auto-result-focus" type="checkbox">完了後に結果へ移動</label></div></details></div><div class="workspace-bar-status"><span id="workspace-calculation-state" role="status">準備中</span><span id="workspace-save-state"></span><button id="workspace-pending-return" type="button" class="text-button" hidden>入力中のルールへ戻る</button><span id="workspace-exercise-note" hidden></span><span id="workspace-navigation-status" class="sr-only" role="status" aria-live="polite"></span></div></section><div id="workspace-viewport" class="workspace-viewport" tabindex="-1"><section id="dashboard-home" class="dashboard-home" tabindex="-1" aria-labelledby="dashboard-home-heading"><div class="dashboard-welcome"><h2 id="dashboard-home-heading">地図で、まちの移動を考えよう</h2><p>人口や坂を見ながら、乗り場の場所を考えてみよう。</p></div><div class="dashboard-context-grid"><article class="dashboard-context-card"><span>いまのまち</span><strong id="dashboard-region">まちを選ぼう</strong><small id="dashboard-region-note">資料を準備しています</small></article><article class="dashboard-context-card"><span>選んでいる案</span><strong id="dashboard-plan">案を選ぼう</strong><small id="dashboard-plan-note">乗り場を確認しています</small></article><article class="dashboard-context-card"><span>計算と保存</span><strong id="dashboard-work-state">資料を読み込み中</strong><small id="dashboard-work-note">保存状態を確認しています</small></article></div><div class="dashboard-task-grid" data-workspace-home-audience="learn" aria-label="学習の4つの手順"><button type="button" class="dashboard-task-card" data-dashboard-route="predict"><span class="dashboard-task-number">01</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0l-1 2H9l-1-2Z"/></svg></span><strong class="dashboard-task-title">よそうする</strong><span class="dashboard-task-copy">まちと置く数を選び、先に考えを書こう。</span></button><button type="button" class="dashboard-task-card" data-dashboard-route="map"><span class="dashboard-task-number">02</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg></span><strong class="dashboard-task-title">地図に置く</strong><span class="dashboard-task-copy">Bは自分の案。乗り場を置いて試そう。</span></button><button type="button" class="dashboard-task-card" data-dashboard-route="compare"><span class="dashboard-task-number">03</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 21V10h4v11m2 0V3h4v18m2 0v-7h4v7"/></svg></span><strong class="dashboard-task-title">くらべる</strong><span class="dashboard-task-copy">同じルールでA・B・Cをくらべよう。</span></button><button type="button" class="dashboard-task-card" data-dashboard-route="note"><span class="dashboard-task-number">04</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 3h16v15H9l-5 3V3m4 5h8M8 12h6"/></svg></span><strong class="dashboard-task-title">まとめる</strong><span class="dashboard-task-copy">見つけた違いと、まだ分からないことを残そう。</span></button></div><div class="dashboard-task-grid" data-workspace-home-audience="municipal" aria-label="自治体の検討手順" hidden><button type="button" class="dashboard-task-card" data-workspace-route="region"><span class="dashboard-task-number">01</span><strong class="dashboard-task-title">資料を取り込む</strong><span class="dashboard-task-copy">地域の道路・人口・乗り場などを登録します。</span></button><button type="button" class="dashboard-task-card" data-workspace-route="map"><span class="dashboard-task-number">02</span><strong class="dashboard-task-title">配置案を編集</strong><span class="dashboard-task-copy">同じ資料でA・B・Cの配置を試します。</span></button><button type="button" class="dashboard-task-card" data-workspace-route="review"><span class="dashboard-task-number">03</span><strong class="dashboard-task-title">条件を点検</strong><span class="dashboard-task-copy">坂・行き帰り・乗り場の変化を調べます。</span></button><button type="button" class="dashboard-task-card" data-workspace-route="decision"><span class="dashboard-task-number">04</span><strong class="dashboard-task-title">根拠を残す</strong><span class="dashboard-task-copy">判断した理由と追加確認を記録します。</span></button></div><p class="help">写真・動画の現地資料は「現地資料の登録／現地の写真と動画」の専用ファイルで保存できます。配置案の作業ファイルとは別です。</p><p id="dashboard-file-note" class="help"></p><p id="dashboard-nav-status" class="help" role="status" aria-live="polite"></p></section>
@@ -8519,7 +8522,7 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
     const sel=$('fr-filter');if(sel){const names=Array.from(new Set(current().records.map(r=>r.municipality))).sort();if(filter&&!names.includes(filter))filter='';sel.innerHTML='<option value="">登録した全自治体</option>'+names.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('');sel.value=filter;}
     const rows=visible(),tbody=$('fr-rows');if(tbody)tbody.innerHTML=rows.slice(0,200).map(r=>'<tr><td>'+esc(r.municipality)+'</td><th scope="row">'+esc(r.mpId)+'<br>'+esc(r.name)+'</th><td>'+esc(r.lat==null?'座標なし':r.lat.toFixed(6)+', '+r.lon.toFixed(6))+'</td><td>'+(photoList(r).length?'写真'+photoList(r).length+'枚':'写真なし')+'／'+(r.video?'動画あり':'動画なし')+'<br>'+esc(({unconfirmed:'未確認',document:'資料と照合',field:'現地で確認'})[r.confirmation])+'</td><td><button type="button" class="button secondary small" data-fr-select="'+esc(r.key)+'">確認・編集</button></td></tr>').join('')||'<tr><td colspan="5">登録はまだありません。新規登録・CSV・中間市の見本から始められます。</td></tr>';
     if($('fr-list-note'))$('fr-list-note').textContent=rows.length>200?'一覧は先頭200件を表示しています。自治体・番号・名称で絞り込んでください。地図と保存には全件を含みます。':'';
-    if($('fr-undo'))$('fr-undo').disabled=!undo;renderMap();renderDetail();renderStatus();if(global.MPPhotoFolderUI)global.MPPhotoFolderUI.refresh();
+    if($('fr-undo'))$('fr-undo').disabled=!undo;renderMap();renderDetail();renderStatus();if(global.MPPhotoFolderUI)global.MPPhotoFolderUI.refresh();if(global.StopFolderIntakeUI)global.StopFolderIntakeUI.refresh();
   }
   const fields=['municipality','service','mpId','name','lat','lon','elevationM','address','observedAt','coordinateBasis','confirmation','notes'];
   function setEditor(record){editorEpoch++;clearExtraPhotos=false;editingKey=record?record.key:null;attachments={photo:record&&record.photo||null,video:record&&record.video||null};for(const name of fields){const n=$('fr-'+name);if(n)n.value=record&&record[name]!=null?record[name]:name==='confirmation'?'unconfirmed':'';}
@@ -8533,8 +8536,8 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
     attachmentReads++;let url;try{url=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=()=>reject(Error('ファイルを開けませんでした。'));reader.readAsDataURL(new Blob([file],{type:mime}));});}finally{attachmentReads--;}if(epoch!==editorEpoch||request!==fileEpoch[kind])return;C.safeMediaURL(url,kind);draftRevision++;attachments[kind]={url,name,mime};$('fr-'+kind+'-url').value='';$('fr-'+kind+'-name').textContent=name+'（登録ボタンで確定）';notify('ファイルを選びました。登録ボタンで保存してください。');
   }
   function importCurrentStops(){if(!adapter.getCurrentStops)throw Error('現在の地域のMPを取得できません。');const input=adapter.getCurrentStops(),existing=new Set(current().records.map(r=>r.key));const added=[];for(const raw of input){const r=C.normalizeRecord(raw);if(existing.has(r.key))continue;added.push(r);existing.add(r.key);}commit({...current(),records:current().records.concat(added)},'表示中の地域から'+added.length+'地点を追加しました。配置案は変更していません。');fitMap();return added.length;}
-  function stageScenarioSync(bindings={}){assertMapExportReady();if(!adapter.getScenarioStops||!global.MPFieldPlanSync)throw Error('配置案と台帳を結ぶ部品を読み込めませんでした。');syncBindings=bindings;syncStaged=global.MPFieldPlanSync.preview(current(),adapter.getScenarioStops(),{bindings});syncRevision=revision;renderSyncPreview();return copy(syncStaged);}
-  function renderSyncPreview(){const node=$('fr-sync-preview');if(!node)return;node.hidden=!syncStaged;if(!syncStaged)return;const p=syncStaged,summary=p.summary;node.innerHTML='<h4>'+esc(p.input.municipalityLabel+' ／ '+p.input.scenarioLabel)+'</h4><p>追加 '+summary.add+' ／ 座標変更 '+summary.move+' ／ 再表示 '+summary.reactivate+' ／ 別版対応の明示変更 '+(summary.relink||0)+' ／ そのまま '+summary.keep+' ／ 非表示で保管 '+summary.archive+'</p><p>'+esc(p.notice)+'</p><div class="table-scroll"><table><thead><tr><th>MP・操作</th><th>台帳の対応先（同一地点か確認）</th><th>座標 前→後</th></tr></thead><tbody>'+p.rows.slice(0,500).map(r=>'<tr><td>'+esc(r.mpId+' '+r.name)+'<br>'+esc(({add:'新しく登録',move:'位置を変える',reactivate:'再表示',relink:'別版資料へ対応変更',keep:'維持',archive:'非表示で保管'})[r.action])+'</td><td>'+(r.after?'<select data-fr-sync-bind="'+esc(r.mpId)+'"><option value="">'+(r.separateSourceRecord?'別版として分けて新規追加':'新しい台帳として追加')+'</option>'+Array.from(new Map((r.before?[{key:r.before.key,name:r.before.name,service:r.before.service,photoCount:photoList(r.before).length}]:[]).concat(r.candidates).map(x=>[x.key,x])).values()).map(x=>'<option value="'+esc(x.key)+'" '+(x.key===r.key?'selected':'')+'>'+esc(x.service+' ／ '+x.name+' ／ 写真'+x.photoCount+'枚')+'</option>').join('')+'</select>':'保管する資料・写真は残します')+'</td><td>'+esc(r.before?r.before.lat+', '+r.before.lon:'新規')+' → '+esc(r.after?r.after.lat+', '+r.after.lon:'保管')+'</td></tr>').join('')+'</tbody></table></div>'+(p.rows.length>500?'<p>表は先頭500件です。差分JSONには全件を保存できます。</p>':'')+'<label>同期する理由<input id="fr-sync-reason" maxlength="1000" placeholder="例：C案の仮配置を現地確認の台帳へ。公式運行は未確認"></label><div class="fr-toolbar"><button type="button" id="fr-sync-confirm" class="button">この差分で台帳へ反映</button><button type="button" id="fr-sync-save" class="text-button">差分JSONを保存</button><button type="button" id="fr-sync-cancel" class="text-button">やめる</button></div>';}
+  function stageScenarioSync(bindings={}){assertMapExportReady();if(!adapter.getScenarioStops||!global.MPFieldPlanSync)throw Error('配置案と台帳を結ぶ部品を読み込めませんでした。');const snapshot=adapter.getScenarioStops();syncBindings={...(snapshot.registryBindings||{}),...bindings};syncStaged=global.MPFieldPlanSync.preview(current(),snapshot,{bindings:syncBindings});syncRevision=revision;renderSyncPreview();return copy(syncStaged);}
+  function renderSyncPreview(){const node=$('fr-sync-preview');if(!node)return;node.hidden=!syncStaged;if(!syncStaged)return;const p=syncStaged,summary=p.summary;node.innerHTML='<h4>'+esc(p.input.municipalityLabel+' ／ '+p.input.scenarioLabel)+'</h4><p>追加 '+summary.add+' ／ 座標変更 '+summary.move+' ／ 再表示 '+summary.reactivate+' ／ 別版対応の明示変更 '+(summary.relink||0)+' ／ そのまま '+summary.keep+' ／ 非表示で保管 '+summary.archive+'</p><p>'+esc(p.notice)+'</p>'+(p.input.registryBindings&&Object.keys(p.input.registryBindings).length?'<p>台帳から取り込んだ'+Object.keys(p.input.registryBindings).length+'地点は、元の停留所へ対応づけています。番号を変えて二重登録しません。</p>':'')+'<div class="table-scroll"><table><thead><tr><th>MP・操作</th><th>台帳の対応先（同一地点か確認）</th><th>座標 前→後</th></tr></thead><tbody>'+p.rows.slice(0,500).map(r=>'<tr><td>'+esc(r.mpId+' '+r.name)+'<br>'+esc(({add:'新しく登録',move:'位置を変える',reactivate:'再表示',relink:'別版資料へ対応変更',keep:'維持',archive:'非表示で保管'})[r.action])+'</td><td>'+(r.after?'<select data-fr-sync-bind="'+esc(r.mpId)+'"><option value="">'+(r.separateSourceRecord?'別版として分けて新規追加':'新しい台帳として追加')+'</option>'+Array.from(new Map((r.before?[{key:r.before.key,name:r.before.name,service:r.before.service,photoCount:photoList(r.before).length}]:[]).concat(r.candidates).map(x=>[x.key,x])).values()).map(x=>'<option value="'+esc(x.key)+'" '+(x.key===r.key?'selected':'')+'>'+esc(x.service+' ／ '+x.name+' ／ 写真'+x.photoCount+'枚')+'</option>').join('')+'</select>':'保管する資料・写真は残します')+'</td><td>'+esc(r.before?r.before.lat+', '+r.before.lon:'新規')+' → '+esc(r.after?r.after.lat+', '+r.after.lon:'保管')+'</td></tr>').join('')+'</tbody></table></div>'+(p.rows.length>500?'<p>表は先頭500件です。差分JSONには全件を保存できます。</p>':'')+'<label>同期する理由<input id="fr-sync-reason" maxlength="1000" placeholder="例：C案の仮配置を現地確認の台帳へ。公式運行は未確認"></label><div class="fr-toolbar"><button type="button" id="fr-sync-confirm" class="button">この差分で台帳へ反映</button><button type="button" id="fr-sync-save" class="text-button">差分JSONを保存</button><button type="button" id="fr-sync-cancel" class="text-button">やめる</button></div>';}
   function applyScenarioSync(reason){assertMapExportReady();if(!syncStaged||syncRevision!==revision)throw Error('台帳が変わりました。配置案との差分を確認し直してください。');const next=global.MPFieldPlanSync.apply(current(),adapter.getScenarioStops(),syncStaged,reason),input=syncStaged.input;syncStaged=null;syncBindings={};commit(next,'選択した'+input.scenarioId+'案を写真台帳へ同期しました。外した資料も削除せず保管しています。');filter=input.municipalityLabel;query='';if($('fr-search'))$('fr-search').value='';renderSyncPreview();render();fitMap();return getState();}
   let mapExportGeneration=0,mapExportAbort=null,mapExportState={phase:'idle',summary:null};
   function assertMapExportReady(){if(draftRevision!==editorBaseline||attachmentReads)throw Error('入力中の内容があります。先に「この内容を登録・更新」で保存してから地図HTMLを出力してください。');}
@@ -8557,7 +8560,7 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
     download('乗り場の現地案内.html',html,'text/html;charset=utf-8');return html;
   }
   function init(next){if(mounted)return api;adapter=next||{};const panel=$('field-registry-panel');if(!panel)return api;mounted=true;current();
-    panel.innerHTML='<h2>乗り場の写真・動画を登録する</h2><p>自治体・サービス・MP番号で、地図と現地資料を結びつけます。内蔵14自治体以外も登録できます。登録は配置計算のMPを変更しません。</p><div class="fr-toolbar"><button type="button" id="fr-new" class="button">新しく登録</button><button type="button" id="fr-current" class="button secondary">表示中の地域のMPを追加</button><button type="button" id="fr-sample" class="button secondary" hidden disabled>現地写真の見本は非公開</button><span class="fr-public-sample-note">公開版に実写真の見本は含みません。自分の写真・動画は登録できます。</span><button type="button" id="fr-undo" class="text-button">一つ前に戻す</button></div><p id="fr-counts"></p><p id="fr-status" role="status" aria-live="polite"></p><div class="fr-file-tools"><button type="button" id="fr-save" class="button">現地資料をファイル保存</button><label>現地資料JSON・乗り場CSVを開く<input type="file" id="fr-import" accept=".json,.csv,application/json,text/csv"></label><button type="button" id="fr-template" class="text-button">CSVのひな形を保存</button><button type="button" id="fr-guide" class="text-button">表示中の案内をHTML保存・印刷</button></div><p id="fr-storage" class="help"></p><div id="fr-import-preview" hidden><p id="fr-import-note"></p><button type="button" id="fr-import-confirm" class="button">この内容で読み込む</button><button type="button" id="fr-import-cancel" class="text-button">取り消す</button></div><section class="fr-map-export" aria-label="写真付き地図HTMLの出力"><h3>地図と写真をHTMLで持ち出す</h3><p>地図の点から写真や説明を開ける、閲覧用のHTMLを保存します。端末から登録した写真・動画はHTML内に含めます。写真URL・YouTube等の外部リンクは通信が必要です。</p><div class="fr-filter-tools"><label>出力する乗り場<select id="fr-map-export-scope"><option value="visible">表示中の自治体・検索結果</option><option value="all">登録した全乗り場</option></select></label><label>最初に表示する地図の範囲<select id="fr-map-export-view"><option value="all">出力する全地点が入る範囲</option><option value="current">いまの地図の中心・縮尺</option></select></label></div><label class="fr-map-export-opt"><input type="checkbox" id="fr-map-export-background">背景地図もHTMLへ保存する（組織内閲覧向け・通信あり）</label><p class="help">背景を含めない場合は通信なしの位置図です。保存したHTMLで「オンライン背景」を選ぶと地理院地図を表示できます。保存背景は出力時の範囲のみです。組織外へ公開するときは<a href="https://service.gsi.go.jp/onestop/navi/nav1/" target="_blank" rel="noopener noreferrer">地理院の利用手続</a>を確認してください。</p><div class="fr-toolbar"><button type="button" id="fr-map-html" class="button">地図と写真をHTML保存</button><button type="button" id="fr-map-html-cancel" class="text-button">地図HTMLの出力を取り消す</button></div></section><section class="fr-plan-sync"><h3>選択した配置案を写真付き地図へつなぐ</h3><p>A・B・Cのいま選んでいる案の有効MPを転記します。手動で追加・移動した座標も使います。差分を確認して同期し、写真を登録したあと、上の「地図と写真をHTML保存」で公開用ファイルを作れます。作業の再開は配置案JSONと現地資料JSONの両方を保存してください。</p><button type="button" id="fr-sync-stage" class="button">選択案との差分を見る</button><div id="fr-sync-preview" hidden></div></section><section id="fr-photo-folder" class="fr-photo-folder" aria-label="写真フォルダーの一括取込"></section><label><input type="checkbox" id="fr-show-archived">非表示で保管した資料も台帳に表示（公開HTMLには含めません）</label><div class="fr-filter-tools"><label>表示する自治体<select id="fr-filter"></select></label><label>番号・名称などで探す<input id="fr-search" type="search" placeholder="例：536、公園"></label><button type="button" id="fr-fit" class="button secondary">全地点が入る表示</button></div><div class="fr-columns"><div class="fr-map-column"><div class="fr-toolbar"><button type="button" id="fr-zoom-in" class="button secondary" aria-label="現地資料の地図を拡大">＋</button><button type="button" id="fr-zoom-out" class="button secondary" aria-label="現地資料の地図を縮小">−</button><button type="button" id="fr-pan-n" class="text-button" aria-label="地図を北へ">↑</button><button type="button" id="fr-pan-w" class="text-button" aria-label="地図を西へ">←</button><button type="button" id="fr-pan-e" class="text-button" aria-label="地図を東へ">→</button><button type="button" id="fr-pan-s" class="text-button" aria-label="地図を南へ">↓</button><label><input id="fr-background" type="checkbox">地理院地図を表示（通信あり）</label></div><div id="fr-map"></div><p id="fr-map-caption" class="help"></p><p class="help">背景地図：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener noreferrer">国土地理院・地理院タイル</a>。表示を選ぶと表示範囲のタイルを取得します。通信できないときは位置図を使えます。</p><label><input type="checkbox" id="fr-pick">地図を押して入力欄の座標を指定する</label><p id="fr-map-pick-state" class="help"></p><section id="fr-detail" aria-label="選んだ乗り場の現地資料"></section></div><form id="fr-editor" class="fr-editor"><h3 id="fr-editor-title">新しい乗り場を登録する</h3><div class="fr-input-grid">'+[['municipality','自治体名','text'],['service','運行サービス名','text'],['mpId','MP番号・ID','text'],['name','乗り場名','text'],['lat','緯度','number'],['lon','経度','number'],['elevationM','標高（m・任意）','number'],['observedAt','撮影・確認日（任意）','date'],['address','所在地（任意）','text'],['coordinateBasis','位置の根拠（地図・現地確認など）','text']].map(([id,label,type])=>'<label>'+label+'<input id="fr-'+id+'" type="'+type+'" '+(['municipality','service','mpId','name'].includes(id)?'required maxlength="200"':'')+(type==='number'?'step="any"':'')+'></label>').join('')+'<label>確認状況<select id="fr-confirmation"><option value="unconfirmed">未確認</option><option value="document">資料と照合</option><option value="field">現地で確認</option></select></label></div><p class="help">緯度・経度が不明なら両方を空欄にできます。看板・入口・乗降場所のどの位置かを根拠やメモに記録してください。</p>'+['photo','video'].map(kind=>'<fieldset><legend>'+(kind==='photo'?'写真':'動画')+'</legend><label>'+(kind==='photo'?'写真URL（https）':'YouTube・動画URL（https）')+'<input type="url" id="fr-'+kind+'-url" placeholder="https://…"></label><label>または端末のファイル<input type="file" id="fr-'+kind+'-file" accept="'+(kind==='photo'?'.jpg,.jpeg,.png,.webp':'.mp4,.webm,.mov')+'"></label><p id="fr-'+kind+'-name">未登録</p><button type="button" class="text-button" id="fr-'+kind+'-clear">'+(kind==='photo'?'写真をすべて':'動画の登録を')+'外す</button></fieldset>').join('')+'<p class="help">写真12MB・動画40MB、保存JSON全体80MBまで。元ファイルは加工しません。MOVの画面内再生は端末によって異なります。</p><label id="fr-location-review" hidden><input type="checkbox" id="fr-location-reviewed">写真・動画・住所を現在の位置と照合した（確認日と確認状況も入力）</label><label>確認メモ<textarea id="fr-notes" rows="4" maxlength="5000" placeholder="目印、看板と乗降場所の違い、追加で確かめること"></textarea></label><div class="fr-toolbar"><button type="submit" class="button">この内容を登録・更新</button><button type="button" id="fr-delete" class="text-button" disabled>この登録を削除</button></div></form></div><div class="table-scroll"><table class="fr-table"><thead><tr><th>自治体</th><th>番号・名称</th><th>位置</th><th>登録状況</th><th>操作</th></tr></thead><tbody id="fr-rows"></tbody></table></div><p id="fr-list-note" class="help"></p><p class="help">中間市の見本は利用者の現地収集資料・保存台帳に基づく41地点です。自治体提供・公式認証済みのデータではありません。ショート11本と原写真1枚を含み、撮影日不明は空欄です。人口・道路・ODの計算対象として中間市を追加したものではありません。</p>';
+    panel.innerHTML='<h2>乗り場の写真・動画を登録する</h2><p>自治体・サービス・MP番号で、地図と現地資料を結びつけます。内蔵14自治体以外も登録できます。台帳への登録だけでは配置案は変わりません。登録後に追加先の案を確認できます。</p><div class="fr-toolbar"><button type="button" id="fr-new" class="button">新しく登録</button><button type="button" id="fr-current" class="button secondary">表示中の地域のMPを追加</button><button type="button" id="fr-sample" class="button secondary" hidden disabled>現地写真の見本は非公開</button><span class="fr-public-sample-note">公開版に実写真の見本は含みません。自分の写真・動画は登録できます。</span><button type="button" id="fr-undo" class="text-button">一つ前に戻す</button></div><p id="fr-counts"></p><p id="fr-status" role="status" aria-live="polite"></p><div class="fr-file-tools"><button type="button" id="fr-save" class="button">現地資料をファイル保存</button><label>現地資料JSON・乗り場CSVを開く<input type="file" id="fr-import" accept=".json,.csv,application/json,text/csv"></label><button type="button" id="fr-template" class="text-button">CSVのひな形を保存</button><button type="button" id="fr-guide" class="text-button">表示中の案内をHTML保存・印刷</button></div><p id="fr-storage" class="help"></p><div id="fr-import-preview" hidden><p id="fr-import-note"></p><button type="button" id="fr-import-confirm" class="button">この内容で読み込む</button><button type="button" id="fr-import-cancel" class="text-button">取り消す</button></div><section class="fr-map-export" aria-label="写真付き地図HTMLの出力"><h3>地図と写真をHTMLで持ち出す</h3><p>地図の点から写真や説明を開ける、閲覧用のHTMLを保存します。端末から登録した写真・動画はHTML内に含めます。写真URL・YouTube等の外部リンクは通信が必要です。</p><div class="fr-filter-tools"><label>出力する乗り場<select id="fr-map-export-scope"><option value="visible">表示中の自治体・検索結果</option><option value="all">登録した全乗り場</option></select></label><label>最初に表示する地図の範囲<select id="fr-map-export-view"><option value="all">出力する全地点が入る範囲</option><option value="current">いまの地図の中心・縮尺</option></select></label></div><label class="fr-map-export-opt"><input type="checkbox" id="fr-map-export-background">背景地図もHTMLへ保存する（組織内閲覧向け・通信あり）</label><p class="help">背景を含めない場合は通信なしの位置図です。保存したHTMLで「オンライン背景」を選ぶと地理院地図を表示できます。保存背景は出力時の範囲のみです。組織外へ公開するときは<a href="https://service.gsi.go.jp/onestop/navi/nav1/" target="_blank" rel="noopener noreferrer">地理院の利用手続</a>を確認してください。</p><div class="fr-toolbar"><button type="button" id="fr-map-html" class="button">地図と写真をHTML保存</button><button type="button" id="fr-map-html-cancel" class="text-button">地図HTMLの出力を取り消す</button></div></section><section class="fr-plan-sync"><h3>選択した配置案を写真付き地図へつなぐ</h3><p>A・B・Cのいま選んでいる案の有効MPを転記します。手動で追加・移動した座標も使います。差分を確認して同期し、写真を登録したあと、上の「地図と写真をHTML保存」で公開用ファイルを作れます。作業の再開は配置案JSONと現地資料JSONの両方を保存してください。</p><button type="button" id="fr-sync-stage" class="button">選択案との差分を見る</button><div id="fr-sync-preview" hidden></div></section><section id="fr-photo-folder" class="fr-photo-folder" aria-label="写真フォルダーの一括取込"></section><label><input type="checkbox" id="fr-show-archived">非表示で保管した資料も台帳に表示（公開HTMLには含めません）</label><div class="fr-filter-tools"><label>表示する自治体<select id="fr-filter"></select></label><label>番号・名称などで探す<input id="fr-search" type="search" placeholder="例：536、公園"></label><button type="button" id="fr-fit" class="button secondary">全地点が入る表示</button></div><div class="fr-columns"><div class="fr-map-column"><div class="fr-toolbar"><button type="button" id="fr-zoom-in" class="button secondary" aria-label="現地資料の地図を拡大">＋</button><button type="button" id="fr-zoom-out" class="button secondary" aria-label="現地資料の地図を縮小">−</button><button type="button" id="fr-pan-n" class="text-button" aria-label="地図を北へ">↑</button><button type="button" id="fr-pan-w" class="text-button" aria-label="地図を西へ">←</button><button type="button" id="fr-pan-e" class="text-button" aria-label="地図を東へ">→</button><button type="button" id="fr-pan-s" class="text-button" aria-label="地図を南へ">↓</button><label><input id="fr-background" type="checkbox">地理院地図を表示（通信あり）</label></div><div id="fr-map"></div><p id="fr-map-caption" class="help"></p><p class="help">背景地図：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener noreferrer">国土地理院・地理院タイル</a>。表示を選ぶと表示範囲のタイルを取得します。通信できないときは位置図を使えます。</p><label><input type="checkbox" id="fr-pick">地図を押して入力欄の座標を指定する</label><p id="fr-map-pick-state" class="help"></p><section id="fr-detail" aria-label="選んだ乗り場の現地資料"></section></div><form id="fr-editor" class="fr-editor"><h3 id="fr-editor-title">新しい乗り場を登録する</h3><div class="fr-input-grid">'+[['municipality','自治体名','text'],['service','運行サービス名','text'],['mpId','MP番号・ID','text'],['name','乗り場名','text'],['lat','緯度','number'],['lon','経度','number'],['elevationM','標高（m・任意）','number'],['observedAt','撮影・確認日（任意）','date'],['address','所在地（任意）','text'],['coordinateBasis','位置の根拠（地図・現地確認など）','text']].map(([id,label,type])=>'<label>'+label+'<input id="fr-'+id+'" type="'+type+'" '+(['municipality','service','mpId','name'].includes(id)?'required maxlength="200"':'')+(type==='number'?'step="any"':'')+'></label>').join('')+'<label>確認状況<select id="fr-confirmation"><option value="unconfirmed">未確認</option><option value="document">資料と照合</option><option value="field">現地で確認</option></select></label></div><p class="help">緯度・経度が不明なら両方を空欄にできます。看板・入口・乗降場所のどの位置かを根拠やメモに記録してください。</p>'+['photo','video'].map(kind=>'<fieldset><legend>'+(kind==='photo'?'写真':'動画')+'</legend><label>'+(kind==='photo'?'写真URL（https）':'YouTube・動画URL（https）')+'<input type="url" id="fr-'+kind+'-url" placeholder="https://…"></label><label>または端末のファイル<input type="file" id="fr-'+kind+'-file" accept="'+(kind==='photo'?'.jpg,.jpeg,.png,.webp':'.mp4,.webm,.mov')+'"></label><p id="fr-'+kind+'-name">未登録</p><button type="button" class="text-button" id="fr-'+kind+'-clear">'+(kind==='photo'?'写真をすべて':'動画の登録を')+'外す</button></fieldset>').join('')+'<p class="help">写真12MB・動画40MB、保存JSON全体80MBまで。元ファイルは加工しません。MOVの画面内再生は端末によって異なります。</p><label id="fr-location-review" hidden><input type="checkbox" id="fr-location-reviewed">写真・動画・住所を現在の位置と照合した（確認日と確認状況も入力）</label><label>確認メモ<textarea id="fr-notes" rows="4" maxlength="5000" placeholder="目印、看板と乗降場所の違い、追加で確かめること"></textarea></label><div class="fr-toolbar"><button type="submit" class="button">この内容を登録・更新</button><button type="button" id="fr-delete" class="text-button" disabled>この登録を削除</button></div></form></div><div class="table-scroll"><table class="fr-table"><thead><tr><th>自治体</th><th>番号・名称</th><th>位置</th><th>登録状況</th><th>操作</th></tr></thead><tbody id="fr-rows"></tbody></table></div><p id="fr-list-note" class="help"></p><p class="help">中間市の見本は利用者の現地収集資料・保存台帳に基づく41地点です。自治体提供・公式認証済みのデータではありません。ショート11本と原写真1枚を含み、撮影日不明は空欄です。人口・道路・ODの計算対象として中間市を追加したものではありません。</p>';
     panel.innerHTML=panel.innerHTML.replace('<p id="fr-storage"','<section class="fr-capture-import" aria-label="スマホの現地メモの追加"><h3>スマホで集めた現地メモを追加する</h3><p><a href="field/index.html" target="_blank" rel="noopener noreferrer">スマホで撮影・仮登録</a></p><p><button type="button" id="fr-stop-catalog-save" class="button secondary">スマホ用の停留所一覧を保存</button></p><p class="help">台帳の番号・名前・位置などをスマホで選べる一覧にします。写真・動画・観察メモ・履歴は含めません。台帳が0件なら、上の「受領MPを追加」または「新しく登録」で先に停留所を登録してください。</p><label>スマホの現地メモを追加<input type="file" id="fr-capture-import" accept=".json,application/json"></label><p class="help">本登録した写真・メモだけを追加します。仮登録はスマホ側で続けて編集できます。今ある台帳全体を置き換えません。</p><div id="fr-capture-preview" hidden><label>同じ自治体・サービス・MP番号がある場合<select id="fr-capture-mode"><option value="skip">既存登録を保ち、追加しない</option><option value="append">写真と新しいメモだけを追記する</option></select></label><p id="fr-capture-summary"></p><div class="table-scroll"><table><thead><tr><th>現地メモ</th><th>扱い</th><th>内容</th></tr></thead><tbody id="fr-capture-rows"></tbody></table></div><button type="button" id="fr-capture-confirm" class="button">この内容を台帳へ追加</button><button type="button" id="fr-capture-cancel" class="text-button">取り消す</button></div></section><p id="fr-storage"');
     $('fr-stop-catalog-save').addEventListener('click',message(exportStopCatalog));
     $('fr-capture-import').addEventListener('change',message(async()=>{const file=$('fr-capture-import').files[0];$('fr-capture-import').value='';await readCaptureFile(file);}));$('fr-capture-confirm').addEventListener('click',message(confirmCaptureImport));$('fr-capture-cancel').addEventListener('click',cancelCaptureImport);$('fr-capture-mode').addEventListener('change',message(()=>{if(!captureStaged)return;try{assertCaptureReady();if(captureStaged.revision!==revision||captureStaged.draft!==captureDraftToken())throw Error('確認中に台帳か入力内容が変わりました。現地メモを選び直してください。');const plan=captureModel().planImport(current(),captureStaged.data,{duplicateMode:$('fr-capture-mode').value});captureStaged.plan=plan;}finally{renderCaptureImport();}}));
@@ -8575,9 +8578,10 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
     $('fr-import').addEventListener('change',message(async()=>{const file=$('fr-import').files[0];if(!file)return;const epoch=++importEpoch,baseRevision=revision,base=current(),draft=captureDraftToken();staged=null;captureStaged=null;renderCaptureImport();$('fr-import-preview').hidden=true;$('fr-import').value='';if(file.size>80*1024*1024)throw Error('取込ファイルは80MBまでです。');const text=await file.text();if(epoch!==importEpoch)return;if(!/\.csv$/i.test(file.name)){let raw;try{raw=JSON.parse(text.replace(/^\uFEFF/,''));}catch(e){throw Error('JSONの形式を読み取れませんでした。');}if(raw&&raw.format==='noriba-field-capture'){if(baseRevision!==revision||draft!==captureDraftToken())throw Error('読込中に台帳か入力内容が変わりました。現地メモを選び直してください。');stageCaptureBundle(raw);return;}}staged=/\.csv$/i.test(file.name)?{data:C.importCSV(text,base),revision:baseRevision}:{data:C.parseJSON(text),revision:baseRevision};$('fr-import-note').textContent='読み込み後 '+staged.data.records.length+'地点。JSONは現地資料全体を置き換え、CSVは重複のない番号を追加します。';$('fr-import-preview').hidden=false;notify('件数を確認し「この内容で読み込む」で確定してください。');}));
     $('fr-import-confirm').addEventListener('click',message(()=>{if(!staged)return;if(staged.revision!==revision)throw Error('確認中に登録が変わりました。取込ファイルを選び直してください。');const data=staged.data;staged=null;$('fr-import-preview').hidden=true;loadWorkspace(data);}));$('fr-import-cancel').addEventListener('click',()=>{importEpoch++;staged=null;$('fr-import-preview').hidden=true;$('fr-import').value='';});
     if(global.MPPhotoFolderUI)global.MPPhotoFolderUI.mount({getWorkspace:current,getRevision:()=>revision,assertReadyForPhotoImport:()=>{if(draftRevision!==editorBaseline||attachmentReads)throw Error('入力中の内容があります。先に「この内容を登録・更新」で保存してから写真フォルダーを選んでください。');},getDraftToken:()=>editorEpoch+':'+draftRevision+':'+attachmentReads,notify,commit:next=>{commit(next,'フォルダーの写真を登録しました。');const record=current().records.find(r=>r.key===selected);if(record)setEditor(record);else clearEditor();}});
+    if(global.StopFolderIntakeUI)global.StopFolderIntakeUI.mount({getWorkspace:current,getRevision:()=>revision,getDraftToken:captureDraftToken,assertReady:assertCaptureReady,commit:next=>{const result=commit(next,'停留所と写真をまとめて登録しました。');clearEditor();fitMap();return result;}});
     clearEditor();render();fitMap();const atStart=revision;openDB().then(store=>new Promise((resolve,reject)=>{const tx=store.transaction('workspaces','readonly'),items=tx.objectStore('workspaces'),req=items.get('main-v2');req.onsuccess=()=>{if(req.result!==undefined){resolve({raw:req.result,legacy:false});return;}const old=items.get('main');old.onsuccess=()=>resolve({raw:old.result,legacy:true});old.onerror=()=>reject(Error('以前の端末内の控えを読めませんでした。'));};req.onerror=()=>reject(Error('端末内の控えを読めませんでした。'));})).then(saved=>{const raw=saved&&saved.raw;if(raw&&revision===atStart){workspace=C.validateWorkspace(raw);revision++;status.storage='端末内の控えを復元済み';render();fitMap();if(saved.legacy)persist();}else if(!raw){status.storage='端末内の控えを利用できます';renderStatus();}}).catch(e=>{status.storage=e.message;renderStatus();});return api;
   }
-  const api=Object.freeze({version:'1.5.0',stageCaptureBundle,confirmCaptureImport,cancelCaptureImport,getCaptureImportState:()=>({phase:captureStaged?'preview':'idle',plan:captureStaged&&copy(captureStaged.plan)}),stageScenarioSync,applyScenarioSync,getScenarioSyncPreview:()=>syncStaged&&copy(syncStaged),buildMapHTML,exportMapHTML,cancelMapHTMLExport,getMapExportState:()=>copy(mapExportState),stagePhotoFiles:(files,options)=>global.MPPhotoFolderUI.stagePhotoFiles(files,options),confirmPhotoFiles:options=>global.MPPhotoFolderUI.confirmPhotoFiles(options),cancelPhotoFiles:()=>global.MPPhotoFolderUI.cancelPhotoFiles(),getPhotoImportState:()=>global.MPPhotoFolderUI.getPhotoImportState(),init,getState,loadWorkspace,upsert,remove,importCSV,exportJSON,exportStopCatalog,loadSample,getMapModel,getStatus,refresh:render,select,fitMap,importCurrentStops,exportGuide});global.MPFieldRegistryUI=api;
+  const api=Object.freeze({version:'1.6.0',stageCaptureBundle,confirmCaptureImport,cancelCaptureImport,getCaptureImportState:()=>({phase:captureStaged?'preview':'idle',plan:captureStaged&&copy(captureStaged.plan)}),stageScenarioSync,applyScenarioSync,getScenarioSyncPreview:()=>syncStaged&&copy(syncStaged),buildMapHTML,exportMapHTML,cancelMapHTMLExport,getMapExportState:()=>copy(mapExportState),stagePhotoFiles:(files,options)=>global.MPPhotoFolderUI.stagePhotoFiles(files,options),confirmPhotoFiles:options=>global.MPPhotoFolderUI.confirmPhotoFiles(options),cancelPhotoFiles:()=>global.MPPhotoFolderUI.cancelPhotoFiles(),getPhotoImportState:()=>global.MPPhotoFolderUI.getPhotoImportState(),init,getState,loadWorkspace,upsert,remove,importCSV,exportJSON,exportStopCatalog,loadSample,getMapModel,getStatus,refresh:render,select,fitMap,importCurrentStops,exportGuide});global.MPFieldRegistryUI=api;
 })(typeof window!=='undefined'?window:globalThis);
 
 (function(global){
@@ -9282,6 +9286,469 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
   global.PurposeEvidenceUI=Object.freeze({version:VERSION,mount,mapSvg,printHtml});
 })(typeof window!=='undefined'?window:globalThis);
 
+/* Begin same-origin stop intake modules 8.21.0 */
+(function (global) {
+  'use strict';
+  // Text parsing supplies review candidates only. It never asserts that a map centre is a stop.
+  const VERSION = '1.0.0';
+  const BOUNDS = Object.freeze({ minLat: 20, maxLat: 46, minLon: 122, maxLon: 154 });
+  const NUM = '[-+]?\\d{1,3}(?:\\.\\d+)?';
+  function inJapan(lat, lon) { return Number.isFinite(lat) && Number.isFinite(lon) && lat >= BOUNDS.minLat && lat <= BOUNDS.maxLat && lon >= BOUNDS.minLon && lon <= BOUNDS.maxLon; }
+  function normalise(text) {
+    return text.replace(/[′’‘]/g, "'").replace(/[″”“]/g, '"').normalize('NFKC').replace(/[−–—]/g, '-').replace(/，/g, ',');
+  }
+  function parse(raw) {
+    if (typeof raw !== 'string') return { status: 'invalid', candidates: [], requiresConfirmation: true, message: '緯度経度の文字列を入力してください。' };
+    if (raw.length > 20000) return { status: 'invalid', candidates: [], requiresConfirmation: true, message: '座標の入力は20,000文字以内にしてください。' };
+    const text = normalise(raw), found = [], rejected = [], seen = new Set(), covered = [], urlRanges = [];
+    function add(lat, lon, format, source, start, end) {
+      const item = { lat, lon, format, source: String(source || '').slice(0, 1000) };
+      if (!inJapan(lat, lon)) { rejected.push(item); return; }
+      const key = lat.toFixed(7) + ':' + lon.toFixed(7);
+      if (!seen.has(key)) { seen.add(key); found.push(item); }
+      if (Number.isInteger(start)) covered.push([start, end]);
+    }
+    function overlaps(a, b) { return covered.some(([s, e]) => a < e && b > s); }
+    // GSI share links use #zoom/latitude/longitude. Reject foreign hosts, credentials and non-http schemes.
+    const urlRe = /https?:\/\/[^\s<>"']+/gi;
+    let match;
+    while ((match = urlRe.exec(text))) {
+      urlRanges.push([match.index, match.index + match[0].length]);
+      try {
+        const url = new URL(match[0].replace(/[)\]。]+$/, ''));
+        if (url.hostname !== 'maps.gsi.go.jp' || url.username || url.password || url.port) continue;
+        const hash = decodeURIComponent(url.hash), p = /^#\d+(?:\.\d+)?\/([-+]?\d+(?:\.\d+)?)\/([-+]?\d+(?:\.\d+)?)(?:\/|$|&)/.exec(hash);
+        if (p) add(Number(p[1]), Number(p[2]), 'gsi_url', url.href, match.index, match.index + match[0].length);
+      } catch (_) { /* Incomplete URLs remain unparsed instead of guessing. */ }
+    }
+    // Labelled decimal coordinates are paired within a short, number-free gap to prevent crossing records.
+    const labelled = new RegExp('(緯度|北緯|latitude|lat)\\s*[:=]?\\s*(' + NUM + ')\\s*[,;/\\s]*?(経度|東経|longitude|lon|lng)\\s*[:=]?\\s*(' + NUM + ')(?![\\d.])', 'gi');
+    while ((match = labelled.exec(text))) {
+      if (!overlaps(match.index, labelled.lastIndex)) add(Number(match[2]), Number(match[4]), 'labelled_decimal', match[0], match.index, labelled.lastIndex);
+    }
+    const reversedLabels = new RegExp('(経度|東経|longitude|lon|lng)\\s*[:=]?\\s*(' + NUM + ')\\s*[,;/\\s]*?(緯度|北緯|latitude|lat)\\s*[:=]?\\s*(' + NUM + ')(?![\\d.])', 'gi');
+    while ((match = reversedLabels.exec(text))) {
+      if (!overlaps(match.index, reversedLabels.lastIndex)) add(Number(match[4]), Number(match[2]), 'labelled_decimal', match[0], match.index, reversedLabels.lastIndex);
+    }
+    const decimalDegrees = new RegExp('(?:北緯|N)?\\s*(' + NUM + ')\\s*(?:°|度)\\s*(?:N)?\\s*[,;/\\s]*(?:東経|E)?\\s*(' + NUM + ')\\s*(?:°|度)\\s*(?:E)?', 'gi');
+    while ((match = decimalDegrees.exec(text))) {
+      if (!overlaps(match.index, decimalDegrees.lastIndex)) add(Number(match[1]), Number(match[2]), 'decimal_degrees', match[0], match.index, decimalDegrees.lastIndex);
+    }
+    // DMS/DM require explicit unit marks. Never reinterpret an invalid minute/second as a valid decimal pair.
+    const component = '(\\d{1,3})\\s*(?:°|度)\\s*(\\d{1,2}(?:\\.\\d+)?)\\s*(?:\'|分)(?:\\s*(\\d{1,2}(?:\\.\\d+)?)\\s*(?:"|秒))?';
+    const dms = new RegExp('(?:(北緯|南緯|[NS])\\s*)?' + component + '\\s*([NS])?\\s*[,;/\\s]*(?:(東経|西経|[EW])\\s*)?' + component + '\\s*([EW])?', 'gi');
+    while ((match = dms.exec(text))) {
+      if (overlaps(match.index, dms.lastIndex)) continue;
+      covered.push([match.index, dms.lastIndex]);
+      const latDeg = Number(match[2]), latMin = Number(match[3]), latSec = Number(match[4] || 0), lonDeg = Number(match[7]), lonMin = Number(match[8]), lonSec = Number(match[9] || 0);
+      const latHem = (match[1] || match[5] || '').toUpperCase(), lonHem = (match[6] || match[10] || '').toUpperCase();
+      const badHemisphere = /南|S/.test(latHem) || /西|W/.test(lonHem);
+      if (latMin >= 60 || latSec >= 60 || lonMin >= 60 || lonSec >= 60 || (match[4] && match[3].includes('.')) || (match[9] && match[8].includes('.')) || badHemisphere) {
+        rejected.push({ format: 'dms', source: match[0] }); continue;
+      }
+      add(latDeg + latMin / 60 + latSec / 3600, lonDeg + lonMin / 60 + lonSec / 3600, 'dms', match[0], match.index, dms.lastIndex);
+    }
+    // Decimal pairs require a separator and at least one fractional part, except an entire numeric pair.
+    const decimal = new RegExp('(^|[^\\d.])(' + NUM + ')\\s*([,;/]|\\s+)\\s*(' + NUM + ')(?![\\d.])', 'g');
+    while ((match = decimal.exec(text))) {
+      const start = match.index + match[1].length, end = decimal.lastIndex;
+      if (overlaps(start, end)) continue;
+      if (urlRanges.some(([s, e]) => start < e && end > s)) continue;
+      const a = Number(match[2]), b = Number(match[4]), source = match[0].slice(match[1].length);
+      if (!match[2].includes('.') && !match[4].includes('.') && text.trim() !== source.trim()) continue;
+      // Do not extract a subpair from unrecognised/foreign URLs or degree notation.
+      const lineBefore = text.slice(Math.max(text.lastIndexOf('\n', start) + 1, start - 200), start);
+      if (/https?:\/\/\S*$/i.test(lineBefore) || /[°度分秒'"]/.test(text.slice(Math.max(0, start - 2), end + 2))) continue;
+      if (a >= BOUNDS.minLon && a <= BOUNDS.maxLon && b >= BOUNDS.minLat && b <= BOUNDS.maxLat) add(b, a, 'decimal_lon_lat', source, start, end);
+      else if ((a >= 15 && a <= 90 && b >= 100 && b <= 180) || text.trim() === source.trim()) add(a, b, 'decimal', source, start, end);
+    }
+    const status = rejected.length ? (found.length ? 'ambiguous' : 'invalid') : found.length > 1 ? 'ambiguous' : found.length === 1 ? 'candidate' : 'none';
+    const message = status === 'candidate' ? '座標の候補が1組あります。画像の中心点と地図上の位置を確認してください。' : status === 'ambiguous' ? '座標が複数あるか、範囲外の読み取りが混在しています。使う座標を入力し直して確認してください。' : status === 'invalid' ? '日本の座標範囲外、または度分秒の値が正しくありません。読み取り・入力内容を確認してください。' : '座標を読み取れませんでした。緯度と経度を貼り付けるか入力してください。';
+    return { status, candidates: found, rejectedCount: rejected.length, requiresConfirmation: true, message };
+  }
+  const api = Object.freeze({ version: VERSION, bounds: BOUNDS, inJapan, parse });
+  global.StopCoordinateReader = api;
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+(function (global) {
+  'use strict';
+  const VERSION = '1.0.0';
+  const sourceScript = global.document && global.document.currentScript && global.document.currentScript.src;
+  const pageBase = sourceScript || (global.document && global.document.baseURI) || (global.location && global.location.href) || '';
+  // A published single-file page is at repository root. External source usage is under app/.
+  const defaultBase = sourceScript ? new URL('vendor/stop-coordinate-ocr/', sourceScript).href : pageBase ? new URL('vendor/stop-coordinate-ocr/', pageBase).href : '';
+  let scriptPromise = null, busy = false;
+  function abortError() { const e = Error('座標の画像読み取りを取り消しました。'); e.name = 'AbortError'; return e; }
+  function checkAbort(signal) { if (signal && signal.aborted) throw abortError(); }
+  function assetBase(raw) {
+    const value = new URL(raw || defaultBase, pageBase);
+    if (!global.location || !['http:', 'https:'].includes(value.protocol) || value.origin !== global.location.origin || value.username || value.password) throw Error('画像読み取りはアプリと同じ配信元の部品で実行してください。座標の貼り付けは利用できます。');
+    return value.href.endsWith('/') ? value.href : value.href + '/';
+  }
+  function loadLibrary(base) {
+    if (global.Tesseract && typeof global.Tesseract.createWorker === 'function') return Promise.resolve(global.Tesseract);
+    if (scriptPromise) return scriptPromise;
+    if (!global.document) return Promise.reject(Error('画像読み取りはブラウザーで利用してください。'));
+    scriptPromise = new Promise((resolve, reject) => {
+      const script = global.document.createElement('script'); script.src = base + 'tesseract.min.js'; script.async = true;
+      script.onload = () => global.Tesseract && typeof global.Tesseract.createWorker === 'function' ? resolve(global.Tesseract) : reject(Error('画像読み取りの部品を準備できませんでした。'));
+      script.onerror = () => { script.remove(); scriptPromise = null; reject(Error('画像読み取りの部品を読み込めませんでした。緯度経度の貼り付けで登録できます。')); };
+      global.document.head.appendChild(script);
+    });
+    return scriptPromise;
+  }
+  function supported() { return !!(global.document && typeof global.Worker === 'function' && typeof global.WebAssembly === 'object' && global.location && ['http:', 'https:'].includes(global.location.protocol)); }
+  async function recognise(file, options) {
+    const opts = options || {}, signal = opts.signal;
+    if (!supported()) throw Error('この環境では画像読み取りを利用できません。緯度経度を貼り付けるか入力してください。');
+    if (!file || typeof file.arrayBuffer !== 'function' || !(file.size > 0) || file.size > 12 * 1024 * 1024 || !/\.(?:jpe?g|png|webp)$/i.test(file.name || '')) throw Error('座標のキャプチャはJPEG・PNG・WebP、1枚12MiBまでです。');
+    if (busy) throw Error('別の座標画像を読み取り中です。完了してから選んでください。');
+    if (!global.StopCoordinateReader) throw Error('座標を確認する部品を読み込めませんでした。');
+    checkAbort(signal); const base = assetBase(opts.baseURL); let worker, cancel, timer, cancelled = false, terminated = false;
+    async function terminate() { if (worker && !terminated) { terminated = true; await worker.terminate().catch(() => {}); } }
+    busy = true;
+    const aborted = new Promise((_, reject) => { cancel = () => { cancelled = true; terminate(); reject(abortError()); }; if (signal) signal.addEventListener('abort', cancel, { once: true }); });
+    try {
+      const work = (async () => {
+        const T = await loadLibrary(base); checkAbort(signal); if (cancelled) throw abortError();
+        worker = await T.createWorker('eng', 1, { workerPath: base + 'worker.min.js', corePath: base.replace(/\/$/, ''), langPath: base.replace(/\/$/, ''), workerBlobURL: false, gzip: true, cacheMethod: 'none', logger: info => { if (opts.onProgress && !cancelled && !(signal && signal.aborted)) opts.onProgress({ status: info.status, progress: Math.max(0, Math.min(1, Number(info.progress) || 0)) }); } });
+        if (cancelled) { await terminate(); throw abortError(); }
+        checkAbort(signal);
+        await worker.setParameters({ tessedit_pageseg_mode: '11', preserve_interword_spaces: '1', user_defined_dpi: '150' });
+        checkAbort(signal);
+        const result = await worker.recognize(file, opts.rectangle ? { rectangle: opts.rectangle } : {}, { text: true });
+        checkAbort(signal);
+        const text = String(result && result.data && result.data.text || '').slice(0, 20000), confidence = Number(result && result.data && result.data.confidence);
+        return { text, parsed: global.StopCoordinateReader.parse(text), confidence: Number.isFinite(confidence) ? confidence : null, requiresConfirmation: true, engine: 'Tesseract.js 6.0.1 / eng / local', message: '画像の読み取り結果は候補です。元画像と地図を確認して登録してください。' };
+      })();
+      const timeout = new Promise((_, reject) => { timer = global.setTimeout(() => { cancelled = true; terminate(); reject(Error('画像読み取りに時間がかかっています。緯度経度を貼り付けるか入力してください。')); }, 90000); });
+      return await Promise.race([work, aborted, timeout]);
+    } catch (error) {
+      if (error && error.name === 'AbortError') throw error;
+      throw Error('座標画像を読み取れませんでした。' + String(error && error.message || '').slice(0, 300) + ' 緯度経度を貼り付けるか入力してください。');
+    } finally {
+      if (timer) global.clearTimeout(timer); if (signal && cancel) signal.removeEventListener('abort', cancel); await terminate(); busy = false;
+    }
+  }
+  const api = Object.freeze({ version: VERSION, supported, recognize: recognise, recognise, isBusy: () => busy, assetDirectory: 'vendor/stop-coordinate-ocr/' });
+  global.StopCoordinateOCR = api;
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+(function (global) {
+  'use strict';
+  const C = global.MPFieldRegistry || (typeof require === 'function' ? require('./mp-field-registry.js') : null);
+  const F = global.MPPhotoFolder || (typeof require === 'function' ? require('./mp-photo-folder.js') : null);
+  const VERSION = '1.0.0';
+  const FORMAT = 'stop-folder-intake-1';
+  const MIME = Object.freeze({ jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png', webp: 'image/webp' });
+  const LIMITS = Object.freeze({ files: 5000, coordinateText: 1500, sourceURL: 1500, notes: 1000 });
+  const clone = value => JSON.parse(JSON.stringify(value));
+  const fail = message => { throw Error(message); };
+  const photoList = record => (record.photo ? [record.photo] : []).concat(record.additionalPhotos || []);
+  const filenameKey = name => String(name || '').normalize('NFC').toLowerCase();
+  function text(value, label, max, required) {
+    if (value == null) value = '';
+    if (typeof value !== 'string' && typeof value !== 'number') fail(label + 'を文字で入力してください。');
+    const result = String(value).trim();
+    if (required && !result) fail(label + 'を入力してください。');
+    if (result.length > max || /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(result)) fail(label + 'は' + max + '文字以内の文字で入力してください。');
+    return result;
+  }
+  function signature(workspace) {
+    const source = C.stringify(workspace); let a = 2166136261, b = 5381;
+    for (let i = 0; i < source.length; i++) { const n = source.charCodeAt(i); a = Math.imul(a ^ n, 16777619) >>> 0; b = Math.imul(b, 33) ^ n; }
+    return source.length + ':' + a.toString(16) + ':' + (b >>> 0).toString(16);
+  }
+  function normalizeScope(raw) {
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) fail('登録先の自治体と運行サービスを入力してください。');
+    const scope = C.normalizeRecord({ municipality: raw.municipality, service: raw.service, mpId: '__scope__', name: '対象確認' });
+    return { municipality: scope.municipality, service: scope.service };
+  }
+  function roleOf(name) {
+    return /位置(?:確認|情報)?|座標|緯度|経度|地理院|地図|(?:^|[_\s-])(?:capture|coordinate|map)(?:[_\s.-]|$)/i.test(name) ? 'coordinate' : 'photo';
+  }
+  function inspect(workspace, descriptors, rawScope) {
+    const current = C.validateWorkspace(workspace), scope = normalizeScope(rawScope);
+    if (!Array.isArray(descriptors) || descriptors.length > LIMITS.files) fail('一度に選択できるファイルは5000件までです。');
+    const target = current.records.filter(r => r.municipality === scope.municipality && r.service === scope.service);
+    const byId = new Map(target.map(r => [r.mpId, r])), indices = new Set(), clean = [], groups = new Map(), skippedRows = [];
+    for (let slot = 0; slot < descriptors.length; slot++) {
+      const file = descriptors[slot];
+      if (!file || typeof file !== 'object' || Array.isArray(file)) fail('選択したファイルを確認してください。');
+      const index = file.index === undefined ? slot : file.index;
+      if (!Number.isInteger(index) || index < 0 || indices.has(index)) fail('ファイルの対応番号が重複しているか正しくありません。');
+      indices.add(index);
+      const descriptor = { index, name: String(file.name || ''), path: String(file.path || file.name || ''), size: file.size };
+      if (!Number.isInteger(descriptor.size) || descriptor.size <= 0) descriptor.size = 0;
+      clean.push(descriptor);
+      const parsed = F.parseFilename(descriptor.name, byId.keys()), row = { ...descriptor, mpId: parsed.mpId, mime: MIME[parsed.extension] || '', role: roleOf(descriptor.name), status: 'ready', reason: '' };
+      if (!parsed.supported) { row.status = 'skip'; row.reason = parsed.reason; }
+      else if (/(^|[\\/])(?:\.[^\\/]*|__MACOSX)(?:[\\/]|$)/.test(descriptor.path)) { row.status = 'skip'; row.reason = '隠しフォルダー・管理用ファイルは対象外です。'; }
+      else if (!descriptor.size) { row.status = 'skip'; row.reason = '空のファイル、または容量を確認できないファイルです。'; }
+      else if (descriptor.size > C.LIMITS.photoBytes) { row.status = 'skip'; row.reason = '元画像は1枚12MiBまでです。'; }
+      if (!parsed.mpId) { skippedRows.push(row); continue; }
+      let group = groups.get(parsed.mpId);
+      if (!group) {
+        const record = byId.get(parsed.mpId);
+        group = { mpId: parsed.mpId, key: record ? record.key : C.keyOf({ ...scope, mpId: parsed.mpId }), kind: record ? 'existing' : 'new', name: record ? record.name : '', lat: record ? record.lat : null, lon: record ? record.lon : null, rows: [], status: record ? 'ready' : 'draft', reason: '', existingPhotos: record ? photoList(record).length : 0 };
+        groups.set(parsed.mpId, group);
+      }
+      group.rows.push(row);
+    }
+    for (const group of groups.values()) {
+      const record = byId.get(group.mpId), filesByName = new Map();
+      for (const row of group.rows) {
+        if (row.status !== 'ready') continue;
+        const key = filenameKey(row.name), list = filesByName.get(key) || []; list.push(row); filesByName.set(key, list);
+        if (record && photoList(record).some(p => p.name && filenameKey(p.name) === key)) { row.status = 'skip'; row.reason = '同じファイル名の画像が登録済みです。'; }
+      }
+      for (const rows of filesByName.values()) if (rows.length > 1) for (const row of rows) { row.status = 'skip'; row.reason = '同じ停留所番号・ファイル名が複数あります。名前を区別してください。'; }
+      const ready = group.rows.filter(r => r.status === 'ready');
+      if (group.existingPhotos + ready.length > C.LIMITS.photosPerRecord) {
+        group.status = 'blocked'; group.reason = '追加すると1地点20枚を超えます。フォルダーを分けて選んでください。';
+        for (const row of ready) { row.status = 'skip'; row.reason = group.reason; }
+      } else if (!ready.length) { group.status = 'blocked'; group.reason = '追加できる画像がありません。'; }
+      group.rows.sort((a, b) => a.name.localeCompare(b.name, 'ja', { numeric: true }) || a.index - b.index);
+    }
+    const list = Array.from(groups.values()).sort((a, b) => a.mpId.localeCompare(b.mpId, 'ja', { numeric: true }) || a.mpId.localeCompare(b.mpId));
+    const allRows = list.flatMap(g => g.rows).concat(skippedRows);
+    return { format: FORMAT, sourceSignature: signature(current), scope, descriptors: clean, groups: list, skippedRows, summary: { files: descriptors.length, groups: list.length, existingGroups: list.filter(g => g.kind === 'existing').length, newGroups: list.filter(g => g.kind === 'new').length, readyPhotos: allRows.filter(r => r.status === 'ready').length, skippedPhotos: allRows.filter(r => r.status === 'skip').length } };
+  }
+  function validatedInspection(workspace, inspected) {
+    const current = C.validateWorkspace(workspace);
+    if (!inspected || inspected.format !== FORMAT || !Array.isArray(inspected.descriptors)) fail('フォルダーを選び直してください。');
+    if (inspected.sourceSignature !== signature(current)) fail('確認中に停留所台帳が変わりました。フォルダーを選び直してください。');
+    const next = inspect(current, inspected.descriptors, inspected.scope);
+    if (JSON.stringify(next.groups) !== JSON.stringify(inspected.groups) || JSON.stringify(next.skippedRows) !== JSON.stringify(inspected.skippedRows)) fail('ファイルの確認表が変わりました。フォルダーを選び直してください。');
+    return { current, inspected: next };
+  }
+  function sourceURL(value) {
+    const source = text(value, '位置資料のURL', LIMITS.sourceURL);
+    if (!source) return '';
+    let url; try { url = new URL(source); } catch (_) { fail('位置資料のURLを確認してください。'); }
+    if (url.protocol !== 'https:' || url.username || url.password || /[\u0000-\u0020\u007f]/.test(source)) fail('位置資料には認証情報を含まないhttpsのURLを入力してください。');
+    return url.href;
+  }
+  function coordinate(value, label, min, max) {
+    const s = text(value, label, 40, true);
+    if (!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(s)) fail(label + 'は十進数で入力してください。');
+    const n = Number(s);
+    if (!Number.isFinite(n) || n < min || n > max) fail(label + 'が日本周辺の範囲にありません。緯度・経度の順番も確認してください。');
+    return n;
+  }
+  function prepare(workspace, inspected, edits) {
+    const check = validatedInspection(workspace, inspected), p = check.inspected;
+    if (!Array.isArray(edits)) fail('登録する停留所を選んでください。');
+    const editMap = new Map(), selections = [], fileRows = [];
+    for (const edit of edits) {
+      if (!edit || typeof edit !== 'object' || Array.isArray(edit) || typeof edit.mpId !== 'string' || editMap.has(edit.mpId)) fail('登録候補の停留所番号を確認してください。');
+      if (!p.groups.some(g => g.mpId === edit.mpId)) fail('今回のフォルダーにない停留所が選択されています。');
+      if (edit.include !== undefined && typeof edit.include !== 'boolean') fail('登録候補の選択状態を確認してください。');
+      editMap.set(edit.mpId, edit);
+    }
+    for (const group of p.groups) {
+      const edit = editMap.get(group.mpId);
+      if (!edit || edit.include !== true) continue;
+      if (group.status === 'blocked') fail(group.mpId + '：' + group.reason);
+      let record = null;
+      if (group.kind === 'new') {
+        if (edit.reviewed !== true) fail(group.mpId + '：地図上の位置・番号・名称を確認してから登録してください。');
+        const name = text(edit.name, '停留所名', 240, true), lat = coordinate(edit.lat, '緯度', 20, 46), lon = coordinate(edit.lon, '経度', 122, 154);
+        const coordinateText = text(edit.coordinateText, '座標の入力元', LIMITS.coordinateText), url = sourceURL(edit.sourceURL), notes = text(edit.notes, 'メモ', LIMITS.notes);
+        const coordinateFiles = group.rows.filter(r => r.role === 'coordinate' && r.status === 'ready').map(r => r.name);
+        const basis = '一括取込で入力座標・位置図を利用者が照合（現地測量・運行確認ではない）。' + (coordinateFiles.length ? '位置確認画像：' + coordinateFiles.join('、').slice(0, 700) : '');
+        const provenance = [notes, coordinateText ? '【座標の入力元】\n' + coordinateText : '', url ? '【位置資料URL】\n' + url : ''].filter(Boolean).join('\n\n');
+        record = C.normalizeRecord({ ...p.scope, mpId: group.mpId, name, lat, lon, observedAt: edit.observedAt || '', coordinateBasis: basis, confirmation: 'document', notes: provenance });
+      }
+      selections.push({ mpId: group.mpId, key: group.key, kind: group.kind, record });
+      fileRows.push(...group.rows.filter(r => r.status === 'ready').map(row => ({ ...row, key: group.key })));
+    }
+    if (!fileRows.length) fail('登録する画像付きの停留所を選んでください。');
+    if (check.current.records.length + selections.filter(s => s.kind === 'new').length > C.LIMITS.records) fail('登録は5000地点までです。');
+    return { scope: p.scope, selections, fileRows, newStops: selections.filter(s => s.kind === 'new').length, existingStops: selections.filter(s => s.kind === 'existing').length };
+  }
+  function finalize(workspace, inspected, edits, loadedPhotos, options) {
+    const plan = prepare(workspace, inspected, edits), current = C.validateWorkspace(workspace);
+    if (!Array.isArray(loadedPhotos) || loadedPhotos.length !== plan.fileRows.length) fail('読み込んだ画像の件数が確認表と一致しません。');
+    const rowsByIndex = new Map(plan.fileRows.map(r => [r.index, r])), loaded = new Map();
+    for (const item of loadedPhotos) {
+      if (!item || !rowsByIndex.has(item.index) || loaded.has(item.index)) fail('画像と停留所の対応番号を確認してください。');
+      const row = rowsByIndex.get(item.index);
+      if (!item.media || item.media.name !== row.name) fail('読み込んだ画像名が確認表と一致しません。');
+      const record = C.normalizeRecord({ ...plan.scope, mpId: row.mpId, name: '画像の形式確認', photo: item.media });
+      if (!record.photo || !record.photo.url.startsWith('data:')) fail('一括取込には端末から読み込んだ画像データが必要です。');
+      loaded.set(item.index, record.photo);
+    }
+    const at = options && options.now || new Date().toISOString();
+    const skippedRows = [], appliedKeys = [], newKeys = []; let addedStops = 0, affectedStops = 0, addedPhotos = 0;
+    for (const selection of plan.selections) {
+      const oldIndex = current.records.findIndex(r => r.key === selection.key), record = selection.kind === 'existing' ? current.records[oldIndex] : selection.record;
+      if (!record || selection.kind === 'new' && oldIndex !== -1) fail('停留所の登録状態が変わりました。フォルダーを選び直してください。');
+      const pictures = photoList(record), names = new Set(pictures.map(p => filenameKey(p.name))), urls = new Set(pictures.map(p => p.url)); let addedHere = 0;
+      for (const row of plan.fileRows.filter(r => r.key === selection.key)) {
+        const media = loaded.get(row.index);
+        if (names.has(filenameKey(media.name))) fail('同じ画像名が登録済みです。フォルダーを選び直してください。');
+        if (urls.has(media.url)) { skippedRows.push({ index: row.index, name: row.name, mpId: row.mpId, reason: '同じ画像データが登録済み、または今回の選択内で重複しています。' }); continue; }
+        const copy = clone(media);
+        if (row.role === 'coordinate') copy.processingNote = text([copy.processingNote, '位置確認用の画像。現地の測量結果ではありません。'].filter(Boolean).join(' '), '画像処理の記録', 500);
+        pictures.push(copy); names.add(filenameKey(media.name)); urls.add(media.url); addedHere++;
+      }
+      if (pictures.length > C.LIMITS.photosPerRecord) fail('1地点の画像は20枚までです。');
+      if (!addedHere) continue;
+      // Prefer an actual field photograph over a coordinate screenshot for a new stop's cover image.
+      if (selection.kind === 'new') {
+        const ordinary = plan.fileRows.find(r => r.key === selection.key && r.role === 'photo' && pictures.some(p => p.name === r.name));
+        const i = ordinary ? pictures.findIndex(p => p.name === ordinary.name) : -1;
+        if (i > 0) pictures.unshift(pictures.splice(i, 1)[0]);
+      }
+      record.photo = pictures[0] || null; record.additionalPhotos = pictures.slice(1);
+      record.history = (record.history || []).concat([{ at, action: selection.kind === 'new' ? 'created' : 'imported', summary: selection.kind === 'new' ? '位置を確認して停留所と画像' + addedHere + '枚を登録（運行状況は別確認）' : '一括取込で画像' + addedHere + '枚を追加。名称・座標は維持', changes: selection.kind === 'new' ? ['name', 'lat', 'lon', 'coordinateBasis', 'photo', 'additionalPhotos'] : ['photo', 'additionalPhotos'] }]).slice(-C.LIMITS.history);
+      if (selection.kind === 'new') { current.records.push(record); addedStops++; newKeys.push(record.key); } else current.records[oldIndex] = record;
+      appliedKeys.push(record.key);
+      affectedStops++; addedPhotos += addedHere;
+    }
+    if (addedPhotos) current.updatedAt = at;
+    return { workspace: C.validateWorkspace(current), addedStops, affectedStops, addedPhotos, skippedPhotos: skippedRows.length, skippedRows, appliedKeys, newKeys };
+  }
+  const api = Object.freeze({ VERSION, FORMAT, LIMITS, inspect, prepare, finalize, roleOf });
+  global.StopFolderIntake = api;
+  if (typeof module === 'object' && module.exports) module.exports = api;
+})(typeof window !== 'undefined' ? window : globalThis);
+
+(function (global) {
+  'use strict';
+  const esc = value => String(value == null ? '' : value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const $ = id => global.document.getElementById(id);
+  let adapter, mounted = false, batch = null, generation = 0, limit = 20, busy = false, controller = null, planPreview = null;
+  const urls = new Map();
+  function notify(text, error) { const node = $('fsi-status'); if (node) { node.textContent = text; node.setAttribute('role', error ? 'alert' : 'status'); } }
+  function action(fn) { return async event => { try { await fn(event); } catch (error) { notify(error.message, true); } }; }
+  function photoURL(index) { if (!urls.has(index)) urls.set(index, URL.createObjectURL(batch.files[index])); return urls.get(index); }
+  function releaseURLs() { for (const url of urls.values()) URL.revokeObjectURL(url); urls.clear(); }
+  function context() { const p = global.PlannerUI && global.PlannerUI.stopIntake; return p && p.getContext(); }
+  function refresh() {
+    if (!mounted) return;
+    const records = adapter.getWorkspace().records, c = context();
+    $('fsi-cities').innerHTML = Array.from(new Set(records.map(r => r.municipality).concat(c ? [c.municipalityLabel] : []))).map(n => '<option value="'+esc(n)+'"></option>').join('');
+    $('fsi-services').innerHTML = Array.from(new Set(records.filter(r => r.municipality === $('fsi-city').value).map(r => r.service))).map(n => '<option value="'+esc(n)+'"></option>').join('');
+    if (!batch && !$('fsi-city').value && c) { $('fsi-city').value = c.municipalityLabel; refresh(); }
+  }
+  function cancel() { generation++; if (controller) controller.abort(); controller = null; busy = false; batch = null; planPreview = null; $('fsi-plan-preview').innerHTML=''; releaseURLs(); $('fsi-folder').value = ''; $('fsi-files').value = ''; render(); notify('取り込み候補を取り消しました。登録済みの資料は変更していません。'); }
+  function ensureCurrent(own, token) {
+    if (own !== batch || token !== generation) throw Error('取り込みを取り消したか、別の写真を選択しました。');
+    adapter.assertReady();
+    if (adapter.getRevision() !== own.revision || adapter.getDraftToken() !== own.draftToken) throw Error('確認中に台帳か入力内容が変わりました。写真を選び直してください。');
+  }
+  function stage(files) {
+    if (busy) throw Error('現在の読み取りが終わるか、取り消してから選び直してください。');
+    adapter.assertReady();
+    const list = Array.from(files || []), scope = {municipality:$('fsi-city').value.trim(),service:$('fsi-service').value.trim()};
+    const plan = global.StopFolderIntake.inspect(adapter.getWorkspace(), list.map((f,index) => ({index,name:f.name,path:f.webkitRelativePath || f.name,size:f.size})), scope);
+    generation++; releaseURLs(); limit = 20; planPreview = null; $('fsi-plan-preview').innerHTML='';
+    batch = {files:list,plan,revision:adapter.getRevision(),draftToken:adapter.getDraftToken(),edits:new Map(),phase:'preview'};
+    for (const group of plan.groups) batch.edits.set(group.mpId, {mpId:group.mpId,include:group.status !== 'blocked',name:group.kind === 'existing' ? group.name : '',lat:group.lat == null ? '' : String(group.lat),lon:group.lon == null ? '' : String(group.lon),reviewed:false,coordinateText:'',sourceURL:'',observedAt:'',notes:'',ocrMessage:'',ocrCandidates:[]});
+    render(); notify('停留所ごとの対応を確認してください。新規の停留所は名称・位置の確認後に登録します。');
+  }
+  function mapHTML(edit) {
+    const lat = Number(edit.lat), lon = Number(edit.lon);
+    if (!String(edit.lat).trim() || !String(edit.lon).trim() || !Number.isFinite(lat) || !Number.isFinite(lon) || lat < 20 || lat > 46 || lon < 122 || lon > 154) return '<p class="help">緯度・経度を入れると位置を表示します。</p>';
+    const z = 16, n = 2 ** z, x = (lon + 180) / 360 * n, y = (1 - Math.asinh(Math.tan(lat*Math.PI/180))/Math.PI) / 2*n;
+    let tiles = '';
+    if (edit.showMap) for (let dy=-1;dy<=1;dy++) for (let dx=-1;dx<=1;dx++) { const tx=Math.floor(x)+dx,ty=Math.floor(y)+dy;tiles += '<image href="https://cyberjapandata.gsi.go.jp/xyz/pale/'+z+'/'+tx+'/'+ty+'.png" x="'+(200+(tx-x)*256)+'" y="'+(120+(ty-y)*256)+'" width="256" height="256"/>'; }
+    return '<svg viewBox="0 0 400 240" class="fsi-map" role="img" aria-label="停留所候補 '+esc(edit.mpId)+' の位置。緯度 '+lat+' 経度 '+lon+'"><rect width="400" height="240" fill="#f1f5f6"/>'+tiles+'<path d="M200 0V240M0 120H400" stroke="#a4b6bd" stroke-dasharray="4 4"/><circle cx="200" cy="120" r="8" fill="#c64925" stroke="white" stroke-width="3"/><rect x="8" y="210" width="384" height="24" fill="white" opacity=".94"/><text x="14" y="227" font-size="12">'+lat.toFixed(6)+', '+lon.toFixed(6)+(edit.showMap?' ／ 国土地理院・地理院タイル':' ／ 位置図・背景未表示')+'</text></svg><a href="https://maps.gsi.go.jp/#18/'+lat+'/'+lon+'/&base=std&ls=std&disp=1" target="_blank" rel="noopener noreferrer">地理院地図でこの位置を開く</a>';
+  }
+  function groupHTML(group) {
+    const e = batch.edits.get(group.mpId), disabled = busy || batch.phase === 'complete', rows = group.rows.filter(r=>r.status==='ready'), blocked = group.status==='blocked';
+    const attr = ' data-mp="'+esc(group.mpId)+'"';
+    let html='<article class="fsi-card"><div class="fsi-card-heading"><label><input type="checkbox" data-fsi-edit="include"'+attr+(e.include?' checked':'')+(disabled||blocked?' disabled':'')+'> '+esc(group.mpId)+' '+esc(group.kind==='existing'?group.name:'新しい停留所')+'</label><span>'+esc(group.kind==='existing'?'写真を追加':'新規登録の候補')+'</span></div>';
+    if(group.reason)html+='<p class="help">'+esc(group.reason)+'</p>';
+    html+='<div class="fsi-gallery">'+rows.map(r=>'<figure><a href="'+esc(photoURL(r.index))+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(photoURL(r.index))+'" alt="'+esc(r.name)+'" loading="lazy"></a><figcaption>'+esc(r.role==='coordinate'?'位置確認：':'写真：')+esc(r.name)+'</figcaption></figure>').join('')+'</div>';
+    const skipped=group.rows.filter(r=>r.status!=='ready');if(skipped.length)html+='<details><summary>対象外 '+skipped.length+'件</summary>'+skipped.map(r=>'<p>'+esc(r.name)+'：'+esc(r.reason)+'</p>').join('')+'</details>';
+    if(group.kind==='new'&&!blocked){
+      const input=(key,label,type,extra)=>'<label>'+label+'<input type="'+(type||'text')+'" data-fsi-edit="'+key+'"'+attr+' value="'+esc(e[key])+'" '+(extra||'')+(disabled?' disabled':'')+'></label>';
+      html+='<div class="fsi-grid">'+input('name','停留所名','text','maxlength="240"')+input('observedAt','撮影・確認日（任意）','date','')+'</div><label>緯度経度、または地理院地図のURLを貼り付け<textarea rows="2" maxlength="1500" data-fsi-edit="coordinateText"'+attr+(disabled?' disabled':'')+' placeholder="例：33.568000, 130.513000">'+esc(e.coordinateText)+'</textarea></label>';
+      html+='<div class="fr-toolbar"><button type="button" class="button secondary" data-fsi-action="parse"'+attr+(disabled?' disabled':'')+'>貼り付けた位置を読み取る</button>';
+      if(rows.length)html+='<label>位置を読み取る画像<select data-fsi-edit="ocrIndex"'+attr+(disabled?' disabled':'')+'>'+rows.map(r=>'<option value="'+r.index+'"'+(String(e.ocrIndex==null?(rows.find(x=>x.role==='coordinate')||rows[0]).index:e.ocrIndex)===String(r.index)?' selected':'')+'>'+esc(r.name)+'</option>').join('')+'</select></label><button type="button" class="button secondary" data-fsi-action="ocr"'+attr+(disabled?' disabled':'')+'>画像の座標を読み取る</button>';
+      html+='</div><p class="help">画像はこの端末内で読み取ります。写真を外部へ送信しません。数字が小さい場合は、緯度経度を手入力してください。</p>';
+      if(e.ocrMessage)html+='<p role="status">'+esc(e.ocrMessage)+'</p>';
+      if(e.ocrCandidates.length>1)html+='<p>複数の座標が見つかりました。正しい位置を選んでください。</p>'+e.ocrCandidates.map((p,i)=>'<button type="button" class="text-button" data-fsi-action="candidate" data-candidate="'+i+'"'+attr+(disabled?' disabled':'')+'>'+esc(p.lat+', '+p.lon)+'</button>').join('');
+      html+='<div class="fsi-grid">'+input('lat','緯度','number','step="any" min="20" max="46"')+input('lon','経度','number','step="any" min="122" max="154"')+'</div><div class="fsi-preview" data-fsi-map="'+esc(group.mpId)+'">'+mapHTML(e)+'</div><label><input type="checkbox" data-fsi-edit="showMap"'+attr+(e.showMap?' checked':'')+(disabled?' disabled':'')+'> 地理院の背景を表示（通信あり）</label>';
+      html+='<details><summary>位置の根拠・メモ</summary>'+input('sourceURL','元の地図URL（任意）','url','maxlength="1500"')+'<label>確認メモ<textarea rows="2" maxlength="1000" data-fsi-edit="notes"'+attr+(disabled?' disabled':'')+'>'+esc(e.notes)+'</textarea></label></details><label class="fsi-review"><input type="checkbox" data-fsi-edit="reviewed"'+attr+(e.reviewed?' checked':'')+(disabled?' disabled':'')+'> 停留所番号・名称・座標と地図上の位置を確認した</label><p class="help">資料と照合した位置として登録します。実際の運行・乗降場所を現地確認した認定ではありません。</p>';
+    }else if(group.kind==='existing')html+='<p class="help">登録済みの名称・座標・確認状況は維持して、写真だけを追加します。</p>';
+    return html+'</article>';
+  }
+  function render(){
+    if(!mounted)return;
+    $('fsi-city').disabled=busy||!!batch; $('fsi-service').disabled=busy||!!batch; $('fsi-folder').disabled=busy; $('fsi-files').disabled=busy; $('fsi-optimize').disabled=busy; $('fsi-cancel').disabled=!batch;
+    const panel=$('fsi-preview');
+    if(!batch){panel.innerHTML='';$('fsi-register').disabled=true;return;}
+    const groups=batch.plan.groups;
+    panel.innerHTML='<p><strong>'+esc(batch.plan.scope.municipality)+' ／ '+esc(batch.plan.scope.service)+'</strong>：'+groups.length+'地点の候補。新規登録は、名称・座標を入れて位置確認にチェックしてください。後回しにする地点は、番号の横のチェックを外します。</p>'+groups.slice(0,limit).map(groupHTML).join('')+(groups.length>limit?'<button type="button" class="button secondary" data-fsi-action="more">続きを表示（残り'+(groups.length-limit)+'地点）</button>':'')+(batch.plan.skippedRows.length?'<details><summary>番号や形式を確認できないファイル '+batch.plan.skippedRows.length+'件</summary>'+batch.plan.skippedRows.map(r=>'<p>'+esc(r.name)+'：'+esc(r.reason)+'</p>').join('')+'</details>':'');
+    if(batch.result)panel.innerHTML+='<p class="fsi-result">新しい停留所 '+batch.result.addedStops+'地点、写真 '+batch.result.addedPhotos+'枚を登録しました。現地資料ファイルを保存してください。</p>';
+    $('fsi-register').disabled=busy||batch.phase==='complete'||!groups.some(g=>batch.edits.get(g.mpId).include&&g.status!=='blocked');
+    $('fsi-plan-section').hidden=false;
+  }
+  function updateEdit(node){
+    if(!batch||busy||batch.phase==='complete')return;
+    const e=batch.edits.get(node.dataset.mp);if(!e)return;
+    const key=node.dataset.fsiEdit;e[key]=node.type==='checkbox'?node.checked:node.value;
+    if(['name','lat','lon','coordinateText','sourceURL'].includes(key)){e.reviewed=false;const card=node.closest('.fsi-card'),check=card&&card.querySelector('[data-fsi-edit="reviewed"]');if(check)check.checked=false;}
+    if(['lat','lon','showMap'].includes(key)){const holder=node.closest('.fsi-card').querySelector('[data-fsi-map]');if(holder)holder.innerHTML=mapHTML(e);}
+    if(key==='include')$('fsi-register').disabled=!batch.plan.groups.some(g=>batch.edits.get(g.mpId).include&&g.status!=='blocked');
+  }
+  function parsedInto(edit,parsed){edit.ocrCandidates=parsed.candidates||[];edit.ocrMessage=parsed.message||'';edit.reviewed=false;if(parsed.status==='candidate'&&parsed.candidates.length===1){edit.lat=String(parsed.candidates[0].lat);edit.lon=String(parsed.candidates[0].lon);edit.ocrMessage+=' 地図上の位置を確認してください。';}else{edit.lat='';edit.lon='';}}
+  async function readCoordinates(group,edit){
+    if(!global.StopCoordinateOCR)throw Error('画像の読取部品を読み込めません。緯度経度を貼り付けてください。');
+    const rows=group.rows.filter(r=>r.status==='ready'),index=edit.ocrIndex==null?(rows.find(r=>r.role==='coordinate')||rows[0]).index:Number(edit.ocrIndex),own=batch,token=generation;
+    ensureCurrent(own,token);edit.reviewed=false;busy=true;controller=new AbortController();render();
+    try{const result=await global.StopCoordinateOCR.recognize(own.files[index],{signal:controller.signal,onProgress:p=>{const text=typeof p==='string'?p:p&&p.status||'読み取り中';notify('画像の座標を読み取っています：'+text);}});ensureCurrent(own,token);edit.coordinateText=String(result.text||'').slice(0,1500);parsedInto(edit,result.parsed||global.StopCoordinateReader.parse(edit.coordinateText));notify('画像の読み取りが終わりました。座標候補と地図上の位置を確認してください。');}
+    finally{if(own===batch&&token===generation){busy=false;controller=null;render();}}
+  }
+  function asDataURL(blob){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(Error('画像を読み込めませんでした。'));reader.readAsDataURL(blob);});}
+  async function media(file,row){
+    let image,bitmap=false,url;
+    try{if(global.createImageBitmap){image=await global.createImageBitmap(file,{imageOrientation:'from-image'});bitmap=true;}else{url=URL.createObjectURL(file);image=await new Promise((resolve,reject)=>{const i=new Image();i.onload=()=>resolve(i);i.onerror=()=>reject(Error(row.name+'を開けませんでした。'));i.src=url;});}
+      const width=image.width||image.naturalWidth,height=image.height||image.naturalHeight;if(!width||!height||width*height>100000000)throw Error('画像の大きさを確認してください：'+row.name);
+    if(row.role==='coordinate'||!$('fsi-optimize').checked)return {name:row.name,url:await asDataURL(new Blob([file],{type:row.mime})),mime:row.mime,processingNote:row.role==='coordinate'?'位置確認用の原画像。文字の読取結果は利用者が確認。':'選択した写真を無加工で登録。'};
+      const ratio=Math.min(1,1600/Math.max(width,height)),canvas=global.document.createElement('canvas');canvas.width=Math.max(1,Math.round(width*ratio));canvas.height=Math.max(1,Math.round(height*ratio));const ctx=canvas.getContext('2d');if(!ctx)throw Error('写真の表示用コピーを作れませんでした。');ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(image,0,0,canvas.width,canvas.height);const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('写真を保存用に変換できませんでした。')),'image/jpeg',.82));return {name:row.name,url:await asDataURL(blob),mime:blob.type,processingNote:'表示用コピー：長辺1600px以内・JPEG品質0.82。元ファイルは変更していません。'};
+    }finally{if(bitmap&&image)image.close();if(url)URL.revokeObjectURL(url);}
+  }
+  async function register(){
+    if(!batch||busy||batch.phase!=='preview')return;
+    const own=batch,token=generation;ensureCurrent(own,token);
+    const edits=Array.from(own.edits.values()),prepared=global.StopFolderIntake.prepare(adapter.getWorkspace(),own.plan,edits);busy=true;render();
+    try{const loaded=[];let byteCount=new TextEncoder().encode(global.MPFieldRegistry.stringify(adapter.getWorkspace())).length;for(const row of prepared.fileRows){ensureCurrent(own,token);notify('写真を準備しています：'+(loaded.length+1)+' / '+prepared.fileRows.length);const m=await media(own.files[row.index],row);byteCount+=new TextEncoder().encode(JSON.stringify(m)).length;if(byteCount>global.MPFieldRegistry.LIMITS.workspaceBytes)throw Error('写真と台帳の保存容量を超えます。取り込む地点・枚数を減らしてください。');loaded.push({index:row.index,media:m});}
+      ensureCurrent(own,token);const result=global.StopFolderIntake.finalize(adapter.getWorkspace(),own.plan,edits,loaded);ensureCurrent(own,token);adapter.commit(result.workspace);own.result=result;own.phase='complete';own.revision=adapter.getRevision();own.draftToken=adapter.getDraftToken();notify('停留所と写真を登録しました。現地資料ファイルを保存してください。');
+    }finally{if(own===batch&&token===generation){busy=false;render();}}
+  }
+  function previewPlan(){
+    const p=global.PlannerUI&&global.PlannerUI.stopIntake;if(!p)throw Error('配置案への取込機能を読み込めませんでした。');
+    const scope={municipality:$('fsi-city').value.trim(),service:$('fsi-service').value.trim()};
+    planPreview=p.preview(adapter.getWorkspace(),scope);const c=planPreview.context;
+    $('fsi-plan-preview').innerHTML='<p><strong>'+esc(c.municipalityLabel)+' ／ '+esc(c.scenarioId)+'案</strong>へ追加します。既存の配置は維持し、新しい候補を加えます。</p><p id="fsi-plan-total"></p>'+(c.prototype?'<p class="help">現在の案には計算から作った仮配置が含まれます。現行の運行停留所だけの一覧ではありません。</p>':'')+'<p>追加可能 '+planPreview.rows.filter(r=>r.action==='add').length+'地点 ／ 重複・範囲外など '+planPreview.rows.filter(r=>r.action!=='add').length+'地点。</p><div class="table-scroll"><table class="fr-table"><thead><tr><th>追加</th><th>停留所</th><th>扱い</th></tr></thead><tbody>'+planPreview.rows.map((r,i)=>'<tr><td><input type="checkbox" data-fsi-plan-row="'+i+'" aria-label="'+esc(r.mpId+'を配置案へ追加')+'"'+(r.action==='add'?' checked':' disabled')+'></td><td>'+esc(r.mpId+' '+r.name)+'</td><td>'+esc(r.reason)+'</td></tr>').join('')+'</tbody></table></div><label><input id="fsi-plan-reviewed" type="checkbox">選択した案への追加であり、公式の運行停留所の変更ではないことを確認した</label><button type="button" class="button" data-fsi-action="apply-plan">確認した停留所をこの案へ追加</button>';
+    renderPlanTotal();
+  }
+  function renderPlanTotal(){if(!planPreview||!$('fsi-plan-total'))return;const n=$('fsi-plan-preview').querySelectorAll('[data-fsi-plan-row]:checked').length;$('fsi-plan-total').textContent='現在の案 '+planPreview.context.currentCount+'か所 ＋ 選択した '+n+'か所 ＝ '+(planPreview.context.currentCount+n)+'か所';}
+  function applyPlan(){
+    if(!planPreview||!$('fsi-plan-reviewed').checked)throw Error('追加先の案と内容を確認してチェックしてください。');
+    const keys=Array.from($('fsi-plan-preview').querySelectorAll('[data-fsi-plan-row]:checked')).map(n=>planPreview.rows[Number(n.dataset.fsiPlanRow)].key);
+    const result=global.PlannerUI.stopIntake.apply(planPreview,keys,adapter.getWorkspace());planPreview=null;$('fsi-plan-preview').innerHTML='<p>'+result.added+'地点を追加しました。配置案の作業ファイルと現地資料ファイルをそれぞれ保存してください。</p>';
+    notify('配置案へ停留所候補を追加しました。計算結果は更新後に確認してください。');
+  }
+  function mount(next){
+    if(mounted)return;adapter=next;const anchor=$('fr-photo-folder');if(!anchor)return;
+    const panel=global.document.createElement('section');panel.id='fr-stop-intake';panel.className='fr-stop-intake';panel.setAttribute('aria-label','写真と位置情報から停留所を登録');($('fr-counts')||anchor).before(panel);mounted=true;
+    panel.innerHTML='<details id="fsi-open"><summary>写真と位置情報から、新しい停留所もまとめて登録</summary><p>写真は <strong>511_現地写真.jpg</strong>、位置を示す画像は <strong>511_位置確認.png</strong> のように命名します。同じ番号を1地点にまとめます。001と1は別番号です。</p><div class="fsi-grid"><label>登録先の自治体<input id="fsi-city" type="text" list="fsi-cities" maxlength="120" placeholder="例：中間市"><datalist id="fsi-cities"></datalist></label><label>運行サービス名<input id="fsi-service" type="text" list="fsi-services" maxlength="120" placeholder="例：のるーと中間"><datalist id="fsi-services"></datalist></label></div><p class="help">市町村ごとにフォルダーを分けてください。画像の位置から自治体を自動判定しません。</p><label><input id="fsi-optimize" type="checkbox" checked>現地写真の表示用コピーを軽くする（位置確認の画像は原画像を保持）</label><div class="fr-file-tools"><label>写真・位置確認のフォルダー<input type="file" id="fsi-folder" webkitdirectory directory multiple></label><label>または画像を複数選ぶ<input type="file" id="fsi-files" multiple accept=".jpg,.jpeg,.png,.webp"></label></div><p class="help">JPEG・PNG・WebP、1枚12MiB・1地点20枚・現地資料全体80MiBまで。未登録の番号を読み取っただけでは登録しません。</p><div id="fsi-preview"></div><div class="fr-toolbar"><button type="button" id="fsi-register" class="button" disabled>確認した内容で停留所と写真を登録</button><button type="button" id="fsi-cancel" class="text-button" disabled>取り込み候補を取り消す</button></div><p id="fsi-status" role="status" aria-live="polite"></p><section id="fsi-plan-section"><h4>登録した停留所を配置案にも使う</h4><p>上で指定した自治体・サービスの台帳から、いま選んでいるA・B・C案への追加候補を確認します。現行の運行を変更する操作ではありません。</p><button type="button" id="fsi-plan-button" class="button secondary">選択中の配置案への追加候補を見る</button><div id="fsi-plan-preview"></div></section><details><summary>保存と読み取りの注意</summary><p>登録前の候補・選択画像は画面を閉じると失われます。登録後は「現地資料を保存」で写真入りのファイルを保存してください。配置案も変更した場合は配置案の作業ファイルも保存します。</p><p>画像の読取は入力補助です。複数の座標や読み違いがあるため、地図上の位置を確認してください。画像・緯度経度を読み取っても、正確な測量や公式運行の認定にはなりません。画像読取用の部品を通信で取得し、画像は端末内で処理します。</p></details></details>';
+    $('fsi-city').addEventListener('input',refresh);$('fsi-folder').addEventListener('change',action(e=>stage(e.target.files)));$('fsi-files').addEventListener('change',action(e=>stage(e.target.files)));$('fsi-cancel').addEventListener('click',cancel);$('fsi-register').addEventListener('click',action(register));$('fsi-plan-button').addEventListener('click',action(previewPlan));
+    panel.addEventListener('input',e=>{if(e.target.dataset.fsiEdit)updateEdit(e.target);});panel.addEventListener('change',e=>{if(e.target.dataset.fsiEdit)updateEdit(e.target);if(e.target.dataset.fsiPlanRow!==undefined)renderPlanTotal();});
+    panel.addEventListener('click',action(async event=>{const n=event.target.closest('[data-fsi-action]');if(!n)return;const type=n.dataset.fsiAction;if(type==='more'){limit+=20;render();return;}if(type==='apply-plan'){applyPlan();return;}if(!batch||busy||batch.phase!=='preview')return;const g=batch.plan.groups.find(g=>g.mpId===n.dataset.mp),e=g&&batch.edits.get(g.mpId);if(!e)return;if(type==='parse'){parsedInto(e,global.StopCoordinateReader.parse(e.coordinateText));render();}if(type==='ocr')await readCoordinates(g,e);if(type==='candidate'){const p=e.ocrCandidates[Number(n.dataset.candidate)];if(p){e.lat=String(p.lat);e.lon=String(p.lon);e.reviewed=false;render();}}}));
+    refresh();render();
+  }
+  global.StopFolderIntakeUI=Object.freeze({version:'1.0.0',mount,refresh,cancel,getState:()=>batch?{phase:batch.phase,scope:{...batch.plan.scope},groups:batch.plan.groups.length}:null});
+})(typeof window!=='undefined'?window:globalThis);
+/* End same-origin stop intake modules 8.21.0 */
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
@@ -9800,6 +10267,7 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
         seen.add(p.id);
         const input=p.originalCoordinate&&validCoord(p.originalCoordinate)?p.originalCoordinate:p, b=placementBounds(m);
         if (b && (lon(input)<b[0] || lon(input)>b[2] || lat(input)<b[1] || lat(input)>b[3])) throw new Error('取得範囲外の追加候補が含まれています。');
+        if(p.source==='field_registry_coordinate')return restoreFieldRegistryCandidate(p,m);
         return placedInput(m,{...input,name:String(p.name||'追加候補').slice(0,120),active:p.active!==false,source:p.source||'restored_user_candidate',sourceFacilityId:p.sourceFacilityId||null},p.id);
       });
       return {id:letters[i],label:String(s.label||labels[i]).slice(0,80),activeStopIds:s.activeStopIds.slice(),customStops:cc};
@@ -11014,7 +11482,7 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
   function exportCircleGapHtml(){
     if(!circleGapActive())throw Error('先に円または円の外側を表示してください。');if(guardLearningInputs())return false;
     return window.PlanningWorkspace.withMapVisible(()=>{drawMap();const r=circleGapReport(),p=circleGapSettings(),image=$('planner-map').toDataURL('image/png');
-      const html='<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(region().label)+' 円による交通空白候補</title><style>@page{size:A4 landscape;margin:12mm}body{font:14px/1.6 sans-serif;color:#193e4d;max-width:1100px;margin:24px auto;padding:0 16px}img{display:block;width:100%;height:auto;max-height:65vh;object-fit:contain}table{border-collapse:collapse;width:100%}th,td{border:1px solid #bbcacc;padding:7px;text-align:left}caption{text-align:left}h1{font-size:23px}.help{font-size:12px}.circle-gap-warning{border-left:4px solid #a44;padding:8px}button{padding:10px 20px}@media print{button{display:none}img{max-height:120mm}}</style><h1>'+esc(region().label)+'：円による交通空白候補</h1><p>のりば設計室8.20.2 ／ '+esc(new Date().toLocaleString('ja-JP'))+' ／ '+esc(circleGapPolicyText(p))+'</p><button onclick="window.print()">印刷・PDF保存</button><img alt="登録位置からの直線距離の円と交通空白候補" src="'+image+'"><p>緑：円の内側 ／ 橙：すべての円の外側（表示を選んだもののみ）。'+(p.showRoadSymbols?'○△×は道路評価です。':'道路評価の○△×は非表示です。')+'</p>'+circleGapSummaryHtml(r)+'<p class="help">'+esc(r.meaning)+'</p><details><summary>交通資料の出典</summary>'+r.sourceRecords.map(x=>'<p>'+esc(x.name||x.title||x.id)+' ／ '+esc(x.sourceDate||x.year||'時点は元資料参照')+' ／ '+esc(x.sourceReference||x.url||'')+'</p>').join('')+'</details><p class="help">行政界：国土数値情報N03（表示用簡略化）。道路：© OpenStreetMap contributors。人口：'+esc(r.populationSource)+'。画像はこのファイルに埋め込み済みです。</p></html>';
+      const html='<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(region().label)+' 円による交通空白候補</title><style>@page{size:A4 landscape;margin:12mm}body{font:14px/1.6 sans-serif;color:#193e4d;max-width:1100px;margin:24px auto;padding:0 16px}img{display:block;width:100%;height:auto;max-height:65vh;object-fit:contain}table{border-collapse:collapse;width:100%}th,td{border:1px solid #bbcacc;padding:7px;text-align:left}caption{text-align:left}h1{font-size:23px}.help{font-size:12px}.circle-gap-warning{border-left:4px solid #a44;padding:8px}button{padding:10px 20px}@media print{button{display:none}img{max-height:120mm}}</style><h1>'+esc(region().label)+'：円による交通空白候補</h1><p>のりば設計室8.21.0 ／ '+esc(new Date().toLocaleString('ja-JP'))+' ／ '+esc(circleGapPolicyText(p))+'</p><button onclick="window.print()">印刷・PDF保存</button><img alt="登録位置からの直線距離の円と交通空白候補" src="'+image+'"><p>緑：円の内側 ／ 橙：すべての円の外側（表示を選んだもののみ）。'+(p.showRoadSymbols?'○△×は道路評価です。':'道路評価の○△×は非表示です。')+'</p>'+circleGapSummaryHtml(r)+'<p class="help">'+esc(r.meaning)+'</p><details><summary>交通資料の出典</summary>'+r.sourceRecords.map(x=>'<p>'+esc(x.name||x.title||x.id)+' ／ '+esc(x.sourceDate||x.year||'時点は元資料参照')+' ／ '+esc(x.sourceReference||x.url||'')+'</p>').join('')+'</details><p class="help">行政界：国土数値情報N03（表示用簡略化）。道路：© OpenStreetMap contributors。人口：'+esc(r.populationSource)+'。画像はこのファイルに埋め込み済みです。</p></html>';
       download(region().label+'_円による交通空白候補.html',html,'text/html;charset=utf-8');return {status:'saved',municipality:r.municipality,scenarioId:r.scenarioId};});
   }
   function bindCircleGap(){
@@ -11118,7 +11586,66 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
   populationMapAdapter.getStatusFilter=()=>clone(populationStatusFilterSummary());
 
 
-  window.PlannerUI={circleGap:circleGapAdapter,count:countPlanningAdapter,purpose:purposeEvidenceAdapter,workspace:window.PlanningWorkspace,dashboard:window.PlanningDashboard,version:'8.20.2',fieldRegistry:window.MPFieldRegistryUI,context:integratedContextAdapter,municipalityImport:importAdapter,coverage:{getState:()=>clone(wholeAreaCoverage()),getEvidence:()=>clone(coverageEvidenceSummary()),exportPointCsv:exportPointEvidenceCsv,getTransitHtml:transitCoverageHtml},populationMap:populationMapAdapter,review:originalityReviewAdapter,learning:learningAdapter,loadWork,focusFacility,getDecisionContext,getDecisionNote:()=>clone(state.decisionNote),setDecisionNote,getState:()=>clone(exportState()),setRegion:chooseRegion,getRegionDataState:()=>regionStore?regionStore.getState():null,getResults:()=>clone(state.results),getAccessResults:()=>clone(state.accessResults),getAccessState:()=>({mode:state.evaluationMode,policy:clone(state.accessPolicy),modes:clone(state.accessModes),latest:isLatest(),pendingQuery:state.transitQueryPending,pendingPolicy:state.accessPolicyPending,notice:state.accessNotice}),getPrintSnapshot,getEditState:()=>({canUndo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].past.length),canRedo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].future.length),dirty:dirty(),localDraftEnabled:state.localDraftEnabled,revision:state.revision}),undo:()=>moveHistory('undo'),redo:()=>moveHistory('redo'),refresh:()=>{syncParamInputs();updatePopulationPoints();changed();renderEvidence();},exportComparisonHtml};
+  // Field registry -> selected scenario. Explicit preview; original coordinates stay exact.
+  function fieldIntakeContext(){const m=region();return {municipalityKey:m.key,municipalityLabel:m.label,municipalityAliases:[m.key,m.label,m.name].filter(Boolean),datasetSignature:String(signature(m)),scenarioId:letters[state.selected],scenarioLabel:scenario().label,currentCount:totalActive(scenario()),prototype:!!m.countPlanningProfile};}
+  function fieldRegistryHash(text){let a=2166136261,b=5381;for(let i=0;i<text.length;i++){a=Math.imul(a^text.charCodeAt(i),16777619)>>>0;b=(Math.imul(b,33)^text.charCodeAt(i))>>>0;}return a.toString(16)+'-'+b.toString(16);}
+  function fieldRegistryCandidate(raw,id){
+    const C=window.MPFieldRegistry,r=C.normalizeRecord(raw);
+    if(!validCoord(r))throw Error('停留所の緯度・経度を確認してください。');
+    return {id,name:r.name.slice(0,120),lat:r.lat,lon:r.lon,z:null,active:true,source:'field_registry_coordinate',checks:unknownChecks(),originalCoordinate:{lat:r.lat,lon:r.lon},projectionOffsetM:null,placementBasis:'registered_coordinate_unprojected',fieldRegistryLink:{key:r.key,municipality:r.municipality,service:r.service,mpId:r.mpId,coordinateBasis:r.coordinateBasis}};
+  }
+  function restoreFieldRegistryCandidate(p,m){
+    const link=p.fieldRegistryLink;
+    if(!link||typeof link!=='object'||typeof link.coordinateBasis!=='string'||link.coordinateBasis.length>1000)throw Error('停留所台帳との対応情報を確認してください。');
+    const r=window.MPFieldRegistry.normalizeRecord({...link,name:p.name,lat:p.lat,lon:p.lon});
+    const b=placementBounds(m);
+    if(!p.originalCoordinate||p.originalCoordinate.lat!==r.lat||p.originalCoordinate.lon!==r.lon||b&&(r.lon<b[0]||r.lon>b[2]||r.lat<b[1]||r.lat>b[3]))throw Error('停留所台帳の入力座標または計算範囲を確認してください。');
+    if(r.key!==link.key||!String(p.id).startsWith('field-'+fieldRegistryHash(r.key)))throw Error('停留所台帳の番号と配置案の対応が一致しません。');
+    const result=fieldRegistryCandidate(r,p.id);result.active=p.active!==false;return result;
+  }
+  function fieldPlanFingerprint(){return JSON.stringify({context:fieldIntakeContext(),scenarios:state.scenarios,params:state.params});}
+  function fieldIntakePreview(workspace,scope){
+    const C=window.MPFieldRegistry,w=C.validateWorkspace(workspace),context=fieldIntakeContext();
+    if(!scope||!context.municipalityAliases.includes(scope.municipality))throw Error('台帳の自治体と、配置案で選んでいる自治体を合わせてください。');
+    if(!String(scope.service||'').trim())throw Error('取り込む運行サービスを指定してください。');
+    const rows=w.records.filter(r=>r.municipality===scope.municipality&&r.service===scope.service).map(r=>{
+      let action='add',reason='入力した位置を保持して追加候補にする';
+      if(r.active===false||r.archived){action='skip';reason='非表示で保管中の台帳';}
+      else if(r.locationReviewRequired){action='skip';reason='位置変更後の資料を再確認する必要がある';}
+      else if(!validCoord(r)){action='skip';reason='緯度・経度が未登録';}
+      else if(!withinBounds(r)){action='skip';reason='この自治体の配置計算範囲外（台帳には保持）';}
+      else if((scenario().customStops||[]).some(p=>p.fieldRegistryLink&&p.fieldRegistryLink.key===r.key)){action='skip';reason='この台帳の停留所は配置案へ取込済み（移動時は別途確認）';}
+      else if(stops(region()).some(p=>stopId(p)===r.mpId)){action='skip';reason='受領MPに同じ番号があるため自動追加しない。配置編集で照合する';}
+      else if(stops(region()).concat(scenario().customStops).some(p=>validCoord(p)&&Math.abs(lat(p)-r.lat)<.000001&&Math.abs(lon(p)-r.lon)<.000001)){action='skip';reason='ほぼ同じ座標の停留所があるため重複追加しない';}
+      return {key:r.key,mpId:r.mpId,name:r.name,lat:r.lat,lon:r.lon,action,reason};
+    });
+    if(!rows.length)throw Error('この自治体・サービスの台帳がありません。先に停留所を登録してください。');
+    return {version:1,context,scope:{municipality:scope.municipality,service:scope.service},rows,planFingerprint:fieldPlanFingerprint(),registryFingerprint:C.stringify(w)};
+  }
+  function fieldIntakeApply(preview,keys,workspace){
+    if(!preview||preview.planFingerprint!==fieldPlanFingerprint()||preview.registryFingerprint!==window.MPFieldRegistry.stringify(workspace))throw Error('配置案または台帳が変わりました。追加候補を確認し直してください。');
+    if(!Array.isArray(keys)||!keys.length||new Set(keys).size!==keys.length)throw Error('追加する停留所を選んでください。');
+    if(guardLearningInputs()||state.accessPolicyPending||state.transitQueryPending)throw Error('入力中の比較条件を反映または取消してから追加してください。');
+    const issue=childEditIssue();if(issue)throw Error(issue);
+    const fresh=fieldIntakePreview(workspace,preview.scope);
+    if(JSON.stringify(fresh.rows)!==JSON.stringify(preview.rows))throw Error('追加候補の内容が変わりました。確認し直してください。');
+    const selected=keys.map(key=>{const row=fresh.rows.find(r=>r.key===key&&r.action==='add');if(!row)throw Error('追加できない停留所が含まれています。');return workspace.records.find(r=>r.key===key);});
+    if(scenario().customStops.length+selected.length>5000)throw Error('追加候補は1つの案で5000地点までです。');
+    const trial=clone(scenario()),used=new Set(stops(region()).concat(trial.customStops).map(stopId));
+    for(const r of selected){let id='field-'+fieldRegistryHash(r.key),suffix=1;while(used.has(id))id='field-'+fieldRegistryHash(r.key)+'-'+suffix++;used.add(id);trial.customStops.push(fieldRegistryCandidate(r,id));}
+    const violation=learningViolation(trial);if(violation)throw Error(violation);
+    state.scenarios[state.selected]=trial;if(changed()===false)throw Error('配置案に追加できませんでした。');renderCustomStops();renderEditor();requestDraw();
+    return {added:selected.length,scenarioId:letters[state.selected]};
+  }
+  const fieldIntakePlanner=Object.freeze({getContext:fieldIntakeContext,preview:fieldIntakePreview,apply:fieldIntakeApply});
+  const fieldIntakeOriginalSnapshot=currentFieldScenarioSnapshot;
+  currentFieldScenarioSnapshot=function(){
+    const snapshot=fieldIntakeOriginalSnapshot(),w=window.MPFieldRegistryUI&&window.MPFieldRegistryUI.getState(),records=w&&w.records||[];snapshot.registryBindings={};
+    for(const p of scenario().customStops||[]){const link=p.source==='field_registry_coordinate'&&p.fieldRegistryLink,r=link&&records.find(r=>r.key===link.key);if(r&&snapshot.stops.some(s=>s.mpId===p.id)&&r.active!==false&&!r.archived&&!r.locationReviewRequired&&r.lat===p.lat&&r.lon===p.lon){snapshot.registryBindings[p.id]=r.key;const stop=snapshot.stops.find(s=>s.mpId===p.id);stop.name=r.name;stop.elevationM=r.elevationM;}}
+    return snapshot;
+  };
+
+  window.PlannerUI={stopIntake:fieldIntakePlanner,circleGap:circleGapAdapter,count:countPlanningAdapter,purpose:purposeEvidenceAdapter,workspace:window.PlanningWorkspace,dashboard:window.PlanningDashboard,version:'8.21.0',fieldRegistry:window.MPFieldRegistryUI,context:integratedContextAdapter,municipalityImport:importAdapter,coverage:{getState:()=>clone(wholeAreaCoverage()),getEvidence:()=>clone(coverageEvidenceSummary()),exportPointCsv:exportPointEvidenceCsv,getTransitHtml:transitCoverageHtml},populationMap:populationMapAdapter,review:originalityReviewAdapter,learning:learningAdapter,loadWork,focusFacility,getDecisionContext,getDecisionNote:()=>clone(state.decisionNote),setDecisionNote,getState:()=>clone(exportState()),setRegion:chooseRegion,getRegionDataState:()=>regionStore?regionStore.getState():null,getResults:()=>clone(state.results),getAccessResults:()=>clone(state.accessResults),getAccessState:()=>({mode:state.evaluationMode,policy:clone(state.accessPolicy),modes:clone(state.accessModes),latest:isLatest(),pendingQuery:state.transitQueryPending,pendingPolicy:state.accessPolicyPending,notice:state.accessNotice}),getPrintSnapshot,getEditState:()=>({canUndo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].past.length),canRedo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].future.length),dirty:dirty(),localDraftEnabled:state.localDraftEnabled,revision:state.revision}),undo:()=>moveHistory('undo'),redo:()=>moveHistory('redo'),refresh:()=>{syncParamInputs();updatePopulationPoints();changed();renderEvidence();},exportComparisonHtml};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
 
