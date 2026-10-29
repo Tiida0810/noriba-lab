@@ -1763,13 +1763,15 @@ body.font-extra .odp-note,body.font-extra .odp-result span,body.font-extra .odp-
 .purpose-evidence svg:focus-visible{outline-offset:-3px}.purpose-evidence circle[data-pe-stop]:focus-visible{stroke:#173e58;stroke-width:3.2;outline:none}
 </style>
 <style></style>
+<style>.circle-gap-quick{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;padding:7px 9px;margin:4px 0 7px;background:#edf6f3;border:1px solid #b5cec4;border-radius:7px;font-size:13px}.circle-gap-quick label,.circle-gap-switches label{display:flex;gap:6px;align-items:center;cursor:pointer}.circle-gap-quick input,.circle-gap-card input[type=checkbox]{width:19px;height:19px;accent-color:#075b4b}.circle-gap-quick .text-button{min-height:32px;margin:0;padding:4px 7px}.circle-gap-quick #circle-gap-quick-note{font-size:12px;color:#46615b}.circle-gap-map-caption{font-size:12px;line-height:1.7;margin:4px 0 8px;color:#24483f}.circle-gap-inside-swatch,.circle-gap-outside-swatch{display:inline-block;width:13px;height:13px;vertical-align:middle;margin:0 4px 2px 6px;border:1px solid #53685e}.circle-gap-inside-swatch{background:#009e7366}.circle-gap-outside-swatch{background:#d55e0044}.circle-gap-card{padding:12px;margin:10px 0;background:#f8fbfa;border:1px solid #bed2cb;border-radius:8px}.circle-gap-card h3{font-size:17px;margin:4px 0 10px}.circle-gap-card fieldset{padding:9px;margin:10px 0;border:1px solid #b6ccc2;border-radius:6px}.circle-gap-card legend{font-size:13px;padding:0 5px}.circle-gap-switches{display:flex;flex-wrap:wrap;gap:10px 15px}.circle-gap-radius{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:6px 0}.circle-gap-radius label{display:flex;align-items:center;gap:6px;margin:0;font-size:14px}.circle-gap-radius input[type=number]{width:98px;min-width:0;min-height:38px;padding:6px}.circle-gap-road-switch{display:flex;gap:7px;align-items:center;font-size:13px}.circle-gap-table{overflow:auto;max-width:100%}.circle-gap-table table{border-collapse:collapse;width:100%;font-size:13px;white-space:normal}.circle-gap-table th,.circle-gap-table td{border:1px solid #bdcec6;padding:6px;text-align:left;min-width:40px}.circle-gap-table caption{text-align:left;margin:7px 0}.circle-gap-warning{border-left:4px solid #a25824;background:#fff3e7;padding:8px}.circle-gap-card details{margin-top:12px}.circle-gap-card .help{font-size:12px;line-height:1.75}.circle-gap-card .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}#circle-gap-main{max-width:100%}#circle-gap-main fieldset{max-width:440px}@media(max-width:700px){.circle-gap-quick{gap:6px 10px}.circle-gap-quick #circle-gap-quick-note{flex-basis:100%}.circle-gap-table{font-size:12px}.circle-gap-card{padding:9px}.circle-gap-radius input[type=number]{width:85px}}
+</style>
 </head>
 <body data-learning-level="intro">
 <div id="loading-panel" class="loading-panel" role="status" aria-live="polite"><div><span class="loading-spinner" aria-hidden="true"></span><h2 id="loading-title">地図の準備をしています</h2><p id="loading-message">道や人数の資料を読んでいます。準備が終わるまで少し待ってください。選んだ地域だけを展開します。</p><details id="loading-error-detail" hidden><summary>先生とみる：開けなかった理由</summary><p id="loading-error-text"></p></details><a id="loading-retry" href="" hidden>再読み込みする</a><p class="help">この端末の中で処理します。資料を外部へ送信しません。</p></div></div>
 <a class="skip-link" href="#workspace-screen-title">本文へ移動</a>
 <header class="masthead">
   <div class="brand"><span class="brand-mark" aria-hidden="true">↗</span><div><span class="eyebrow">まちの移動を、根拠から考える</span><h1>のりば設計室</h1></div></div>
-  <div class="header-note"><span class="local-badge">公開初版8.18.1</span><a href="field/index.html" target="_blank" rel="noopener">写真・現地メモ</a><a href="SOURCE_NOTICES.html" target="_blank" rel="noopener">出典・利用条件</a><span id="header-context-text">MP配置のたたき台をつくる比較ツール</span></div>
+  <div class="header-note"><span class="local-badge">公開版8.19.0</span><a href="field/index.html" target="_blank" rel="noopener">写真・現地メモ</a><a href="SOURCE_NOTICES.html" target="_blank" rel="noopener">出典・利用条件</a><span id="header-context-text">MP配置のたたき台をつくる比較ツール</span></div>
 </header>
 <main id="planner-main" aria-busy="true" inert>
 <aside id="dashboard-sidebar" class="dashboard-sidebar" aria-label="表示モードと画面の選択"><div class="dashboard-brand"><div><strong>のりば設計室</strong><small>地図で考える、まちの移動</small></div></div><div class="workspace-role-switch" role="group" aria-label="表示モード"><button type="button" data-workspace-audience="learn" aria-pressed="true">学習用</button><button type="button" data-workspace-audience="municipal" aria-pressed="false">自治体用</button></div><details id="dashboard-navigation" class="dashboard-navigation" open><summary class="dashboard-navigation-toggle">メニューを開く・閉じる</summary><nav class="workspace-menu-list dashboard-nav" data-audience="learn" data-workspace-menu-audience="learn" aria-label="学習用のメニュー"><button type="button" class="dashboard-nav-button" data-workspace-route="home"><span aria-hidden="true">01</span><span class="dashboard-nav-label">学習ホーム</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="region"><span aria-hidden="true">02</span><span class="dashboard-nav-label">まちを選ぶ</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="predict"><span aria-hidden="true">03</span><span class="dashboard-nav-label">よそうして、はじめる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map"><span aria-hidden="true">04</span><span class="dashboard-nav-label">乗り場をつくる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="count"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">乗り場の数を変える</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="compare"><span aria-hidden="true">05</span><span class="dashboard-nav-label">3案をくらべる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="conditions"><span aria-hidden="true">06</span><span class="dashboard-nav-label">ルールを変える</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="sources"><span aria-hidden="true">07</span><span class="dashboard-nav-label">資料を調べる</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="note"><span aria-hidden="true">08</span><span class="dashboard-nav-label">ノートを書く</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="files"><span aria-hidden="true">09</span><span class="dashboard-nav-label">保存・ひらく</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="people"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">人口・年齢と交通</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="od"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">利用の曜日と時刻</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="field"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">現地の写真と動画</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map-details"><span aria-hidden="true">？</span><span class="dashboard-nav-label">地図の説明と資料</span></button></nav><nav class="workspace-menu-list dashboard-nav" data-audience="municipal" data-workspace-menu-audience="municipal" aria-label="自治体用のメニュー" hidden><button type="button" class="dashboard-nav-button" data-workspace-route="home"><span aria-hidden="true">01</span><span class="dashboard-nav-label">検討ホーム</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="region"><span aria-hidden="true">02</span><span class="dashboard-nav-label">地域・資料の取込</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="conditions"><span aria-hidden="true">03</span><span class="dashboard-nav-label">比較の条件</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map"><span aria-hidden="true">04</span><span class="dashboard-nav-label">配置案の編集</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="count"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">停留所（MP）の数を変える</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="compare"><span aria-hidden="true">05</span><span class="dashboard-nav-label">3案の比較</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="transit"><span aria-hidden="true">06</span><span class="dashboard-nav-label">交通資料・参考アクセス</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="facilities"><span aria-hidden="true">07</span><span class="dashboard-nav-label">施設の確認</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="review"><span aria-hidden="true">08</span><span class="dashboard-nav-label">条件・乗り場の点検</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="decision"><span aria-hidden="true">09</span><span class="dashboard-nav-label">記録と根拠</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="files"><span aria-hidden="true">10</span><span class="dashboard-nav-label">保存・出力</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="people"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">人口・年齢と交通</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="od"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">上位OD・曜日と時刻</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="field"><span aria-hidden="true">＋</span><span class="dashboard-nav-label">現地資料の登録</span></button><button type="button" class="dashboard-nav-button" data-workspace-route="map-details"><span aria-hidden="true">？</span><span class="dashboard-nav-label">地図の説明と資料</span></button></nav><p class="dashboard-sidebar-note">表示モードはいつでも切り替えられます。配置案と記録は共通です。<br>実際に設置できるかは別に確認します。</p></details></aside><section id="workspace-bar" class="workspace-bar" aria-label="いまの画面と作業状態"><div class="workspace-bar-heading"><span id="workspace-mode-label">学習用</span><h2 id="workspace-screen-title" tabindex="-1">学習ホーム</h2><span id="workspace-region-label"></span></div><div class="workspace-bar-actions"><div class="workspace-scenario-switch" role="group" aria-label="地図に表示・編集する案"><button type="button" data-workspace-scenario="0" aria-pressed="true">A案</button><button type="button" data-workspace-scenario="1" aria-pressed="false">B案</button><button type="button" data-workspace-scenario="2" aria-pressed="false">C案</button></div><button id="workspace-calculate" type="button" class="button small">計算・更新</button><button type="button" class="button secondary small" data-workspace-route="files">保存・出力</button><details id="workspace-display-settings"><summary>見やすさ</summary><div class="accessibility-tools"><label>文字の大きさ<select id="ui-font-size"><option value="normal">標準</option><option value="large">大きい</option><option value="extra">さらに大きい</option></select></label><label class="check-label"><input id="ui-high-contrast" type="checkbox" checked>高コントラスト</label><label class="check-label"><input id="auto-result-focus" type="checkbox">完了後に結果へ移動</label></div></details></div><div class="workspace-bar-status"><span id="workspace-calculation-state" role="status">準備中</span><span id="workspace-save-state"></span><button id="workspace-pending-return" type="button" class="text-button" hidden>入力中のルールへ戻る</button><span id="workspace-exercise-note" hidden></span><span id="workspace-navigation-status" class="sr-only" role="status" aria-live="polite"></span></div></section><div id="workspace-viewport" class="workspace-viewport" tabindex="-1"><section id="dashboard-home" class="dashboard-home" tabindex="-1" aria-labelledby="dashboard-home-heading"><div class="dashboard-welcome"><h2 id="dashboard-home-heading">地図で、まちの移動を考えよう</h2><p>人口や坂を見ながら、乗り場の場所を考えてみよう。</p></div><div class="dashboard-context-grid"><article class="dashboard-context-card"><span>いまのまち</span><strong id="dashboard-region">まちを選ぼう</strong><small id="dashboard-region-note">資料を準備しています</small></article><article class="dashboard-context-card"><span>選んでいる案</span><strong id="dashboard-plan">案を選ぼう</strong><small id="dashboard-plan-note">乗り場を確認しています</small></article><article class="dashboard-context-card"><span>計算と保存</span><strong id="dashboard-work-state">資料を読み込み中</strong><small id="dashboard-work-note">保存状態を確認しています</small></article></div><div class="dashboard-task-grid" data-workspace-home-audience="learn" aria-label="学習の4つの手順"><button type="button" class="dashboard-task-card" data-dashboard-route="predict"><span class="dashboard-task-number">01</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0l-1 2H9l-1-2Z"/></svg></span><strong class="dashboard-task-title">よそうする</strong><span class="dashboard-task-copy">まちと置く数を選び、先に考えを書こう。</span></button><button type="button" class="dashboard-task-card" data-dashboard-route="map"><span class="dashboard-task-number">02</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg></span><strong class="dashboard-task-title">地図に置く</strong><span class="dashboard-task-copy">Bは自分の案。乗り場を置いて試そう。</span></button><button type="button" class="dashboard-task-card" data-dashboard-route="compare"><span class="dashboard-task-number">03</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 21V10h4v11m2 0V3h4v18m2 0v-7h4v7"/></svg></span><strong class="dashboard-task-title">くらべる</strong><span class="dashboard-task-copy">同じルールでA・B・Cをくらべよう。</span></button><button type="button" class="dashboard-task-card" data-dashboard-route="note"><span class="dashboard-task-number">04</span><span class="dashboard-task-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 3h16v15H9l-5 3V3m4 5h8M8 12h6"/></svg></span><strong class="dashboard-task-title">まとめる</strong><span class="dashboard-task-copy">見つけた違いと、まだ分からないことを残そう。</span></button></div><div class="dashboard-task-grid" data-workspace-home-audience="municipal" aria-label="自治体の検討手順" hidden><button type="button" class="dashboard-task-card" data-workspace-route="region"><span class="dashboard-task-number">01</span><strong class="dashboard-task-title">資料を取り込む</strong><span class="dashboard-task-copy">地域の道路・人口・乗り場などを登録します。</span></button><button type="button" class="dashboard-task-card" data-workspace-route="map"><span class="dashboard-task-number">02</span><strong class="dashboard-task-title">配置案を編集</strong><span class="dashboard-task-copy">同じ資料でA・B・Cの配置を試します。</span></button><button type="button" class="dashboard-task-card" data-workspace-route="review"><span class="dashboard-task-number">03</span><strong class="dashboard-task-title">条件を点検</strong><span class="dashboard-task-copy">坂・行き帰り・乗り場の変化を調べます。</span></button><button type="button" class="dashboard-task-card" data-workspace-route="decision"><span class="dashboard-task-number">04</span><strong class="dashboard-task-title">根拠を残す</strong><span class="dashboard-task-copy">判断した理由と追加確認を記録します。</span></button></div><p class="help">写真・動画の現地資料は「現地資料の登録／現地の写真と動画」の専用ファイルで保存できます。配置案の作業ファイルとは別です。</p><p id="dashboard-file-note" class="help"></p><p id="dashboard-nav-status" class="help" role="status" aria-live="polite"></p></section>
@@ -9572,10 +9574,11 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
     ctx.strokeStyle='#e5eadd';ctx.lineWidth=.6;for(let x=0;x<map.width;x+=55){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,map.height);ctx.stroke();}for(let y=0;y<map.height;y+=55){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(map.width,y);ctx.stroke();}
     drawGeographyContext(ctx,m);
     drawPopulationMesh(ctx);
+    drawCircleGapOverlay(ctx);
     if(state.layers.roads){ctx.strokeStyle=state.layers.population?'#71838a':'#bec9b8';ctx.lineWidth=.7;ctx.beginPath();for(const road of roadPaths(m)){const g=road.geometry||road;let lines;if(Array.isArray(g))lines=[g];else if(g.type==='MultiLineString')lines=g.coordinates;else lines=[g.coordinates||road.coordinates||[]];for(const line of lines){if(!Array.isArray(line))continue;let started=false;for(const p of line){if(!Array.isArray(p)||p.length<2)continue;const pos=xy({lon:Number(p[0]),lat:Number(p[1])});if(!started){ctx.moveTo(pos[0],pos[1]);started=true;}else ctx.lineTo(pos[0],pos[1]);}}}ctx.stroke();}
     drawGeographyBoundaries(ctx,m);
     drawTransitContext(ctx,m);
-    drawPopulationStatus(ctx);
+    if(!circleGapActive()||circleGapSettings().showRoadSymbols)drawPopulationStatus(ctx);
     drawLearningOverlays(ctx);
     if(state.layers.transit)drawTransitReferences(ctx);
     if(state.layers.facilities){for(const p of evaluationFacilities()){if(!validCoord(p))continue;const[x,y]=xy(p);if(x<-10||y<-10||x>map.width+10||y>map.height+10)continue;ctx.fillStyle='#968aa1';ctx.beginPath();ctx.moveTo(x,y-4);ctx.lineTo(x+4,y);ctx.lineTo(x,y+4);ctx.lineTo(x-4,y);ctx.closePath();ctx.fill();state.hits.push({x,y,radius:7,kind:'facility',point:p});}}
@@ -9637,7 +9640,7 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
   function queueLocalDraft(){clearTimeout(localDraftTimer);if(!state.localDraftEnabled)return;localDraftTimer=setTimeout(()=>{try{if(!window.localStorage)throw Error('端末の下書き保存を利用できません。');window.localStorage.setItem(localDraftKey(),JSON.stringify(exportState()));$('local-draft-status').textContent='この端末へ下書きを保存しました。共有端末では削除してください。';}catch(e){state.localDraftEnabled=false;$('local-draft-optin').checked=false;$('local-draft-status').textContent='端末の容量・設定により下書きを保存できません。JSON保存をご利用ください。';toast('端末への下書き保存を停止しました。作業内容は画面に残っています。');}},350);}
   async function restoreLocalDraft(){try{if(!window.localStorage)throw Error('端末の保存機能がありません。');let text=window.localStorage.getItem(localDraftKey()),legacy=false;if(text===null){text=window.localStorage.getItem(localDraftKey('v4'));legacy=text!==null;}if(!text)for(const datasetId of data.legacyDatasetSignatures||[]){for(const version of ['v5','v4']){text=window.localStorage.getItem(localDraftKey(version,datasetId));if(text){legacy=true;break;}}if(text)break;}if(!text)throw Error('このデータ版と対応する旧版の下書きはありません。');await loadWork(JSON.parse(text));toast(legacy?'旧版の下書きを移行して開きました。旧版の控えは変更していません。新しい作業をファイル保存してください。':'この端末の下書きを開きました。');}catch(e){toast(e.message);}}
   function applyViewPreferences(){Object.assign(state.layers,{roads:true,population:true,populationStatus:true,stops:true,facilities:true,transit:true,demand:false,od:false,difference:false,acquisitionExtent:false},normalizedMapLayers(state.viewPreferences.mapLayers)||{});if(state.learningRecord)state.layers.difference=state.learningRecord.differenceEnabled;for(const k of Object.keys(state.layers)){if($('layer-'+k))$('layer-'+k).checked=state.layers[k];}if(document.body&&document.body.dataset)document.body.dataset.learningLevel=state.viewPreferences.learningLevel||'intro';if($('layer-transit-context'))$('layer-transit-context').checked=state.viewPreferences.transitContextVisible!==false;const p=state.viewPreferences||{fontSize:'normal',highContrast:true};$('ui-font-size').value=p.fontSize;$('ui-high-contrast').checked=p.highContrast;if(document.body&&document.body.classList){document.body.classList.toggle('high-contrast',p.highContrast);document.body.classList.toggle('font-large',p.fontSize==='large');document.body.classList.toggle('font-extra',p.fontSize==='extra');}}
-  function validateViewPreferences(p){if(p==null)p={fontSize:'normal',highContrast:true};if(!p||!['normal','large','extra'].includes(p.fontSize)||typeof p.highContrast!=='boolean')throw Error('表示設定の形式を確認してください。');if(p.learningLevel!=null&&!['intro','explore','detail'].includes(p.learningLevel))throw Error('学習画面の段階を確認してください。');const populationClassification=window.PopulationMesh.getProfile(p.populationClassificationId===undefined?POPULATION_CLASSIFICATION_DEFAULT:p.populationClassificationId);const workspace=window.PlanningWorkspace.normalizeView(p);return {...workspace,fontSize:p.fontSize,highContrast:p.highContrast,populationClassificationId:populationClassification.id,learningLevel:workspace.workspaceAudience==='municipal'?'detail':p.learningLevel||'intro',mapLayers:normalizedMapLayers(p.mapLayers),mapExtentMode:p.mapExtentMode===undefined?(region()&&region().importMetadata?'analysis':'whole'):validateMapExtentMode(p.mapExtentMode),transitContextVisible:p.transitContextVisible===undefined?true:validateTransitContextVisible(p.transitContextVisible),...integratedPreferences(p)};}
+  function validateViewPreferences(p){if(p==null)p={fontSize:'normal',highContrast:true};if(!p||!['normal','large','extra'].includes(p.fontSize)||typeof p.highContrast!=='boolean')throw Error('表示設定の形式を確認してください。');if(p.learningLevel!=null&&!['intro','explore','detail'].includes(p.learningLevel))throw Error('学習画面の段階を確認してください。');const populationClassification=window.PopulationMesh.getProfile(p.populationClassificationId===undefined?POPULATION_CLASSIFICATION_DEFAULT:p.populationClassificationId);const workspace=window.PlanningWorkspace.normalizeView(p);return {...workspace,fontSize:p.fontSize,highContrast:p.highContrast,populationClassificationId:populationClassification.id,learningLevel:workspace.workspaceAudience==='municipal'?'detail':p.learningLevel||'intro',mapLayers:normalizedMapLayers(p.mapLayers),mapExtentMode:p.mapExtentMode===undefined?(region()&&region().importMetadata?'analysis':'whole'):validateMapExtentMode(p.mapExtentMode),transitContextVisible:p.transitContextVisible===undefined?true:validateTransitContextVisible(p.transitContextVisible),...integratedPreferences(p),circleGap:normalizeCircleGapSettings(p.circleGap)};}
   function focusResultsIfWanted(){if($('auto-result-focus').checked){window.PlanningWorkspace.navigate('compare',{focus:false});const h=$('comparison-heading');if(h.scrollIntoView)h.scrollIntoView({behavior:'smooth',block:'start'});if(h.focus)h.focus({preventScroll:true});}}
   function updatePrintState(){if(!$('print-preview')||!region())return;const latest=isLatest();$('print-preview').disabled=!latest;$('print-download').disabled=!latest;$('print-status').textContent=latest?'最新結果・全3案の同じ範囲で出力できます。':state.accessPolicyPending?'参考条件が未反映です。反映又は取消を行ってください。':state.transitQueryPending?'時刻条件が未反映です。先に参考行を照合してください。':'計算中又は結果が未更新です。最新の3案を確認後に出力できます。';if(window.DecisionGuide)window.DecisionGuide.refreshStatus();}
   function getPrintSnapshot(){return window.PlanningWorkspace.withMapVisible(getPrintSnapshotCore);}
@@ -9799,7 +9802,7 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
   }
 
   function currentFieldScenarioSnapshot(){const m=region(),s=scenario(),prototype=!!m.countPlanningProfile,pool=new Map(stops(m).map(p=>[stopId(p),p]));for(const p of s.customStops||[])pool.set(String(p.id),p);const ids=Array.from(new Set(s.activeStopIds.concat((s.customStops||[]).filter(p=>p.active!==false).map(p=>String(p.id)))));return {municipalityKey:m.key,municipalityLabel:m.label,municipalityAliases:[m.key,m.label,m.name].filter(Boolean),datasetSignature:String(signature(m)||'version-unavailable'),scenarioId:letters[state.selected],scenarioLabel:s.label,prototype,service:prototype?'計算からの仮配置（現行MP未入力）':'登録MP',stops:ids.map(id=>{const p=pool.get(id);if(!p)throw Error('配置案のMPを確認できません。');return {mpId:id,name:p.name||id,lat:validCoord(p)?lat(p):null,lon:validCoord(p)?lon(p):null,elevationM:Number.isFinite(p.z)?p.z:null,coordinateBasis:'選択した'+letters[state.selected]+'案の検討座標。現地の乗降位置は別に確認してください。',confirmation:'unconfirmed',notes:prototype?'現行MPではなく計算からの仮配置です。':'配置検討の有効MPから転記。現在の公式運行や安全性は未認定。'};})};}
-  function init(){if(!municipalities.length){$('region-status').innerHTML='<span class="status-pill reference">資料の準備が必要です</span><span>このファイルに自治体資料が含まれていません。データを埋め込んだ完成ファイルを開いてください。</span>';$('calculation-status').textContent='資料未読込';document.querySelectorAll('button,input,select').forEach(el=>{el.disabled=true;});return;}$('municipality-select').innerHTML=municipalities.map(m=>'<option value="'+esc(m.key)+'">'+esc(m.label||m.key)+(calculable(m)?'':'（参照）')+'</option>').join('');bindEvents();const initial=municipalities.find(m=>m.key==='umi')||municipalities.find(calculable)||municipalities[0];setRegion(initial.key);if(window.DecisionGuide)window.DecisionGuide.init(window.PlannerUI,data);if(window.LearningMode)window.LearningMode.init(learningAdapter,data);bindOriginalityReview();bindPopulationMap();bindIntegratedContext();bindJapanRegionPicker();bindMunicipalityImport();const slot=$('learning-map-slot'),workspace=document.querySelector('.workspace');if(slot&&workspace&&slot.appendChild)slot.appendChild(workspace);bindDashboard();if(window.MPFieldRegistryUI)window.MPFieldRegistryUI.init({getScenarioStops:currentFieldScenarioSnapshot,getCurrentStops:()=>stops(region()).map(p=>({municipality:region().label,service:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"計算した仮配置（現行MP未入力）":"登録MP",mpId:stopId(p),name:p.name||stopId(p),lat:validCoord(p)?lat(p):null,lon:validCoord(p)?lon(p):null,elevationM:Number.isFinite(p.z)?p.z:null,coordinateBasis:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"道路上の計算代表点から転記。現行MP・乗降面・現地測量の確認ではありません。":"表示中の地域の登録MP資料から転記。現地の乗降位置は未確認。",confirmation:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"unconfirmed":"document",notes:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"既存MPの位置・台帳・利用ODを入力せずに作った初期213仮配置の転記。実際の設置・運行は未確認です。配置案の有効・無効とは別の資料登録です。":"配置案の有効・無効とは別の資料登録です。"}))});requestDraw();if($('loading-panel'))$('loading-panel').hidden=true;if($('planner-main')){$('planner-main').setAttribute('aria-busy','false');if($('planner-main').removeAttribute)$('planner-main').removeAttribute('inert');}if(window.PlanningDashboard)window.PlanningDashboard.refresh();}
+  function init(){if(!municipalities.length){$('region-status').innerHTML='<span class="status-pill reference">資料の準備が必要です</span><span>このファイルに自治体資料が含まれていません。データを埋め込んだ完成ファイルを開いてください。</span>';$('calculation-status').textContent='資料未読込';document.querySelectorAll('button,input,select').forEach(el=>{el.disabled=true;});return;}$('municipality-select').innerHTML=municipalities.map(m=>'<option value="'+esc(m.key)+'">'+esc(m.label||m.key)+(calculable(m)?'':'（参照）')+'</option>').join('');bindEvents();const initial=municipalities.find(m=>m.key==='umi')||municipalities.find(calculable)||municipalities[0];setRegion(initial.key);if(window.DecisionGuide)window.DecisionGuide.init(window.PlannerUI,data);if(window.LearningMode)window.LearningMode.init(learningAdapter,data);bindOriginalityReview();bindPopulationMap();bindIntegratedContext();bindJapanRegionPicker();bindMunicipalityImport();const slot=$('learning-map-slot'),workspace=document.querySelector('.workspace');if(slot&&workspace&&slot.appendChild)slot.appendChild(workspace);bindCircleGap();bindDashboard();if(window.MPFieldRegistryUI)window.MPFieldRegistryUI.init({getScenarioStops:currentFieldScenarioSnapshot,getCurrentStops:()=>stops(region()).map(p=>({municipality:region().label,service:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"計算した仮配置（現行MP未入力）":"登録MP",mpId:stopId(p),name:p.name||stopId(p),lat:validCoord(p)?lat(p):null,lon:validCoord(p)?lon(p):null,elevationM:Number.isFinite(p.z)?p.z:null,coordinateBasis:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"道路上の計算代表点から転記。現行MP・乗降面・現地測量の確認ではありません。":"表示中の地域の登録MP資料から転記。現地の乗降位置は未確認。",confirmation:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"unconfirmed":"document",notes:region().countPlanningProfile&&region().countPlanningProfile.kind==='nakama_fresh213'?"既存MPの位置・台帳・利用ODを入力せずに作った初期213仮配置の転記。実際の設置・運行は未確認です。配置案の有効・無効とは別の資料登録です。":"配置案の有効・無効とは別の資料登録です。"}))});requestDraw();if($('loading-panel'))$('loading-panel').hidden=true;if($('planner-main')){$('planner-main').setAttribute('aria-busy','false');if($('planner-main').removeAttribute)$('planner-main').removeAttribute('inert');}if(window.PlanningDashboard)window.PlanningDashboard.refresh();}
   function bindMapControls(){
     const canvas=$('planner-map'),pointers=new Map();let drag=null,pinch=null,suppressTap=false;
     const point=e=>({x:Number(e.offsetX),y:Number(e.offsetY)});
@@ -10669,7 +10672,296 @@ global.LandmarkAddresses=Object.freeze({version:DATA.version,get,apply,display,s
   const purposeOriginalInit=init;
   init=function(){const r=purposeOriginalInit.apply(this,arguments);if(purposeEvidenceModel&&window.PurposeEvidenceUI&&$('mp-count-planner-panel'))purposeEvidenceWidget=window.PurposeEvidenceUI.mount($('mp-count-planner-panel'),purposeEvidenceAdapter,purposeEvidenceModel);return r;};
 
-  window.PlannerUI={count:countPlanningAdapter,purpose:purposeEvidenceAdapter,workspace:window.PlanningWorkspace,dashboard:window.PlanningDashboard,version:'8.18.1',fieldRegistry:window.MPFieldRegistryUI,context:integratedContextAdapter,municipalityImport:importAdapter,coverage:{getState:()=>clone(wholeAreaCoverage()),getEvidence:()=>clone(coverageEvidenceSummary()),exportPointCsv:exportPointEvidenceCsv,getTransitHtml:transitCoverageHtml},populationMap:populationMapAdapter,review:originalityReviewAdapter,learning:learningAdapter,loadWork,focusFacility,getDecisionContext,getDecisionNote:()=>clone(state.decisionNote),setDecisionNote,getState:()=>clone(exportState()),setRegion:chooseRegion,getRegionDataState:()=>regionStore?regionStore.getState():null,getResults:()=>clone(state.results),getAccessResults:()=>clone(state.accessResults),getAccessState:()=>({mode:state.evaluationMode,policy:clone(state.accessPolicy),modes:clone(state.accessModes),latest:isLatest(),pendingQuery:state.transitQueryPending,pendingPolicy:state.accessPolicyPending,notice:state.accessNotice}),getPrintSnapshot,getEditState:()=>({canUndo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].past.length),canRedo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].future.length),dirty:dirty(),localDraftEnabled:state.localDraftEnabled,revision:state.revision}),undo:()=>moveHistory('undo'),redo:()=>moveHistory('redo'),refresh:()=>{syncParamInputs();updatePopulationPoints();changed();renderEvidence();},exportComparisonHtml};
+(function (global) {
+  'use strict';
+  const VERSION = 'straight-line-circle-gap-1';
+  const A = 6378137, F = 1 / 298.257223563, B = A * (1 - F);
+  const DEG = Math.PI / 180, MODES = Object.freeze(['bus', 'rail', 'mp']);
+  const EPSILON_M = 0.00001;
+  const finite = value => typeof value === 'number' && Number.isFinite(value);
+  const valid = point => !!point && finite(point.lon) && finite(point.lat) && Math.abs(point.lon) <= 180 && Math.abs(point.lat) <= 90;
+  const clone = value => JSON.parse(JSON.stringify(value));
+  const normalizeLongitude = value => ((value + 180) % 360 + 360) % 360 - 180;
+
+  // Vincenty's ellipsoidal inverse/direct equations use WGS84 metres, not screen pixels
+  // or a constant degrees-to-metres conversion. Failure to converge is unknown, not outside.
+  function distanceM(first, second) {
+    if (!valid(first) || !valid(second)) return null;
+    if (first.lon === second.lon && first.lat === second.lat) return 0;
+    const phi1 = first.lat * DEG, phi2 = second.lat * DEG;
+    const L = normalizeLongitude(second.lon - first.lon) * DEG;
+    const U1 = Math.atan((1 - F) * Math.tan(phi1)), U2 = Math.atan((1 - F) * Math.tan(phi2));
+    const sinU1 = Math.sin(U1), cosU1 = Math.cos(U1), sinU2 = Math.sin(U2), cosU2 = Math.cos(U2);
+    let lambda = L, sinSigma, cosSigma, sigma, sinAlpha, cosSqAlpha, cos2SigmaM;
+    let converged = false;
+    for (let iteration = 0; iteration < 200; iteration++) {
+      const sinLambda = Math.sin(lambda), cosLambda = Math.cos(lambda);
+      sinSigma = Math.hypot(cosU2 * sinLambda, cosU1 * sinU2 - sinU1 * cosU2 * cosLambda);
+      cosSigma = sinU1 * sinU2 + cosU1 * cosU2 * cosLambda;
+      if (sinSigma === 0) return cosSigma > 0 ? 0 : null;
+      sigma = Math.atan2(sinSigma, cosSigma);
+      sinAlpha = cosU1 * cosU2 * sinLambda / sinSigma;
+      cosSqAlpha = Math.max(0, 1 - sinAlpha * sinAlpha);
+      cos2SigmaM = cosSqAlpha > 1e-15 ? cosSigma - 2 * sinU1 * sinU2 / cosSqAlpha : 0;
+      const C = F / 16 * cosSqAlpha * (4 + F * (4 - 3 * cosSqAlpha));
+      const previous = lambda;
+      lambda = L + (1 - C) * F * sinAlpha * (sigma + C * sinSigma *
+        (cos2SigmaM + C * cosSigma * (-1 + 2 * cos2SigmaM * cos2SigmaM)));
+      if (Math.abs(lambda - previous) < 1e-13) { converged = true; break; }
+    }
+    if (!converged) return null;
+    const uSq = cosSqAlpha * (A * A - B * B) / (B * B);
+    const aa = 1 + uSq / 16384 * (4096 + uSq * (-768 + uSq * (320 - 175 * uSq)));
+    const bb = uSq / 1024 * (256 + uSq * (-128 + uSq * (74 - 47 * uSq)));
+    const deltaSigma = bb * sinSigma * (cos2SigmaM + bb / 4 *
+      (cosSigma * (-1 + 2 * cos2SigmaM * cos2SigmaM) - bb / 6 * cos2SigmaM *
+        (-3 + 4 * sinSigma * sinSigma) * (-3 + 4 * cos2SigmaM * cos2SigmaM)));
+    const result = B * aa * (sigma - deltaSigma);
+    return finite(result) && result >= 0 ? result : null;
+  }
+
+  // Spherical helper is exposed for callers that explicitly want an approximation.
+  // It is never used for the coverage decision or for the rendered circle vertices.
+  function greatCircleDistance(first, second) {
+    if (!valid(first) || !valid(second)) return null;
+    const p1 = first.lat * DEG, p2 = second.lat * DEG;
+    const dPhi = p2 - p1, dLambda = normalizeLongitude(second.lon - first.lon) * DEG;
+    const h = Math.sin(dPhi / 2) ** 2 + Math.cos(p1) * Math.cos(p2) * Math.sin(dLambda / 2) ** 2;
+    return 6371008.8 * 2 * Math.atan2(Math.sqrt(Math.max(0, h)), Math.sqrt(Math.max(0, 1 - h)));
+  }
+
+  function destination(point, metres, bearingDegrees) {
+    if (!valid(point) || !finite(metres) || metres < 0 || !finite(bearingDegrees)) return null;
+    if (metres === 0) return {lon: point.lon, lat: point.lat};
+    const alpha1 = bearingDegrees * DEG, sinAlpha1 = Math.sin(alpha1), cosAlpha1 = Math.cos(alpha1);
+    const tanU1 = (1 - F) * Math.tan(point.lat * DEG);
+    const cosU1 = 1 / Math.sqrt(1 + tanU1 * tanU1), sinU1 = tanU1 * cosU1;
+    const sigma1 = Math.atan2(tanU1, cosAlpha1), sinAlpha = cosU1 * sinAlpha1;
+    const cosSqAlpha = Math.max(0, 1 - sinAlpha * sinAlpha);
+    const uSq = cosSqAlpha * (A * A - B * B) / (B * B);
+    const aa = 1 + uSq / 16384 * (4096 + uSq * (-768 + uSq * (320 - 175 * uSq)));
+    const bb = uSq / 1024 * (256 + uSq * (-128 + uSq * (74 - 47 * uSq)));
+    let sigma = metres / (B * aa), sinSigma, cosSigma, cos2SigmaM, converged = false;
+    for (let iteration = 0; iteration < 100; iteration++) {
+      sinSigma = Math.sin(sigma); cosSigma = Math.cos(sigma); cos2SigmaM = Math.cos(2 * sigma1 + sigma);
+      const deltaSigma = bb * sinSigma * (cos2SigmaM + bb / 4 *
+        (cosSigma * (-1 + 2 * cos2SigmaM * cos2SigmaM) - bb / 6 * cos2SigmaM *
+          (-3 + 4 * sinSigma * sinSigma) * (-3 + 4 * cos2SigmaM * cos2SigmaM)));
+      const next = metres / (B * aa) + deltaSigma;
+      if (Math.abs(next - sigma) < 1e-13) { sigma = next; converged = true; break; }
+      sigma = next;
+    }
+    if (!converged) return null;
+    sinSigma = Math.sin(sigma); cosSigma = Math.cos(sigma); cos2SigmaM = Math.cos(2 * sigma1 + sigma);
+    const tmp = sinU1 * sinSigma - cosU1 * cosSigma * cosAlpha1;
+    const phi2 = Math.atan2(sinU1 * cosSigma + cosU1 * sinSigma * cosAlpha1,
+      (1 - F) * Math.sqrt(sinAlpha * sinAlpha + tmp * tmp));
+    const lambda = Math.atan2(sinSigma * sinAlpha1, cosU1 * cosSigma - sinU1 * sinSigma * cosAlpha1);
+    const C = F / 16 * cosSqAlpha * (4 + F * (4 - 3 * cosSqAlpha));
+    const L = lambda - (1 - C) * F * sinAlpha * (sigma + C * sinSigma *
+      (cos2SigmaM + C * cosSigma * (-1 + 2 * cos2SigmaM * cos2SigmaM)));
+    return {lon: normalizeLongitude(point.lon + L / DEG), lat: phi2 / DEG};
+  }
+
+  function circleCoordinates(point, radiusM, steps) {
+    const count = steps === undefined ? 128 : steps;
+    if (!valid(point)) throw new Error('円の中心の緯度経度を確認してください。');
+    if (!finite(radiusM) || radiusM <= 0 || radiusM > 100000) throw new Error('円の半径は0m超、100,000m以下で指定してください。');
+    if (!Number.isInteger(count) || count < 16 || count > 1024) throw new Error('円の描画分割数は16～1024の整数で指定してください。');
+    const coordinates = [];
+    for (let i = 0; i < count; i++) {
+      const p = destination(point, radiusM, i * 360 / count);
+      if (!p) throw new Error('指定した座標の円を計算できませんでした。');
+      coordinates.push([p.lon, p.lat]);
+    }
+    coordinates.push(coordinates[0].slice());
+    return coordinates;
+  }
+
+  function normalizePolicy(raw) {
+    const input = raw || {}, modes = input.modes === undefined ? MODES.slice() : input.modes;
+    if (!Array.isArray(modes) || modes.some(mode => !MODES.includes(mode)) || new Set(modes).size !== modes.length)
+      throw new Error('円に使う交通はバス停・駅・MPから重複なく選んでください。');
+    const radiiM = Object.assign({bus: 300, rail: 300, mp: 300}, input.radiiM || {});
+    for (const mode of MODES) if (!finite(radiiM[mode]) || radiiM[mode] <= 0 || radiiM[mode] > 100000)
+      throw new Error('円の半径は0m超、100,000m以下で指定してください。');
+    const populationMultiplier = input.populationMultiplier === undefined ? 1 : input.populationMultiplier;
+    if (!finite(populationMultiplier) || populationMultiplier < 0) throw new Error('人口の倍率は0以上の数値で指定してください。');
+    return {modes: modes.slice(), radiiM: Object.fromEntries(MODES.map(mode => [mode, radiiM[mode]])), populationMultiplier};
+  }
+
+  function evaluate(input) {
+    if (!input || !Array.isArray(input.populationPoints) || !Array.isArray(input.targets))
+      throw new Error('人口代表点と交通地点の配列が必要です。');
+    const policy = normalizePolicy(input), selected = new Set(policy.modes), byTargetId = new Map();
+    let invalidTargetCount = 0;
+    for (const raw of input.targets) {
+      if (!raw || !MODES.includes(raw.mode)) throw new Error('交通地点の種類を確認してください。');
+      if (!selected.has(raw.mode)) continue;
+      if (!valid(raw)) { invalidTargetCount++; continue; }
+      const id = raw.id == null || String(raw.id) === '' ? 'target-' + byTargetId.size : String(raw.id);
+      const target = {id, lon: raw.lon, lat: raw.lat, mode: raw.mode, radiusM: policy.radiiM[raw.mode]};
+      const previous = byTargetId.get(id);
+      if (previous && (previous.lon !== target.lon || previous.lat !== target.lat || previous.mode !== target.mode))
+        throw new Error('同じ交通地点IDに異なる位置・種類が登録されています。');
+      byTargetId.set(id, target);
+    }
+    const targets = Array.from(byTargetId.values());
+    const circles = targets.map(target => Object.assign({}, target, {coordinates: circleCoordinates(target, target.radiusM, input.circleSteps)}));
+    const groups = Object.fromEntries(['inside', 'outside', 'unevaluated', 'unregistered'].map(status => [status,
+      {status, count: 0, knownPopulation: 0, unknownPopulationCount: 0}]));
+    const pointIds = new Set();
+    const pointResults = input.populationPoints.map((point, index) => {
+      const id = point && point.id != null ? String(point.id) : 'point-' + index;
+      if (pointIds.has(id)) throw new Error('人口代表点IDが重複しています。二重計上を避けるため確認してください。');
+      pointIds.add(id);
+      const population = point && finite(point.population) && point.population >= 0 ? point.population * policy.populationMultiplier : null;
+      let status, nearest = null, nearestDistance = null, covering = null, coveringDistance = null;
+      let failedDistanceCount = 0;
+      if (!valid(point)) status = 'unevaluated';
+      else if (!targets.length && !invalidTargetCount) status = 'unregistered';
+      else {
+        for (const target of targets) {
+          const distance = distanceM(point, target);
+          if (!finite(distance)) { failedDistanceCount++; continue; }
+          if (nearestDistance === null || distance < nearestDistance) { nearest = target; nearestDistance = distance; }
+          if (distance <= target.radiusM + EPSILON_M && (coveringDistance === null || distance < coveringDistance)) {
+            covering = target; coveringDistance = distance;
+          }
+        }
+        status = covering ? 'inside' : invalidTargetCount || failedDistanceCount ? 'unevaluated' : 'outside';
+      }
+      const group = groups[status]; group.count++;
+      if (population === null) group.unknownPopulationCount++; else group.knownPopulation += population;
+      return {id, lon: valid(point) ? point.lon : null, lat: valid(point) ? point.lat : null, population,
+        status, nearestTargetId: nearest && nearest.id, nearestTargetMode: nearest && nearest.mode, distanceM: nearestDistance,
+        coveringTargetId: covering && covering.id, coveringDistanceM: coveringDistance,
+        failedDistanceCount, reason: status === 'inside' ? 'いずれかの選択した円の範囲内です。' :
+          status === 'outside' ? '選択した登録地点のいずれの円にも含まれません。' :
+            status === 'unregistered' ? '選択した交通の位置資料が未登録、または交通種類が未選択です。' :
+              '人口・交通地点の位置または測地距離を確認できないため、範囲外と確定しません。'};
+    });
+    const knownPopulation = Object.values(groups).reduce((sum, group) => sum + group.knownPopulation, 0);
+    const unknownPopulationCount = Object.values(groups).reduce((sum, group) => sum + group.unknownPopulationCount, 0);
+    const notices = [
+      '円は直線距離の範囲です。道路距離・坂・横断・入口・乗降面・運行・予約可否を評価した範囲ではありません。',
+      '円の外側は登録資料と指定半径による交通空白候補です。交通が存在しないことや実際の交通空白を認定しません。',
+      '人口は代表点を基準とする既知人口の参考量です。円の面積による人口案分や実利用者数の推計ではありません。',
+      '円は重ねた範囲全体として評価し、同じ代表点の人口を二重に数えません。',
+    ];
+    if (invalidTargetCount) notices.push('選択した交通地点に位置不明があるため、円で覆われたことを確認できない代表点は未評価です。');
+    return {version: VERSION, policy: clone(policy), circles, pointResults,
+      summary: {groups, pointCount: pointResults.length, targetCount: targets.length, invalidTargetCount,
+        knownPopulation, unknownPopulationCount, insideShareKnown: knownPopulation > 0 ? groups.inside.knownPopulation / knownPopulation : null,
+        populationMultiplier: policy.populationMultiplier,
+        denominatorMeaning: '選択した人口代表点の既知人口小計。人口不明は0へ置き換えません。'},
+      metadata: {distanceMethod: 'WGS84 ellipsoidal Vincenty inverse/direct', coordinateSystem: 'WGS84 longitude/latitude',
+        geometry: 'union_of_selected_circles', boundaryInclusive: true, distanceToleranceM: EPSILON_M,
+        circleSteps: input.circleSteps === undefined ? 128 : input.circleSteps, boundaryKnown: input.boundaryKnown === true,
+        polygonClippingApplied: false, populationMethod: 'representative_point', roadNetworkUsed: false,
+        timetableUsed: false, currentOperationVerified: false, fullNetworkCoverageVerified: false,
+        certifiedTrafficGap: false, visualCircleApproximation: 'Geodesic radius sampled at circleSteps vertices; screen edges approximate the circle.'},
+      notices};
+  }
+
+  global.CircleGapModel = Object.freeze({version: VERSION, evaluate, distanceM, greatCircleDistance, circleCoordinates, normalizePolicy});
+})(typeof window !== 'undefined' ? window : globalThis);
+
+  // Circle coverage is a display/reference analysis, separate from road accessibility.
+  let circleGapCache=null,circleGapUiKey='',circleGapBound=false;
+  const circleGapNames={bus:'バス停',rail:'駅',mp:'停留所（MP）'};
+  function normalizeCircleGapSettings(raw){
+    const p=raw==null?{}:raw;if(!p||typeof p!=='object'||Array.isArray(p))throw Error('円の表示設定を確認してください。');
+    const result={showCircles:false,showOutside:false,showRoadSymbols:false,modes:['bus','rail','mp'],radiiM:{bus:300,rail:300,mp:300}};
+    for(const k of ['showCircles','showOutside','showRoadSymbols'])if(p[k]!==undefined){if(typeof p[k]!=='boolean')throw Error('円の表示・非表示を確認してください。');result[k]=p[k];}
+    const policy=window.CircleGapModel.normalizePolicy({modes:p.modes===undefined?result.modes:p.modes,radiiM:p.radiiM===undefined?result.radiiM:p.radiiM});
+    for(const radius of Object.values(policy.radiiM))if(radius<10||radius>10000)throw Error('画面の円の半径は10～10,000mで指定してください。');
+    return {...result,modes:policy.modes,radiiM:policy.radiiM};
+  }
+  function circleGapSettings(){return normalizeCircleGapSettings(state.viewPreferences.circleGap);}
+  function circleGapActive(){const p=circleGapSettings();return p.showCircles||p.showOutside;}
+  function circleGapTargets(p){
+    const m=region(),context=cachedTransitContext(m.key),targets=window.SpatialTransitAccess.getTargets({municipality:m,context,modes:p.modes.filter(x=>x!=='mp'),includeMP:p.modes.includes('mp'),scenario:scenarioForEvaluation(scenario())}).map(x=>({id:x.id,name:x.name||x.id,lon:lon(x),lat:lat(x),mode:x.accessMode}));
+    // Registered bus/rail locations are reference positions. Plans are excluded.
+    for(const service of transitServices()){
+      if(service.sourceKind==='planned'||!['bus','rail'].includes(service.mode)||!p.modes.includes(service.mode))continue;
+      for(const stop of service.stops||[])targets.push({id:'circle-registered:'+service.id+':'+stop.id,name:stop.name||stop.id,lon:validCoord(stop)?lon(stop):null,lat:validCoord(stop)?lat(stop):null,mode:service.mode});
+    }
+    return targets;
+  }
+  function circleGapReport(force=false){
+    if(!region()||!window.CircleGapModel||(!force&&!circleGapActive()))return null;
+    const p=circleGapSettings(),m=region(),key=JSON.stringify([m.key,signature(m),state.selected,scenarioForEvaluation(scenario()),state.params.populationSource,state.params.populationYear,state.params.resolutionM,state.params.scope,state.params.populationMultiplier,p.modes,p.radiiM,state.transitLayer]);
+    if(circleGapCache&&circleGapCache.key===key&&circleGapCache.points===state.populationPoints)return circleGapCache.report;
+    const targets=circleGapTargets(p),result=window.CircleGapModel.evaluate({populationPoints:state.populationPoints.map(x=>({id:String(x.id),lon:validCoord(x)?lon(x):null,lat:validCoord(x)?lat(x):null,population:Number.isFinite(x.population)?x.population:null})),targets,modes:p.modes,radiiM:p.radiiM,populationMultiplier:state.params.populationMultiplier});
+    const context=geographyDisplayContext(m),boundary=context&&context.target&&context.target.polygons;
+    const report={...result,targetCount:result.summary.targetCount,invalidTargetCount:result.summary.invalidTargetCount,municipality:{key:m.key,label:m.label},scenarioId:letters[state.selected],scenarioLabel:scenario().label,prototype:!!m.countPlanningProfile,boundaryKnown:!!(boundary&&boundary.length),populationSource:populationSourceLabel(),populationResolutionM:state.params.resolutionM,scopeLabel:scopeLabel(),sourceRecords:clone(cachedTransitContext(m.key)?.sources||[]),meaning:'選択した登録位置からの直線距離。道路・坂・運行本数・時刻・予約成立を判定しない。人口は代表点に対応する既知人口の参考量。'};
+    circleGapCache={key,points:state.populationPoints,report};return report;
+  }
+  function circleGapPolicyText(p=circleGapSettings()){return p.modes.length?p.modes.map(mode=>circleGapNames[mode]+' '+fmt(p.radiiM[mode])+'m').join(' ／ '):'交通の種類が未選択';}
+  function circleGapSummaryHtml(report){
+    if(!report)return '<p>「円を表示」または「円の外側を表示」を選ぶと、いまの配置で確認できます。</p>';
+    const s=report.summary,g=s.groups,rows=[['inside','いずれかの円の内側'],['outside','すべての円の外側'],['unevaluated','位置などが未評価'],['unregistered','対象交通が未登録']];
+    const share=report.targetCount>0&&(g.inside.knownPopulation+g.outside.knownPopulation)>0&&Number.isFinite(s.insideShareKnown)?fmt(s.insideShareKnown*100)+'%':'未評価';
+    return '<p><strong>'+esc(report.municipality.label)+' ／ '+esc(report.scenarioId)+'案 ／ '+esc(circleGapPolicyText())+'</strong></p><p>登録位置 '+fmt(report.targetCount)+'件（資料の重複を含む）。参考カバー率 '+share+'。</p><div class="circle-gap-table"><table><caption>人口代表点による参考集計</caption><thead><tr><th>状態</th><th>代表点</th><th>既知人口の参考量</th><th>人口不明の点</th></tr></thead><tbody>'+rows.map(([k,label])=>'<tr><th>'+label+'</th><td>'+fmt(g[k].count)+'</td><td>'+fmt(g[k].knownPopulation)+'人分</td><td>'+fmt(g[k].unknownPopulationCount)+'</td></tr>').join('')+'</tbody></table></div><p class="help">参考カバー率は内側を確認できた人口を、選択範囲の既知人口 '+fmt(s.knownPopulation)+'人分で割った値です。未評価がある場合は確認できた範囲の割合です。人口不明は0人とせず、円の重複は人口を二重計上しません。メッシュの面積按分ではなく代表点の判定です。</p>'+(report.prototype?'<p class="circle-gap-warning">この地域の初期MPは計算した仮配置です。現行MPの交通空白を示すものではありません。</p>':'')+(!report.boundaryKnown?'<p class="circle-gap-warning">境界が未登録のため、円の外側の面は塗りません。人口代表点の集計と円の表示はできます。</p>':'')+(report.invalidTargetCount?'<p class="circle-gap-warning">位置を確認できない交通地点があります。円の外側の面は塗らず、人口の未評価を区別します。</p>':'')+'<p class="help">'+esc(report.populationSource)+' ／ '+report.populationResolutionM+'m ／ '+esc(report.scopeLabel)+'。道路や坂を考慮した○△×とは別の分析です。現在の運行や目的地へ行って帰れるかは別確認です。</p>';
+  }
+  function circleGapControlsHtml(prefix){
+    return '<h3>円で見る交通空白候補</h3><p>乗り場の周りの円と、どの円にも入らない場所を比べます。</p><div class="circle-gap-switches"><label><input type="checkbox" data-circle-setting="showCircles"> 円を表示</label><label><input type="checkbox" data-circle-setting="showOutside"> 円の外側を表示</label></div><fieldset><legend>円を描く交通と半径（直線距離）</legend>'+['mp','bus','rail'].map(mode=>'<div class="circle-gap-radius"><label><input type="checkbox" data-circle-mode="'+mode+'"> '+circleGapNames[mode]+'</label><label for="'+prefix+'-'+mode+'"><span class="sr-only">'+circleGapNames[mode]+'の半径</span><input id="'+prefix+'-'+mode+'" aria-label="'+circleGapNames[mode]+'の円の半径" type="number" min="10" max="10000" step="10" data-circle-radius="'+mode+'"> m</label></div>').join('')+'</fieldset><label class="circle-gap-road-switch"><input type="checkbox" data-circle-setting="showRoadSymbols"> 道路評価の○△×も重ねる</label><p class="help">300mは比較用の初期値です。国の全国一律基準ではありません。MPの増減・案の切替に追従します。隣接市町の登録地点も使います。</p><div data-circle-summary></div><button type="button" class="button secondary small" data-circle-action="save">この図を保存・印刷</button><p class="help">画像を含むファイルを保存します。開いて印刷・PDF保存できます。</p><details><summary>国交省の指標と資料の限界</summary><p>今回計算するのは、登録位置と既知人口による参考カバー率・圏外人口です。運行回数、病院・学校へ一定時間内に届く人口割合、利用者総数、公共交通分担率、収支、満足度などは、それぞれ時刻表・実績・経費・調査資料が必要です。現在の資料で計算できない値を補いません。</p><p><a href="https://www.mlit.go.jp/sogoseisaku/transport/content/procedure.pdf#page=26" target="_blank" rel="noopener noreferrer">国交省：人口カバー率等の指標</a> ／ <a href="https://nlftp.mlit.go.jp/ksj/manual/QGIS_manual_01.htm" target="_blank" rel="noopener noreferrer">円による交通空白地の分析例</a></p><p>面の塗り分けには表示用に簡略化した行政界と128分割の円を使います。円そのものと人口の評価はWGS84の距離で求めます。行政界・乗降面・交通網の完全性を認定しません。山林などを含む面積と、居住人口への影響を分けて読みます。</p></details>';
+  }
+  function refreshCircleGapControls(){
+    if(!circleGapBound||!region())return;const p=circleGapSettings(),active=p.showCircles||p.showOutside;
+    for(const el of document.querySelectorAll('[data-circle-setting]'))el.checked=p[el.dataset.circleSetting];
+    for(const el of document.querySelectorAll('[data-circle-mode]'))el.checked=p.modes.includes(el.dataset.circleMode);
+    for(const el of document.querySelectorAll('[data-circle-radius]'))if(document.activeElement!==el)el.value=p.radiiM[el.dataset.circleRadius];
+    const r=active?circleGapReport():null,key=JSON.stringify([circleGapCache&&circleGapCache.key,active,p.showCircles,p.showOutside,p.showRoadSymbols]);
+    if(key!==circleGapUiKey){for(const el of document.querySelectorAll('[data-circle-summary]'))el.innerHTML=circleGapSummaryHtml(r);circleGapUiKey=key;}
+    const caption=$('circle-gap-map-caption');if(caption){caption.hidden=!active;caption.innerHTML='<span class="circle-gap-inside-swatch"></span> 円の内側 <span class="circle-gap-outside-swatch"></span> 円の外側（交通空白候補） ／ '+esc(circleGapPolicyText(p))+(p.showRoadSymbols?' ／ ○△×は道路評価':' ／ 道路評価の○△×は非表示');}
+    const short=$('circle-gap-quick-note');if(short)short.textContent=active?'直線距離の参考図。運行・道路・坂は別確認。':'円による直線距離の範囲を重ねられます。';
+    const label=document.querySelector('.workspace-map-key-label');if(label)label.textContent=active?'人口の濃淡と、円による直線距離の範囲は別の表示です。'+(p.showRoadSymbols?' ○△×は道路評価です。':''):'人口：濃いほど多い ／ ○ 条件内・△ 条件外・× 未評価';
+  }
+  function setCircleGapSettings(patch){
+    if(guardLearningInputs())return false;const next=normalizeCircleGapSettings({...circleGapSettings(),...patch});state.viewPreferences.circleGap=next;circleGapUiKey='';recordEdit();refreshCircleGapControls();updateCoverageLegend();requestDraw();return clone(next);
+  }
+  function circleGapBoundaryPath(ctx,polygons){ctx.beginPath();for(const polygon of polygons||[])for(const ring of polygon||[]){ring.forEach((c,i)=>{const q=xy({lon:c[0],lat:c[1]});if(i)ctx.lineTo(q[0],q[1]);else ctx.moveTo(q[0],q[1]);});ctx.closePath();}}
+  function circleGapCirclePath(ctx,circle){ctx.beginPath();circle.coordinates.forEach((c,i)=>{const q=xy({lon:c[0],lat:c[1]});if(i)ctx.lineTo(q[0],q[1]);else ctx.moveTo(q[0],q[1]);});ctx.closePath();}
+  function drawCircleGapOverlay(ctx){
+    if(!circleGapActive())return;const p=circleGapSettings(),r=circleGapReport();if(!r||!r.circles.length)return;
+    const polygons=geographyDisplayContext(region())?.target?.polygons,w=Math.ceil(state.map.width),h=Math.ceil(state.map.height),layer=document.createElement('canvas');layer.width=w;layer.height=h;const c=layer.getContext('2d');
+    if(p.showOutside&&polygons&&polygons.length&&!r.invalidTargetCount){
+      circleGapBoundaryPath(c,polygons);c.fillStyle='#d55e00';c.fill('evenodd');c.globalCompositeOperation='destination-out';
+      // Subtract a union: overlapping circles must never create false holes.
+      for(const circle of r.circles){circleGapCirclePath(c,circle);c.fill();}
+      ctx.save();ctx.globalAlpha=.2;ctx.drawImage(layer,0,0,w,h);ctx.restore();c.globalCompositeOperation='source-over';c.clearRect(0,0,w,h);
+    }
+    if(p.showCircles){
+      c.fillStyle='#009e73';for(const circle of r.circles){circleGapCirclePath(c,circle);c.fill();}
+      ctx.save();if(polygons&&polygons.length){circleGapBoundaryPath(ctx,polygons);ctx.clip('evenodd');}ctx.globalAlpha=.17;ctx.drawImage(layer,0,0,w,h);ctx.globalAlpha=.72;ctx.lineWidth=.8;ctx.strokeStyle='#007a5e';for(const circle of r.circles){circleGapCirclePath(ctx,circle);ctx.stroke();}ctx.restore();
+    }
+  }
+  function exportCircleGapHtml(){
+    if(!circleGapActive())throw Error('先に円または円の外側を表示してください。');if(guardLearningInputs())return false;
+    return window.PlanningWorkspace.withMapVisible(()=>{drawMap();const r=circleGapReport(),p=circleGapSettings(),image=$('planner-map').toDataURL('image/png');
+      const html='<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(region().label)+' 円による交通空白候補</title><style>@page{size:A4 landscape;margin:12mm}body{font:14px/1.6 sans-serif;color:#193e4d;max-width:1100px;margin:24px auto;padding:0 16px}img{display:block;width:100%;height:auto;max-height:65vh;object-fit:contain}table{border-collapse:collapse;width:100%}th,td{border:1px solid #bbcacc;padding:7px;text-align:left}caption{text-align:left}h1{font-size:23px}.help{font-size:12px}.circle-gap-warning{border-left:4px solid #a44;padding:8px}button{padding:10px 20px}@media print{button{display:none}img{max-height:120mm}}</style><h1>'+esc(region().label)+'：円による交通空白候補</h1><p>のりば設計室8.19.0 ／ '+esc(new Date().toLocaleString('ja-JP'))+' ／ '+esc(circleGapPolicyText(p))+'</p><button onclick="window.print()">印刷・PDF保存</button><img alt="登録位置からの直線距離の円と交通空白候補" src="'+image+'"><p>緑：円の内側 ／ 橙：すべての円の外側（表示を選んだもののみ）。'+(p.showRoadSymbols?'○△×は道路評価です。':'道路評価の○△×は非表示です。')+'</p>'+circleGapSummaryHtml(r)+'<p class="help">'+esc(r.meaning)+'</p><details><summary>交通資料の出典</summary>'+r.sourceRecords.map(x=>'<p>'+esc(x.name||x.title||x.id)+' ／ '+esc(x.sourceDate||x.year||'時点は元資料参照')+' ／ '+esc(x.sourceReference||x.url||'')+'</p>').join('')+'</details><p class="help">行政界：国土数値情報N03（表示用簡略化）。道路：© OpenStreetMap contributors。人口：'+esc(r.populationSource)+'。画像はこのファイルに埋め込み済みです。</p></html>';
+      download(region().label+'_円による交通空白候補.html',html,'text/html;charset=utf-8');return {status:'saved',municipality:r.municipality,scenarioId:r.scenarioId};});
+  }
+  function bindCircleGap(){
+    if(circleGapBound)return;circleGapBound=true;
+    const mapWrap=$('planner-map').parentNode,quick=document.createElement('div');quick.id='circle-gap-quick';quick.className='circle-gap-quick';quick.innerHTML='<label><input type="checkbox" data-circle-setting="showCircles"> 円を表示</label><label><input type="checkbox" data-circle-setting="showOutside"> 円の外側を表示</label><button type="button" class="text-button" data-circle-action="settings">半径・集計</button><button type="button" class="text-button" data-circle-action="save">この図を保存・印刷</button><span id="circle-gap-quick-note"></span>';mapWrap.parentNode.insertBefore(quick,mapWrap);
+    const caption=document.createElement('p');caption.id='circle-gap-map-caption';caption.className='circle-gap-map-caption';caption.hidden=true;mapWrap.parentNode.insertBefore(caption,mapWrap.nextSibling);
+    const side=document.createElement('details');side.id='circle-gap-side';side.className='circle-gap-card';side.open=true;side.innerHTML='<summary>円で見る交通空白候補</summary><div>'+circleGapControlsHtml('cg-side')+'</div>';const host=$('workspace-map-reference').querySelector('.workspace-map-reference-body');host.insertBefore(side,host.firstChild);
+    const main=document.createElement('section');main.id='circle-gap-main';main.className='circle-gap-card';main.innerHTML=circleGapControlsHtml('cg-main');const panel=$('integrated-context-panel');panel.insertBefore(main,panel.querySelector('.integrated-controls'));
+    for(const el of document.querySelectorAll('[data-circle-setting]'))el.addEventListener('change',()=>{try{setCircleGapSettings({[el.dataset.circleSetting]:el.checked});}catch(e){toast(e.message);refreshCircleGapControls();}});
+    for(const el of document.querySelectorAll('[data-circle-mode]'))el.addEventListener('change',()=>{try{const p=circleGapSettings(),mode=el.dataset.circleMode;setCircleGapSettings({modes:el.checked?Array.from(new Set(p.modes.concat(mode))):p.modes.filter(x=>x!==mode)});}catch(e){toast(e.message);refreshCircleGapControls();}});
+    for(const el of document.querySelectorAll('[data-circle-radius]'))el.addEventListener('change',()=>{try{if(!el.value.trim())throw Error('円の半径を入力してください。');setCircleGapSettings({radiiM:{...circleGapSettings().radiiM,[el.dataset.circleRadius]:Number(el.value)}});}catch(e){toast(e.message);el.value=circleGapSettings().radiiM[el.dataset.circleRadius];refreshCircleGapControls();}});
+    for(const el of document.querySelectorAll('[data-circle-action]'))el.addEventListener('click',()=>{try{if(el.dataset.circleAction==='save')exportCircleGapHtml();else {window.PlanningWorkspace.navigate('map');window.PlanningWorkspace.setMapPanel('display');$('circle-gap-side').open=true;$('circle-gap-side').scrollIntoView({block:'nearest'});}}catch(e){toast(e.message);}});
+    refreshCircleGapControls();
+  }
+  const circleOldLegend=updateCoverageLegend;updateCoverageLegend=function(){circleOldLegend();if(circleGapActive()&&!circleGapSettings().showRoadSymbols&&$('coverage-legend'))$('coverage-legend').innerHTML='<strong>円の表示：</strong><span>緑：円の内側</span><span>橙：すべての円の外側（交通空白候補）</span><span>直線距離。道路・坂の○△×とは別です。</span>';};
+  const circleOldPopulationLegend=renderPopulationLegend;renderPopulationLegend=function(){circleOldPopulationLegend();refreshCircleGapControls();};
+  const circleOldMetadata=populationMapMetadata;populationMapMetadata=function(){const old=circleOldMetadata(),p=circleGapSettings(),active=p.showCircles||p.showOutside;return {...old,statusVisible:old.statusVisible&&(!active||p.showRoadSymbols),statusSymbols:active&&!p.showRoadSymbols?[]:old.statusSymbols,circleGap:{active,settings:clone(p),summary:active?clone(circleGapReport()?.summary||null):null,meaning:'直線距離の円。道路評価・時刻評価と別。'}};};
+  const circleGapAdapter={getSettings:()=>clone(circleGapSettings()),setSettings:setCircleGapSettings,getReport:()=>clone(circleGapReport(true)),exportHtml:exportCircleGapHtml};
+
+  window.PlannerUI={circleGap:circleGapAdapter,count:countPlanningAdapter,purpose:purposeEvidenceAdapter,workspace:window.PlanningWorkspace,dashboard:window.PlanningDashboard,version:'8.19.0',fieldRegistry:window.MPFieldRegistryUI,context:integratedContextAdapter,municipalityImport:importAdapter,coverage:{getState:()=>clone(wholeAreaCoverage()),getEvidence:()=>clone(coverageEvidenceSummary()),exportPointCsv:exportPointEvidenceCsv,getTransitHtml:transitCoverageHtml},populationMap:populationMapAdapter,review:originalityReviewAdapter,learning:learningAdapter,loadWork,focusFacility,getDecisionContext,getDecisionNote:()=>clone(state.decisionNote),setDecisionNote,getState:()=>clone(exportState()),setRegion:chooseRegion,getRegionDataState:()=>regionStore?regionStore.getState():null,getResults:()=>clone(state.results),getAccessResults:()=>clone(state.accessResults),getAccessState:()=>({mode:state.evaluationMode,policy:clone(state.accessPolicy),modes:clone(state.accessModes),latest:isLatest(),pendingQuery:state.transitQueryPending,pendingPolicy:state.accessPolicyPending,notice:state.accessNotice}),getPrintSnapshot,getEditState:()=>({canUndo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].past.length),canRedo:!!(state.historyByRegion[state.municipalityKey]&&state.historyByRegion[state.municipalityKey].future.length),dirty:dirty(),localDraftEnabled:state.localDraftEnabled,revision:state.revision}),undo:()=>moveHistory('undo'),redo:()=>moveHistory('redo'),refresh:()=>{syncParamInputs();updatePopulationPoints();changed();renderEvidence();},exportComparisonHtml};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
 
