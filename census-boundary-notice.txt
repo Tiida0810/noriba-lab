@@ -1,0 +1,30 @@
+国勢調査2020 町丁・字等境界の表示用データ
+
+収録：宇美町86区域、中間市81区域。
+これは国勢調査の町丁・字等の境界です。自治会・行政区の区域へ置き換えず、2026年の自治会・行政区別人口表には結合しません。
+
+出典・クレジット：
+『国勢調査町丁・字等別境界データセット』（CODH作成）
+「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工
+DOI: 10.20676/00000450
+https://geoshape.ex.nii.ac.jp/ka/
+宇美町 https://geoshape.ex.nii.ac.jp/ka/resource/40341.html
+中間市 https://geoshape.ex.nii.ac.jp/ka/resource/40215.html
+
+提供条件：CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+元のe-Stat利用規約 https://www.e-stat.go.jp/terms-of-use
+参照・取得日：2026年10月30日。調査基準日：2020年10月1日。
+NII配信メタデータの発行日：2022年6月24日。
+
+加工内容：
+・TopoJSONの共有弧を復元し、同じ小地域コードの飛び地は一つのMultiPolygonへまとめました。
+・JGD2000（EPSG:4612）からWGS84表示用（EPSG:4326）へ、EPSG:1826の地心移動0mと楕円体変換による近似を適用しました。1m級の表示用近似で、測量精度を保証しません。
+・共有する線が食い違わないよう、共有弧単位で表示用に簡略化しました。許容値は宇美町0.000005度（概ね0.6m以下）、中間市0.000001度（概ね0.12m以下）です。元のTopoJSONも保存しています。
+・境界付近の代表点は近似・簡略化によって所属が変わる可能性があります。厳密な行政区域や設置可否の判断には使いません。
+・元の小地域人口JINKO等はこの境界表示用seedには収録せず、公式自治会人口の代用にしません。
+・画面の地区別集計はアプリの人口代表点をこの表示用境界へ対応させた参考量です。町丁・字等の国勢調査公表人口そのものでも、乗車需要でもありません。
+
+再生成：data/build-census-boundary-seed.py
+原本ハッシュ・座標数・近似変換の参照資料：data/census-boundary-provenance.json
+検証：qa/map-census-check.cjs / map-census-validation.json

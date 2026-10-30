@@ -1,0 +1,18 @@
+背景地図の出典と取得方法
+
+OpenStreetMap：© OpenStreetMap contributors
+https://www.openstreetmap.org/copyright
+標準タイル配信：https://tile.openstreetmap.org/{z}/{x}/{y}.png
+配信条件：https://operations.osmfoundation.org/policies/tiles/
+現在の表示範囲だけを取得し、一括先読み・オフライン配布は行いません。ブラウザー標準のHTTPキャッシュを使います。
+
+地理院地図 淡色：地理院タイル（国土地理院）
+https://maps.gsi.go.jp/development/ichiran.html
+淡色配信：https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png
+利用規約：https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html
+本アプリでは地理院タイルを表示用の投影に合わせて加工しています。
+地理院タイル一覧の案内では、ウェブサイト・アプリ上でのリアルタイム読込は出典明示と一覧ページへのリンクにより利用できるとされています。
+低縮尺の海外部分の海岸線は米国NIMA「Vector Map Level 0 (VMAP0)」（1997、USGS Information Services配布）に由来します。詳細は提供元の淡色地図の備考を確認してください。
+
+共通：現在の表示範囲48枚以内。配信元ごとにキャッシュキーを分離。HTTPステータス・MIME・画像寸法を確認してから描画します。エラー画像やHTTP403は背景として描かず、配置案と計算を保って背景なしで続けられます。配信状況や通信環境によって背景が表示されない場合があります。
+出典確認日：2026年10月30日。

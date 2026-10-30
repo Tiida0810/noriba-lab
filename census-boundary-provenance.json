@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-10-30",
+  "credit": "『国勢調査町丁・字等別境界データセット』（CODH作成）「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工 doi:10.20676/00000450",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "eStatTerms": "https://www.e-stat.go.jp/terms-of-use",
+  "records": [
+    {
+      "key": "umi",
+      "municipalityCode": "40341",
+      "sourceUrl": "https://geoshape.ex.nii.ac.jp/ka/resource/40341.html",
+      "downloadUrl": "https://geoshape.ex.nii.ac.jp/ka/topojson/2020/40/r2ka40341.topojson",
+      "sourceSha256": "bba2d929b37904980a6b2f343f6c3c92106aa0e8c9f950c13619403e633ce687",
+      "sourceIssuedAt": "2022-06-24",
+      "censusReferenceDate": "2020-10-01",
+      "sourceCRS": "JGD2000 (EPSG:4612), as identified by source e-Stat datum=2000",
+      "displayCRS": "WGS84 (EPSG:4326)",
+      "coordinateOperation": "EPSG:1826 geocentric translations dx=dy=dz=0; GRS80 to WGS84 ellipsoid conversion; approximate 1m-class display, not legal or survey boundary",
+      "operationPrimaryReference": "https://pro.arcgis.com/en/pro-app/3.2/tool-reference/data-management/pdf/geographic_transformations.pdf",
+      "simplification": "Shared-arc Ramer-Douglas-Peucker, preserving shared endpoints; original source retained",
+      "simplificationToleranceDegrees": 5e-06,
+      "originalParts": 88,
+      "districts": 86,
+      "coordinateCount": 8443,
+      "maxRing": 870,
+      "rawArcCoordinateCount": 8592,
+      "displayArcCoordinateCount": 5174
+    },
+    {
+      "key": "nakama",
+      "municipalityCode": "40215",
+      "sourceUrl": "https://geoshape.ex.nii.ac.jp/ka/resource/40215.html",
+      "downloadUrl": "https://geoshape.ex.nii.ac.jp/ka/topojson/2020/40/r2ka40215.topojson",
+      "sourceSha256": "acd1d11e8f27af8ee0d4cc87a2742daa7830647bfd60dfe6d4857eb21dfb1ccf",
+      "sourceIssuedAt": "2022-06-24",
+      "censusReferenceDate": "2020-10-01",
+      "sourceCRS": "JGD2000 (EPSG:4612), as identified by source e-Stat datum=2000",
+      "displayCRS": "WGS84 (EPSG:4326)",
+      "coordinateOperation": "EPSG:1826 geocentric translations dx=dy=dz=0; GRS80 to WGS84 ellipsoid conversion; approximate 1m-class display, not legal or survey boundary",
+      "operationPrimaryReference": "https://pro.arcgis.com/en/pro-app/3.2/tool-reference/data-management/pdf/geographic_transformations.pdf",
+      "simplification": "Shared-arc Ramer-Douglas-Peucker, preserving shared endpoints; original source retained",
+      "simplificationToleranceDegrees": 1e-06,
+      "originalParts": 81,
+      "districts": 81,
+      "coordinateCount": 5534,
+      "maxRing": 195,
+      "rawArcCoordinateCount": 4526,
+      "displayArcCoordinateCount": 3482
+    }
+  ],
+  "notes": "国勢調査町丁・字等の表示用境界です。自治会・行政区の所属を認定せず、2026年の自治会人口表へ結合しません。簡略化・近似測地系変換を含み、境界近くの代表点は所属が変わる可能性があります。法的な区域確定・精密測量に使えません。"
+}

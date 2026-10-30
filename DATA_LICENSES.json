@@ -298,5 +298,31 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "modifications": "GTFS・需要記録を集計・地理結合・道路距離評価・参照形式へ加工。人口・年齢・地形と重ねた机上比較。元データや現行運行を再認定しない。",
   "privacyNotice": "公開対象外の施設情報と私物の写真・動画見本を除外。",
-  "privateLocalFilesIncluded": false
+  "privateLocalFilesIncluded": false,
+  "additionalSources8_26": [
+    {
+      "name": "国勢調査2020町丁・字等別境界（宇美町・中間市）",
+      "creator": "CODH / e-Stat",
+      "license": "CC BY 4.0",
+      "doi": "10.20676/00000450",
+      "sourceUrl": "https://geoshape.ex.nii.ac.jp/ka/",
+      "notice": "census-boundary-notice.txt",
+      "provenance": "census-boundary-provenance.json",
+      "note": "表示用簡略化・位置近似あり。自治会区域・2026年人口表とは別。"
+    },
+    {
+      "name": "背景地図",
+      "providers": [
+        "OpenStreetMap contributors",
+        "国土地理院"
+      ],
+      "notice": "background-map-notice.txt",
+      "note": "利用時に現在の表示範囲のみ取得。タイル画像は同梱しない。"
+    },
+    {
+      "name": "自治会・行政区などの名称・人口参考資料",
+      "catalog": "docs/district-features-8.26.0.html",
+      "note": "15地域の資料確認先、11地域の名称1089件、4地域で人口値590行。単位・部分収録・未収録を区別。"
+    }
+  ]
 }
