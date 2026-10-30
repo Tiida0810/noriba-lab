@@ -324,5 +324,17 @@
       "catalog": "docs/district-features-8.26.0.html",
       "note": "15地域の資料確認先、11地域の名称1089件、4地域で人口値590行。単位・部分収録・未収録を区別。"
     }
+  ],
+  "additionalSources8_27": [
+    {
+      "name": "国勢調査2020小地域人口・世帯（宇美町86・中間市81区域）",
+      "referenceDate": "2020-10-01",
+      "creator": "CODH / e-Stat",
+      "license": "CC BY 4.0",
+      "doi": "10.20676/00000450",
+      "notice": "census-population-notice.txt",
+      "provenance": "census-population-provenance.json",
+      "note": "同梱境界とID・名称・時点・形状を照合。人口メッシュの条件集計、自治会人口、現在人口とは別。"
+    }
   ]
 }

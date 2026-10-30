@@ -28,3 +28,5 @@ NII配信メタデータの発行日：2022年6月24日。
 再生成：data/build-census-boundary-seed.py
 原本ハッシュ・座標数・近似変換の参照資料：data/census-boundary-provenance.json
 検証：qa/map-census-check.cjs / map-census-validation.json
+
+8.27.0追記：同じ2020年小地域のJINKO・SETAIを、別の公表人口・世帯一覧として収録しました。境界の属性へ人口を自動認証して追加するものではありません。詳細はcensus-population-notice.txtを確認してください。

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>地図で区域と人数を確かめる｜のりば設計室 8.27.0</title>
+<style>
+:root{font-family:"Yu Gothic UI","Meiryo",system-ui,sans-serif;color:#183d37;background:#f5f8f6;font-synthesis:none}*{box-sizing:border-box}body{max-width:960px;margin:auto;padding:24px;font-size:16px;line-height:1.8}main{background:#fff;border:1px solid #c6d8cf;border-radius:12px;padding:26px}h1{font-size:1.8rem;line-height:1.5;margin:10px 0 18px}h2{font-size:1.25rem;line-height:1.6;margin:28px 0 10px;color:#125b4c}p{margin:10px 0}a{color:#075f82;text-underline-offset:3px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #995a00;outline-offset:3px}.version{font-size:.9rem;color:#426157}.open-app{display:inline-block;background:#0d6654;color:#fff;border-radius:7px;padding:10px 16px;min-height:44px;text-decoration:none;font-weight:700}.steps{padding-left:1.5rem}.steps li{margin:10px 0}.note{background:#fff8e9;border-left:4px solid #9a7124;padding:10px 14px}.example{background:#f0f7f4;border:1px solid #b7d0c5;border-radius:7px;padding:12px 14px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{padding:10px;border:1px solid #bacfc4;text-align:left;vertical-align:top}th{background:#eef6f2}td.number{text-align:right;white-space:nowrap}.sources{font-size:.9rem}footer{margin-top:26px;border-top:1px solid #c6d8cf;padding-top:12px;font-size:.9rem}@media(max-width:600px){body{padding:12px;font-size:15px}main{padding:16px}h1{font-size:1.5rem}th,td{padding:7px}}@media print{body{max-width:none;background:#fff;padding:0;font-size:11pt}main{padding:0;border:0}.open-app{color:#183d37;background:none;padding:0}.table-wrap{overflow:visible}h2{break-after:avoid}table,.note,.example{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<a href="../index.html?v=8.27.0" class="open-app">のりば設計室を開く</a>
+<p class="version">公開版 8.27.0 ／ 2026年10月31日</p>
+<h1>地図で、区域の名前と人数を確かめる</h1>
+<p>色の付いた区域にカーソルを合わせると、区域名・基準日付きの国勢調査人口・選択中の配置案の結果が分かります。区域をクリックすると、地図の下で詳しく確認できます。</p>
+
+<h2>まず、この順に操作します</h2>
+<ol class="steps">
+<li>「自治体用」→「配置案の編集」を開きます。地図の上で、表示する配置案と区域を選びます。</li>
+<li>色の付いた区域にカーソルを合わせて、名前と人数を見ます。スマートフォンなどでは区域をタップします。</li>
+<li>区域をクリック・タップすると、詳しい情報が地図の下に残ります。人口の資料と基準日、選択中の案、ほかの案との違いを確認します。</li>
+<li>配置を変えた後は「計算・更新」を押し、同じ区域で結果の変化を確かめます。</li>
+</ol>
+<p>乗り場や施設の点を選ぶと、その地点の説明が優先されます。区域の情報を見たいときは、区域内の点がない場所を選んでください。名前から区域を選ぶこともできます。</p>
+<p>区域がまだ表示されない場合は、「背景・地区の表示」→「確認済み地区境界を取り込む」で、国勢調査2020の小地域境界を選び、プレビューを確認して取り込みます。</p>
+
+<h2>A・B・Cは、配置を保存して比べる3つの案です</h2>
+<p>A・B・Cには、それぞれ案の名前があります。名前と乗り場の配置は編集できます。Aが必ず現況、Cが必ず最適案という決まりはありません。</p>
+<p>まず地図に表示している1つの案を確認します。3案が同じ配置なら「3つの案は同じ配置です」と表示されます。乗り場を変更して計算すると、条件内の人口目安がどう変わるかを比べられます。</p>
+<p>地区別の表も、最初は選択中の案を1区域1行で表示します。必要なときに「A・B・Cの3案を比べる（案の名前付き）」を開いてください。</p>
+
+<h2>2種類の人数を分けて読みます</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th scope="col">表示</th><th scope="col">何を表すか</th></tr></thead>
+<tbody>
+<tr><th scope="row">国勢調査人口（人）</th><td>2020年10月1日時点の国勢調査による、その小地域の人口です。世帯数も同じ調査時点の値です。現在の人口ではありません。</td></tr>
+<tr><th scope="row">メッシュ人口の目安（人相当）</th><td>区域内の人口メッシュ代表点から求めた参考量です。選択中の案と距離・坂などの条件で、「条件内」「条件外」「判定保留」「更新待ち」に分かれます。実際の乗車人数ではありません。</td></tr>
+</tbody>
+</table>
+</div>
+<p class="example">例：とびたけ一丁目の国勢調査人口は467人です。メッシュ人口の目安に315人相当と表示される場合も、同じ人数を二重に表示しているわけではありません。集計方法が異なるため、それぞれの表示名と資料を見て判断します。</p>
+<p>条件内の割合を見る場合は、同じメッシュ集計の人口目安どうしを比べます。国勢調査人口で割って、利用率やカバー率と解釈しないでください。未収録・判定保留・更新待ちは、人口0人を意味しません。</p>
+
+<h2>色の意味も、地図の上で選べます</h2>
+<p>区域を見分ける色は、区域の違いを示します。人口の多さを見たいときは、公式人口の濃淡を選びます。選択中の表示方法と凡例を見てから、区域を比べてください。</p>
+<p class="note">ここで表示するのは国勢調査の小地域です。自治会・行政区と同じ境界とは限りません。設置場所を決める際は、候補地点の安全性や土地の条件も確認します。</p>
+
+<h2>収録している国勢調査人口の範囲</h2>
+<p>以下は2020年10月1日時点の小地域データの合計です。2026年の自治会・行政区資料とは別に扱います。</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th scope="col">地域</th><th scope="col">小地域の数</th><th scope="col">人口</th><th scope="col">世帯数</th></tr></thead>
+<tbody>
+<tr><th scope="row">宇美町</th><td class="number">86区域</td><td class="number">37,671人</td><td class="number">14,093世帯</td></tr>
+<tr><th scope="row">中間市</th><td class="number">81区域</td><td class="number">40,362人</td><td class="number">17,369世帯</td></tr>
+</tbody>
+</table>
+</div>
+<p class="sources">出典：CODH「国勢調査町丁・字等別境界データセット」（e-Stat「令和2年国勢調査町丁・字等別境界データ」を加工）。<a href="https://geoshape.ex.nii.ac.jp/ka/resource/40341.html">宇美町の資料</a> ／ <a href="https://geoshape.ex.nii.ac.jp/ka/resource/40215.html">中間市の資料</a>。DOI: 10.20676/00000450、CC BY 4.0。境界は表示用に簡略化・位置近似しています。</p>
+<footer><a href="../SOURCE_NOTICES.html">出典・利用条件</a> ／ <a href="../index.html?v=8.27.0">アプリへ戻る</a></footer>
+</main>
+</body>
+</html>
