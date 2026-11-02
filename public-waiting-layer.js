@@ -3,7 +3,7 @@
 const BASE='https://noriba-public-waiting.berry-crown-1982.chatgpt.site';
 const MAX_LIST_BYTES=2*1024*1024,MAX_DETAIL_BYTES=12*1024*1024,MAX_STOPS=5000;
 const ID=/^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/,SVG='http://www.w3.org/2000/svg';
-let api=null,ui=null,stops=[],enabled=true,lastDraw=null,loadToken=0,photoToken=0,photoAbort=null,photoRecord=null,photoStage=null,returnFocus=null,controlKey='',initializing=null;
+let api=null,ui=null,stops=[],enabled=true,lastDraw=null,loadToken=0,photoToken=0,photoAbort=null,photoRecord=null,photoStage=null,photoId=null,returnFocus=null,controlKey='',initializing=null;
 const markers=new Map();
 function object(value,label){if(!value||typeof value!=='object'||Array.isArray(value))throw Error(label+'の形式を確認してください。');return value;}
 function text(value,label,max,required){if(typeof value!=='string'||value.length>max||/[\u0000-\u001f\u007f]/.test(value)||required&&!value.trim())throw Error(label+'の形式を確認してください。');return value;}
@@ -70,7 +70,7 @@ function photoOverlay(){
  overlay.replaceChildren();overlay.setAttribute('viewBox','0 0 '+w+' '+h);const defs=svg('defs',{}),pattern=svg('pattern',{id:'pwl-red-hatch',patternUnits:'userSpaceOnUse',width:spacing,height:spacing,patternTransform:'rotate(45)'});pattern.appendChild(svg('path',{d:'M '+spacing/2+' 0 V '+spacing,fill:'none',stroke:'#dc2626','stroke-width':2*scale}));defs.appendChild(pattern);overlay.appendChild(defs);
  const points=photoRecord.polygon.points.map(p=>(p.x*w)+','+(p.y*h)).join(' ');overlay.appendChild(svg('polygon',{points,fill:'#dc2626','fill-opacity':'.18'}));overlay.appendChild(svg('polygon',{points,fill:'url(#pwl-red-hatch)',stroke:'#dc2626','stroke-width':3,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round'}));
 }
-function close(){photoToken++;if(photoAbort)photoAbort.abort();photoAbort=null;photoRecord=null;photoStage=null;ui.content.replaceChildren();if(ui.dialog.open&&typeof ui.dialog.close==='function')ui.dialog.close();else ui.dialog.removeAttribute('open');ui.dialog.hidden=true;if(returnFocus&&returnFocus.isConnected)returnFocus.focus({preventScroll:true});}
+function close(){photoToken++;if(photoAbort)photoAbort.abort();photoAbort=null;photoRecord=null;photoStage=null;photoId=null;ui.content.replaceChildren();if(ui.dialog.open&&typeof ui.dialog.close==='function')ui.dialog.close();else ui.dialog.removeAttribute('open');ui.dialog.hidden=true;if(returnFocus&&returnFocus.isConnected)returnFocus.focus({preventScroll:true});}
 async function reveal(stop){
  let summary;try{summary=api.getRegionSummary();}catch(_){return false;}
  if(summary.label!==stop.municipality&&!(summary.key==='nakama'&&stop.municipality==='中間市')){
@@ -84,7 +84,7 @@ async function reveal(stop){
 async function show(id,options){
  const settings=options||{},stop=stops.find(s=>s.id===id);if(!stop){message('この番号の公開案内はまだありません。',true);return false;}
  if(settings.focusMap){try{await reveal(stop);}catch(_){message('地域を切り替えられませんでした。入力中の内容を確認してください。',true);}}
- enabled=true;ui.checkbox.checked=true;draw();returnFocus=settings.trigger||global.document.activeElement;photoToken++;const token=photoToken;if(photoAbort)photoAbort.abort();photoAbort=new AbortController();photoRecord=null;photoStage=null;
+ enabled=true;ui.checkbox.checked=true;draw();returnFocus=settings.trigger||global.document.activeElement;photoToken++;const token=photoToken;if(photoAbort)photoAbort.abort();photoAbort=new AbortController();photoRecord=null;photoStage=null;photoId=id;
  ui.title.textContent=stop.id+' '+stop.name;ui.content.replaceChildren(el('p',{},'公開された写真と範囲を読み込んでいます…'));ui.dialog.hidden=false;if(!ui.dialog.open){if(typeof ui.dialog.showModal==='function')ui.dialog.showModal();else ui.dialog.setAttribute('open','');}
  try{const record=validateDetail(await readJSON('/api/stops/'+encodeURIComponent(id),MAX_DETAIL_BYTES,photoAbort.signal),id);if(token!==photoToken)return false;
  const image=el('img',{alt:record.id+' '+record.name+'の公開された現地写真'});await new Promise((resolve,reject)=>{image.onload=()=>image.naturalWidth===record.photo.width&&image.naturalHeight===record.photo.height?resolve():reject(Error('写真の大きさと範囲の記録が一致しません。'));image.onerror=()=>reject(Error('公開写真を表示できませんでした。'));image.src=record.photo.dataUrl;});if(token!==photoToken)return false;
@@ -99,7 +99,7 @@ async function show(id,options){
 async function refresh(){
  const token=++loadToken;ui.refresh.disabled=true;message('公開された案内の一覧を読み込んでいます…');
  const controller=new AbortController(),timer=global.setTimeout(()=>controller.abort(),20000);
- try{const records=validateList(await readJSON('/api/stops',MAX_LIST_BYTES,controller.signal));if(token!==loadToken)return false;stops=records;controls(true);draw();message('公開された案内 '+stops.length+'件を読み込みました。');return true;}
+ try{const records=validateList(await readJSON('/api/stops',MAX_LIST_BYTES,controller.signal));if(token!==loadToken)return false;stops=records;if(photoId&&!stops.some(stop=>stop.id===photoId))close();controls(true);draw();message('公開された案内 '+stops.length+'件を読み込みました。');return true;}
  catch(error){if(token!==loadToken)return false;message(error.name==='AbortError'?'公開案内の取得が完了しませんでした。更新ボタンで再試行できます。':error.message||'公開案内を読み込めませんでした。',true);return false;}
  finally{global.clearTimeout(timer);if(token===loadToken)ui.refresh.disabled=false;}
 }
